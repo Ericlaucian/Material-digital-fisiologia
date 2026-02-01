@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pid 4 Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Pid 4 Questions</h1>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </header>
+        <main>
+            <section id="topics-section">
+                <h2>Escolha um tópico para começar</h2>
+                <div id="topics-container"></div>
+            </section>
+            <section id="roulette-section" class="hidden">
+                <h2>Roleta</h2>
+                <div id="roulette-wheel"></div>
+                <button id="spin-button" class="action-button">Girar</button>
+            </section>
+            <section id="question-section" class="hidden">
+                <h3 id="question-text"></h3>
+                <div id="hints-container"></div>
+                <button id="show-answer-button" class="action-button">Mostrar Resposta</button>
+                <div id="timer-display"></div>
+                <div id="answer-container" class="hidden">
+                    <p id="answer-text"></p>
+                </div>
+                <button id="next-button" class="action-button hidden">Próxima</button>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

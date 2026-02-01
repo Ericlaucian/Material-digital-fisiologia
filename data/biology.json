@@ -1,0 +1,37 @@
+{
+    "Qual é a unidade básica da vida?": {
+        "Hint 1": "É a menor unidade estrutural e funcional de um organismo.",
+        "Hint 2": "Pode ser procariótica ou eucariótica.",
+        "Hint 3": "Contém material genético e organelas.",
+        "Hint 4": "Todas as formas de vida são compostas por elas.",
+        "Answer": "Célula"
+    },
+    "Qual processo as plantas usam para criar seu próprio alimento?": {
+        "Hint 1": "Envolve a conversão de energia luminosa.",
+        "Hint 2": "Requer dióxido de carbono e água.",
+        "Hint 3": "Produz glicose e oxigênio.",
+        "Hint 4": "Ocorre principalmente nas folhas, em organelas específicas.",
+        "Answer": "Fotossíntese"
+    },
+    "Qual é o nome do processo de divisão celular que resulta em duas células-filhas idênticas?": {
+        "Hint 1": "É essencial para o crescimento e reparo de tecidos.",
+        "Hint 2": "Ocorre em células somáticas.",
+        "Hint 3": "Mantém o número de cromossomos.",
+        "Hint 4": "Possui fases como prófase, metáfase, anáfase e telófase.",
+        "Answer": "Mitose"
+    },
+    "Qual gás é essencial para a respiração da maioria dos seres vivos?": {
+        "Hint 1": "É abundante na atmosfera terrestre.",
+        "Hint 2": "É inalado por animais e exalado por plantas (durante a fotossíntese).",
+        "Hint 3": "Participa da cadeia de transporte de elétrons.",
+        "Hint 4": "Sua falta pode levar à asfixia.",
+        "Answer": "Oxigênio"
+    },
+    "Qual é a principal função do coração no corpo humano?": {
+        "Hint 1": "É um órgão muscular.",
+        "Hint 2": "Faz parte do sistema circulatório.",
+        "Hint 3": "Responsável por transportar sangue.",
+        "Hint 4": "Garante que o oxigênio e nutrientes cheguem a todas as células.",
+        "Answer": "Bombear sangue"
+    }
+}
