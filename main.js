@@ -1,4 +1,5 @@
 // src/main.ts
+var AVAILABLE_TOPICS = ["fisiologia"];
 var rouletteSection = document.getElementById("roulette-section");
 var rouletteDisplayElement = document.getElementById("roulette-wheel");
 var spinButton = document.getElementById("spin-button");
@@ -36,16 +37,23 @@ async function selectTopic(topicName) {
     answeredQuestions = [];
     console.log("Loaded questions for topic:", topicName, currentTopicQuestions);
     if (rouletteSection)
-      rouletteSection.classList.add("hidden");
-    pickRandomQuestion();
+      rouletteSection.classList.remove("hidden");
+    if (rouletteDisplayElement)
+      rouletteDisplayElement.textContent = "Pronto para responder?";
+    if (spinButton) {
+      spinButton.disabled = false;
+      spinButton.textContent = "Iniciar Pergunta";
+      spinButton.onclick = pickRandomQuestion;
+      spinButton.classList.remove("hidden");
+    }
   } catch (error) {
     console.error(`Failed to load questions for topic ${topicName}:`, error);
     if (rouletteDisplayElement) {
-      rouletteDisplayElement.textContent = `<p>Erro ao carregar perguntas de Fisiologia. Por favor, tente novamente mais tarde.</p>`;
+      rouletteDisplayElement.textContent = `<p>Erro ao carregar perguntas para o tópico "${topicName}". Por favor, tente novamente mais tarde.</p>`;
     }
   }
 }
-function startRound() {
+function spinRoulette() {
   if (questionSection)
     questionSection.classList.add("hidden");
   if (answerContainer)
@@ -59,13 +67,16 @@ function startRound() {
   if (rouletteSection)
     rouletteSection.classList.remove("hidden");
   if (spinButton)
-    spinButton.classList.add("hidden");
-  if (rouletteDisplayElement) {
-    rouletteDisplayElement.textContent = `Carregando perguntas de Fisiologia...`;
+    spinButton.classList.remove("hidden");
+  const chosenTopic = AVAILABLE_TOPICS[0];
+  if (rouletteDisplayElement && spinButton) {
+    rouletteDisplayElement.textContent = `Girando...`;
+    spinButton.disabled = true;
+    setTimeout(() => {
+      selectTopic(chosenTopic);
+      spinButton.disabled = false;
+    }, 1500);
   }
-  setTimeout(() => {
-    selectTopic("fisiologia");
-  }, 500);
 }
 function pickRandomQuestion() {
   hintsUsedInQuestion = 0;
@@ -247,9 +258,7 @@ function resetQuestionStateAndSpinRoulette() {
   if (scoreDisplayElement) {
     scoreDisplayElement.textContent = `Score: ${score}`;
   }
-  pickRandomQuestion();
-  if (spinButton)
-    spinButton.classList.add("hidden");
+  spinRoulette();
 }
 function revealAnswer() {
   clearTimeout(hintCountdownTimer);
@@ -309,7 +318,7 @@ function applyInitialTheme() {
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
-  startRound();
+  spinRoulette();
   applyInitialTheme();
 });
 if (nextHintButton) {
