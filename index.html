@@ -12,6 +12,7 @@
     <div id="app">
         <header>
             <h1>Jogo das 4 dicas</h1>
+            <div id="score-display">Score: 0</div>
             <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
@@ -20,22 +21,31 @@
             </div>
         </header>
         <main>
-            <section id="topics-section">
+            <section id="topics-section" class="hidden">
                 <h2>Escolha um tópico para começar</h2>
                 <div id="topics-container"></div>
             </section>
-            <section id="roulette-section" class="hidden">
+            <section id="roulette-section">
                 <h2>Perguntas Aleatórias</h2>
                 <div id="roulette-wheel"></div>
-                <button id="spin-button" class="action-button">Pegar Pergunta Aleatória</button>
+                <button id="spin-button" class="action-button">Girar Roleta</button>
             </section>
             <section id="question-section" class="hidden">
                 <h3 id="question-text"></h3>
                 <div id="hints-container"></div>
+                <div id="hint-timer-controls" class="hidden">
+                    <button id="next-hint-button" class="action-button">Próxima Dica</button>
+                    <button id="answer-now-button" class="action-button">Responder Agora</button>
+                    <div id="hint-timer-display"></div>
+                </div>
                 <button id="show-answer-button" class="action-button">Mostrar Resposta</button>
                 <div id="timer-display"></div>
                 <div id="answer-container" class="hidden">
                     <p id="answer-text"></p>
+                    <div id="correct-wrong-container" class="hidden">
+                        <button id="got-right-button" class="action-button">Acertei!</button>
+                        <button id="got-wrong-button" class="action-button">Errei</button>
+                    </div>
                 </div>
                 <button id="next-button" class="action-button hidden">Próxima</button>
             </section>

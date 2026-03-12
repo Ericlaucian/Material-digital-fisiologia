@@ -1,34 +1,31 @@
 // src/main.ts
-var AVAILABLE_TOPICS = ["biology"];
-var topicsContainer = document.getElementById("topics-container");
-var topicsSection = document.getElementById("topics-section");
+var AVAILABLE_TOPICS = ["biologia", "historia", "geografia", "literatura"];
 var rouletteSection = document.getElementById("roulette-section");
-var questionSection = document.getElementById("question-section");
+var rouletteDisplayElement = document.getElementById("roulette-wheel");
 var spinButton = document.getElementById("spin-button");
+var questionSection = document.getElementById("question-section");
 var questionTextElement = document.getElementById("question-text");
 var hintsContainer = document.getElementById("hints-container");
+var hintTimerControls = document.getElementById("hint-timer-controls");
+var nextHintButton = document.getElementById("next-hint-button");
+var answerNowButton = document.getElementById("answer-now-button");
+var hintTimerDisplay = document.getElementById("hint-timer-display");
 var showAnswerButton = document.getElementById("show-answer-button");
-var nextButton = document.getElementById("next-button");
-var timerDisplay = document.getElementById("timer-display");
 var answerContainer = document.getElementById("answer-container");
 var answerTextElement = document.getElementById("answer-text");
+var correctWrongContainer = document.getElementById("correct-wrong-container");
+var gotRightButton = document.getElementById("got-right-button");
+var gotWrongButton = document.getElementById("got-wrong-button");
 var themeSwitch = document.getElementById("checkbox");
+var scoreDisplayElement = document.getElementById("score-display");
 var currentTopicQuestions = {};
 var answeredQuestions = [];
 var selectedQuestionName = null;
-var countdownTimer;
-async function loadTopicButtons() {
-  if (topicsContainer) {
-    topicsContainer.innerHTML = "";
-    AVAILABLE_TOPICS.forEach((topicName) => {
-      const button = document.createElement("button");
-      button.classList.add("topic-button");
-      button.textContent = topicName;
-      button.onclick = () => selectTopic(topicName);
-      topicsContainer.appendChild(button);
-    });
-  }
-}
+var hintCountdownTimer;
+var hintsUsedInQuestion = 0;
+var currentHintIndex = 0;
+var score = 0;
+var questionsAnsweredCount = 0;
 async function selectTopic(topicName) {
   console.log(`Selected topic: ${topicName}`);
   try {
@@ -39,32 +36,80 @@ async function selectTopic(topicName) {
     currentTopicQuestions = await response.json();
     answeredQuestions = [];
     console.log("Loaded questions for topic:", topicName, currentTopicQuestions);
-    if (topicsSection) {
-      topicsSection.classList.add("hidden");
-    }
-    if (rouletteSection) {
+    if (rouletteSection)
       rouletteSection.classList.remove("hidden");
+    if (rouletteDisplayElement)
+      rouletteDisplayElement.textContent = `Tópico selecionado: ${topicName}`;
+    if (spinButton) {
+      spinButton.disabled = false;
+      spinButton.textContent = "Iniciar Pergunta";
+      spinButton.onclick = pickRandomQuestion;
+      spinButton.classList.remove("hidden");
     }
   } catch (error) {
     console.error(`Failed to load questions for topic ${topicName}:`, error);
-    if (topicsContainer) {
-      topicsContainer.innerHTML = `<p>Erro ao carregar perguntas para o tópico "${topicName}". Por favor, tente novamente mais tarde.</p>`;
+    if (rouletteDisplayElement) {
+      rouletteDisplayElement.textContent = `<p>Erro ao carregar perguntas para o tópico "${topicName}". Por favor, tente novamente mais tarde.</p>`;
     }
   }
 }
+function spinRoulette() {
+  if (questionSection)
+    questionSection.classList.add("hidden");
+  if (answerContainer)
+    answerContainer.classList.add("hidden");
+  if (correctWrongContainer)
+    correctWrongContainer.classList.add("hidden");
+  if (hintTimerControls)
+    hintTimerControls.classList.add("hidden");
+  if (showAnswerButton)
+    showAnswerButton.classList.add("hidden");
+  if (rouletteSection)
+    rouletteSection.classList.remove("hidden");
+  if (spinButton)
+    spinButton.classList.remove("hidden");
+  const randomIndex = Math.floor(Math.random() * AVAILABLE_TOPICS.length);
+  const chosenTopic = AVAILABLE_TOPICS[randomIndex];
+  if (rouletteDisplayElement && spinButton) {
+    rouletteDisplayElement.textContent = `Girando...`;
+    spinButton.disabled = true;
+    setTimeout(() => {
+      selectTopic(chosenTopic);
+      spinButton.disabled = false;
+    }, 1500);
+  }
+}
 function pickRandomQuestion() {
+  hintsUsedInQuestion = 0;
+  currentHintIndex = 0;
+  clearTimeout(hintCountdownTimer);
+  if (hintCountdownTimer !== undefined) {
+    clearInterval(hintCountdownTimer);
+    hintCountdownTimer = undefined;
+  }
   const unansweredQuestions = Object.keys(currentTopicQuestions).filter((q) => !answeredQuestions.includes(q));
   if (unansweredQuestions.length === 0) {
     if (questionTextElement)
-      questionTextElement.textContent = "Parabéns! Você respondeu todas as perguntas!";
+      questionTextElement.textContent = "Parabéns! Você respondeu todas as perguntas deste tópico!";
     if (hintsContainer)
       hintsContainer.innerHTML = "";
     if (answerContainer)
       answerContainer.classList.add("hidden");
     if (showAnswerButton)
       showAnswerButton.classList.add("hidden");
-    if (nextButton)
-      nextButton.classList.add("hidden");
+    if (hintTimerControls)
+      hintTimerControls.classList.add("hidden");
+    if (questionSection)
+      questionSection.classList.add("hidden");
+    if (rouletteSection)
+      rouletteSection.classList.remove("hidden");
+    if (rouletteDisplayElement)
+      rouletteDisplayElement.textContent = "Tópico Concluído! Gire a roleta para um novo.";
+    if (spinButton) {
+      spinButton.onclick = spinRoulette;
+      spinButton.textContent = "Girar Roleta";
+      spinButton.classList.remove("hidden");
+    }
     return;
   }
   const randomIndex = Math.floor(Math.random() * unansweredQuestions.length);
@@ -72,71 +117,169 @@ function pickRandomQuestion() {
   if (questionTextElement && selectedQuestionName) {
     questionTextElement.textContent = selectedQuestionName;
   }
+  if (spinButton)
+    spinButton.classList.add("hidden");
+  if (rouletteDisplayElement)
+    rouletteDisplayElement.textContent = "";
   if (hintsContainer)
     hintsContainer.innerHTML = "";
-  if (timerDisplay)
-    timerDisplay.textContent = "";
   if (answerContainer)
     answerContainer.classList.add("hidden");
+  if (correctWrongContainer)
+    correctWrongContainer.classList.add("hidden");
   if (showAnswerButton)
     showAnswerButton.classList.remove("hidden");
-  if (nextButton)
-    nextButton.classList.add("hidden");
-  clearTimeout(countdownTimer);
-  if (rouletteSection) {
+  if (hintTimerControls)
+    hintTimerControls.classList.add("hidden");
+  if (rouletteSection)
     rouletteSection.classList.add("hidden");
-  }
-  if (questionSection) {
+  if (questionSection)
     questionSection.classList.remove("hidden");
-  }
-  displayHints();
+  startQuestion();
 }
-function displayHints() {
-  if (!hintsContainer || !selectedQuestionName || !currentTopicQuestions[selectedQuestionName]) {
-    return;
-  }
-  hintsContainer.innerHTML = "";
-  const questionData = currentTopicQuestions[selectedQuestionName];
-  for (let i = 1;i <= 4; i++) {
-    const hintKey = `Hint ${i}`;
-    const hintText = questionData[hintKey];
-    if (hintText) {
-      const hintButton = document.createElement("button");
-      hintButton.classList.add("hint-button");
-      hintButton.textContent = `Dica ${i}`;
-      hintButton.dataset.hintNumber = String(i);
-      let revealed = false;
-      hintButton.onclick = () => {
-        if (!revealed) {
-          hintButton.textContent = hintText;
-          hintButton.disabled = true;
-          revealed = true;
-          hintButton.classList.add("revealed-hint");
-        }
-      };
-      hintsContainer.appendChild(hintButton);
-    }
-  }
-}
-function startAnswerTimer() {
+function startQuestion() {
+  if (questionSection)
+    questionSection.classList.remove("hidden");
+  if (hintsContainer)
+    hintsContainer.innerHTML = "";
+  if (hintTimerControls)
+    hintTimerControls.classList.remove("hidden");
+  if (answerContainer)
+    answerContainer.classList.add("hidden");
+  if (correctWrongContainer)
+    correctWrongContainer.classList.add("hidden");
   if (showAnswerButton)
     showAnswerButton.classList.add("hidden");
-  let timeLeft = 10;
-  if (timerDisplay)
-    timerDisplay.textContent = `Tempo restante: ${timeLeft}s`;
-  countdownTimer = setInterval(() => {
+  currentHintIndex = 0;
+  hintsUsedInQuestion = 0;
+  revealNextHint();
+}
+function revealNextHint() {
+  clearTimeout(hintCountdownTimer);
+  if (hintCountdownTimer !== undefined) {
+    clearInterval(hintCountdownTimer);
+    hintCountdownTimer = undefined;
+  }
+  if (hintTimerDisplay)
+    hintTimerDisplay.textContent = "";
+  if (!selectedQuestionName || !currentTopicQuestions[selectedQuestionName]) {
+    console.error("revealNextHint called but no question is selected or data is missing.");
+    resetQuestionStateAndSpinRoulette();
+    return;
+  }
+  const questionData = currentTopicQuestions[selectedQuestionName];
+  const hintKey = `Hint ${currentHintIndex + 1}`;
+  const hintText = questionData[hintKey];
+  if (hintText) {
+    if (hintsContainer) {
+      const hintElement = document.createElement("p");
+      hintElement.classList.add("revealed-hint");
+      hintElement.textContent = `Dica ${currentHintIndex + 1}: ${hintText}`;
+      hintsContainer.appendChild(hintElement);
+      hintsUsedInQuestion++;
+    }
+    currentHintIndex++;
+    if (nextHintButton) {
+      nextHintButton.disabled = currentHintIndex >= 4;
+    }
+    startHintTimer();
+  } else {
+    if (hintTimerControls)
+      hintTimerControls.classList.add("hidden");
+    revealAnswer();
+  }
+}
+function startHintTimer() {
+  let timeLeft = 15;
+  if (hintTimerDisplay)
+    hintTimerDisplay.textContent = `Tempo para a próxima dica/resposta: ${timeLeft}s`;
+  clearTimeout(hintCountdownTimer);
+  if (hintCountdownTimer !== undefined) {
+    clearInterval(hintCountdownTimer);
+  }
+  hintCountdownTimer = undefined;
+  hintCountdownTimer = setInterval(() => {
     timeLeft--;
-    if (timerDisplay)
-      timerDisplay.textContent = `Tempo restante: ${timeLeft}s`;
+    if (hintTimerDisplay)
+      hintTimerDisplay.textContent = `Tempo para a próxima dica/resposta: ${timeLeft}s`;
     if (timeLeft <= 0) {
-      clearInterval(countdownTimer);
+      if (hintCountdownTimer !== undefined) {
+        clearInterval(hintCountdownTimer);
+      }
+      hintCountdownTimer = undefined;
       revealAnswer();
     }
   }, 1000);
 }
+function calculateScore(hintsUsed) {
+  switch (hintsUsed) {
+    case 0:
+    case 1:
+      return 100;
+    case 2:
+      return 75;
+    case 3:
+      return 50;
+    case 4:
+      return 25;
+    default:
+      return 0;
+  }
+}
+function resetQuestionStateAndSpinRoulette() {
+  clearTimeout(hintCountdownTimer);
+  if (hintCountdownTimer !== undefined) {
+    clearInterval(hintCountdownTimer);
+    hintCountdownTimer = undefined;
+  }
+  selectedQuestionName = null;
+  hintsUsedInQuestion = 0;
+  currentHintIndex = 0;
+  if (questionSection)
+    questionSection.classList.add("hidden");
+  if (answerContainer)
+    answerContainer.classList.add("hidden");
+  if (correctWrongContainer)
+    correctWrongContainer.classList.add("hidden");
+  if (hintsContainer)
+    hintsContainer.innerHTML = "";
+  if (hintTimerControls)
+    hintTimerControls.classList.add("hidden");
+  if (hintTimerDisplay)
+    hintTimerDisplay.textContent = "";
+  if (showAnswerButton)
+    showAnswerButton.classList.add("hidden");
+  if (rouletteDisplayElement)
+    rouletteDisplayElement.textContent = "";
+  questionsAnsweredCount++;
+  if (questionsAnsweredCount % 5 === 0) {
+    alert(`Fim da rodada! Sua pontuação total: ${score} pontos.`);
+  }
+  if (scoreDisplayElement) {
+    scoreDisplayElement.textContent = `Score: ${score}`;
+  }
+  if (spinButton) {
+    spinButton.textContent = "Girar Roleta";
+    spinButton.classList.remove("hidden");
+    spinButton.onclick = spinRoulette;
+  }
+  spinRoulette();
+}
 function revealAnswer() {
+  clearTimeout(hintCountdownTimer);
+  if (hintCountdownTimer !== undefined) {
+    clearInterval(hintCountdownTimer);
+    hintCountdownTimer = undefined;
+  }
+  if (hintTimerControls)
+    hintTimerControls.classList.add("hidden");
+  if (showAnswerButton)
+    showAnswerButton.classList.add("hidden");
   if (!selectedQuestionName || !currentTopicQuestions[selectedQuestionName]) {
-    console.warn("No question selected to reveal answer.");
+    console.error("revealAnswer called but question data is missing.");
+    console.error("selectedQuestionName:", selectedQuestionName);
+    console.error("currentTopicQuestions for selectedQuestionName:", currentTopicQuestions[selectedQuestionName]);
+    resetQuestionStateAndSpinRoulette();
     return;
   }
   if (!answeredQuestions.includes(selectedQuestionName)) {
@@ -149,21 +292,11 @@ function revealAnswer() {
   if (answerContainer) {
     answerContainer.classList.remove("hidden");
   }
-  if (timerDisplay)
-    timerDisplay.textContent = "";
-  if (showAnswerButton)
-    showAnswerButton.classList.add("hidden");
-  if (nextButton)
-    nextButton.classList.remove("hidden");
-}
-if (spinButton) {
-  spinButton.addEventListener("click", pickRandomQuestion);
-}
-if (showAnswerButton) {
-  showAnswerButton.addEventListener("click", startAnswerTimer);
-}
-if (nextButton) {
-  nextButton.addEventListener("click", pickRandomQuestion);
+  if (correctWrongContainer) {
+    correctWrongContainer.classList.remove("hidden");
+  }
+  if (spinButton)
+    spinButton.classList.add("hidden");
 }
 if (themeSwitch) {
   themeSwitch.addEventListener("change", () => {
@@ -190,6 +323,23 @@ function applyInitialTheme() {
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
-  loadTopicButtons();
+  spinRoulette();
   applyInitialTheme();
 });
+if (nextHintButton) {
+  nextHintButton.addEventListener("click", revealNextHint);
+}
+if (answerNowButton) {
+  answerNowButton.addEventListener("click", revealAnswer);
+}
+if (gotRightButton) {
+  gotRightButton.addEventListener("click", () => {
+    score += calculateScore(hintsUsedInQuestion);
+    resetQuestionStateAndSpinRoulette();
+  });
+}
+if (gotWrongButton) {
+  gotWrongButton.addEventListener("click", () => {
+    resetQuestionStateAndSpinRoulette();
+  });
+}
