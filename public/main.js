@@ -1,5 +1,4 @@
 // src/main.ts
-var AVAILABLE_TOPICS = ["biologia", "historia", "geografia", "literatura"];
 var rouletteSection = document.getElementById("roulette-section");
 var rouletteDisplayElement = document.getElementById("roulette-wheel");
 var spinButton = document.getElementById("spin-button");
@@ -37,23 +36,16 @@ async function selectTopic(topicName) {
     answeredQuestions = [];
     console.log("Loaded questions for topic:", topicName, currentTopicQuestions);
     if (rouletteSection)
-      rouletteSection.classList.remove("hidden");
-    if (rouletteDisplayElement)
-      rouletteDisplayElement.textContent = `Tópico selecionado: ${topicName}`;
-    if (spinButton) {
-      spinButton.disabled = false;
-      spinButton.textContent = "Iniciar Pergunta";
-      spinButton.onclick = pickRandomQuestion;
-      spinButton.classList.remove("hidden");
-    }
+      rouletteSection.classList.add("hidden");
+    pickRandomQuestion();
   } catch (error) {
     console.error(`Failed to load questions for topic ${topicName}:`, error);
     if (rouletteDisplayElement) {
-      rouletteDisplayElement.textContent = `<p>Erro ao carregar perguntas para o tópico "${topicName}". Por favor, tente novamente mais tarde.</p>`;
+      rouletteDisplayElement.textContent = `<p>Erro ao carregar perguntas de Fisiologia. Por favor, tente novamente mais tarde.</p>`;
     }
   }
 }
-function spinRoulette() {
+function startRound() {
   if (questionSection)
     questionSection.classList.add("hidden");
   if (answerContainer)
@@ -67,17 +59,13 @@ function spinRoulette() {
   if (rouletteSection)
     rouletteSection.classList.remove("hidden");
   if (spinButton)
-    spinButton.classList.remove("hidden");
-  const randomIndex = Math.floor(Math.random() * AVAILABLE_TOPICS.length);
-  const chosenTopic = AVAILABLE_TOPICS[randomIndex];
-  if (rouletteDisplayElement && spinButton) {
-    rouletteDisplayElement.textContent = `Girando...`;
-    spinButton.disabled = true;
-    setTimeout(() => {
-      selectTopic(chosenTopic);
-      spinButton.disabled = false;
-    }, 1500);
+    spinButton.classList.add("hidden");
+  if (rouletteDisplayElement) {
+    rouletteDisplayElement.textContent = `Carregando perguntas de Fisiologia...`;
   }
+  setTimeout(() => {
+    selectTopic("fisiologia");
+  }, 500);
 }
 function pickRandomQuestion() {
   hintsUsedInQuestion = 0;
@@ -104,12 +92,13 @@ function pickRandomQuestion() {
     if (rouletteSection)
       rouletteSection.classList.remove("hidden");
     if (rouletteDisplayElement)
-      rouletteDisplayElement.textContent = "Tópico Concluído! Gire a roleta para um novo.";
+      rouletteDisplayElement.textContent = "Todas as perguntas de Fisiologia foram respondidas! Clique para reiniciar.";
     if (spinButton) {
-      spinButton.onclick = spinRoulette;
-      spinButton.textContent = "Girar Roleta";
+      spinButton.onclick = pickRandomQuestion;
+      spinButton.textContent = "Reiniciar Perguntas";
       spinButton.classList.remove("hidden");
     }
+    answeredQuestions = [];
     return;
   }
   const randomIndex = Math.floor(Math.random() * unansweredQuestions.length);
@@ -258,12 +247,9 @@ function resetQuestionStateAndSpinRoulette() {
   if (scoreDisplayElement) {
     scoreDisplayElement.textContent = `Score: ${score}`;
   }
-  if (spinButton) {
-    spinButton.textContent = "Girar Roleta";
-    spinButton.classList.remove("hidden");
-    spinButton.onclick = spinRoulette;
-  }
-  spinRoulette();
+  pickRandomQuestion();
+  if (spinButton)
+    spinButton.classList.add("hidden");
 }
 function revealAnswer() {
   clearTimeout(hintCountdownTimer);
@@ -323,7 +309,7 @@ function applyInitialTheme() {
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
-  spinRoulette();
+  startRound();
   applyInitialTheme();
 });
 if (nextHintButton) {
