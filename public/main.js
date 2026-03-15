@@ -296,16 +296,19 @@ function resetQuestionStateAndSpinRoulette() {
 function checkAnswer() {
   if (!selectedQuestionName || !currentTopicQuestions[selectedQuestionName])
     return;
+  const questionData = currentTopicQuestions[selectedQuestionName];
   const userAnswer = userAnswerInput.value.trim().toLowerCase().replace(/\s+/g, " ");
-  const correctAnswer = currentTopicQuestions[selectedQuestionName].Answer.trim().toLowerCase().replace(/\s+/g, " ");
+  const primaryAnswer = questionData.Answer.trim().toLowerCase().replace(/\s+/g, " ");
+  const alternativeAnswers = (questionData.AlternativeAnswers || []).map((alt) => alt.trim().toLowerCase().replace(/\s+/g, " "));
+  const isCorrect = userAnswer === primaryAnswer || alternativeAnswers.includes(userAnswer);
   if (feedbackMessage) {
     feedbackMessage.classList.remove("hidden");
-    if (userAnswer === correctAnswer) {
+    if (isCorrect) {
       feedbackMessage.textContent = "Correto!";
       feedbackMessage.classList.add("correct-feedback");
       score += calculateScore(hintsUsedInQuestion);
     } else {
-      feedbackMessage.textContent = `Incorreto! A resposta correta era: ${currentTopicQuestions[selectedQuestionName].Answer}`;
+      feedbackMessage.textContent = `Incorreto! A resposta correta era: ${questionData.Answer}`;
       feedbackMessage.classList.add("incorrect-feedback");
     }
   }

@@ -4,293 +4,335 @@
         "Hint 2": "A fórmula envolve o Débito Cardíaco (DC).",
         "Hint 3": "A fórmula envolve a Resistência Periférica Total (RPT).",
         "Hint 4": "É o produto (multiplicação) desses dois fatores.",
-        "Answer": "DC x RPT"
+        "Answer": "DC x RPT",
+        "AlternativeAnswers": ["DC * RPT", "DC vezes RPT", "DC e RPT"]
     },
     "O que são as Artérias Sistêmicas em termos de sua função principal no sistema circulatório?": {
         "Hint 1": "As artérias sistêmicas armazenam a pressão da sístole.",
         "Hint 2": "Elas a liberam lentamente por retração elástica.",
         "Hint 3": "Garantem um fluxo contínuo durante a diástole.",
         "Hint 4": "Atuam como um reservatório de pressão.",
-        "Answer": "Reservatório de pressão"
+        "Answer": "Reservatório de pressão",
+        "AlternativeAnswers": ["Reservatório pressão", "Armazena pressão", "Estoque de pressão"]
     },
     "O que são as Arteríolas no sistema circulatório em termos de controle de fluxo?": {
         "Hint 1": "As arteríolas criam alta resistência no sistema circulatório.",
         "Hint 2": "Elas controlam seletivamente seu diâmetro.",
         "Hint 3": "Direcionam o fluxo sanguíneo para os tecidos que mais necessitam.",
         "Hint 4": "São o principal local de resistência variável.",
-        "Answer": "Resistência variável"
+        "Answer": "Resistência variável",
+        "AlternativeAnswers": ["Resistência", "Controle fluxo", "Vaso resistência"]
     },
     "O que são os Barorreceptores Carotídeos e Aórticos?": {
         "Hint 1": "São receptores sensoriais que detectam o estiramento das paredes arteriais.",
         "Hint 2": "São mecanorreceptores sensíveis ao estiramento.",
         "Hint 3": "São tonicamente ativos.",
         "Hint 4": "Estão localizados nas paredes das artérias carótidas e aorta.",
-        "Answer": "Receptores de estiramento"
+        "Answer": "Receptores de estiramento",
+        "AlternativeAnswers": ["Mecanoreceptores", "Sensores estiramento", "Receptores pressão"]
     },
     "O que é o Reflexo Barorreceptor em termos de velocidade de resposta?": {
         "Hint 1": "É um sistema de ajuste rápido para manter a PA constante.",
         "Hint 2": "A resposta eferente ocorre em milissegundos.",
         "Hint 3": "As mudanças no débito cardíaco e na resistência periférica são muito rápidas.",
         "Hint 4": "Ocorrem dentro de dois batimentos cardíacos após o estímulo.",
-        "Answer": "Reflexo muito rápido"
+        "Answer": "Reflexo muito rápido",
+        "AlternativeAnswers": ["Ajuste rápido", "Resposta rápida", "Reflexo rápido"]
     },
     "O que é o Sistema Renina-Angiotensina-Aldosterona (SRAA) no contexto da regulação da PA?": {
         "Hint 1": "É um sistema de regulação de longo prazo.",
         "Hint 2": "É ativado pela queda na Pressão Arterial.",
         "Hint 3": "Seu objetivo é elevar a pressão arterial.",
         "Hint 4": "É um sistema de controle hormonal.",
-        "Answer": "Controle hormonal lento"
+        "Answer": "Controle hormonal lento",
+        "AlternativeAnswers": ["Sistema hormonal", "SRAA hormonal", "Regulação lenta"]
     },
     "O que é o Débito Cardíaco (DC)?": {
         "Hint 1": "É o principal fator que, junto com a Resistência Periférica Total, determina a Pressão Arterial.",
         "Hint 2": "É o resultado de uma multiplicação.",
         "Hint 3": "Um dos fatores é o Volume Sistólico (VS).",
         "Hint 4": "O outro fator é a Frequência Cardíaca (FC).",
-        "Answer": "VS x FC"
+        "Answer": "VS x FC",
+        "AlternativeAnswers": ["VS * FC", "VS vezes FC", "Volume e Frequência"]
     },
     "Qual é a principal resposta do reflexo barorreceptor para corrigir a Hipotensão Ortostática?": {
         "Hint 1": "Ocorre quando há uma diminuição da PA ao se ficar em pé.",
         "Hint 2": "Para elevar a PA rapidamente, o Centro de controle cardiovascular atua.",
         "Hint 3": "Aumenta a inervação simpática (aumentando FC e RPT).",
         "Hint 4": "Retira a inibição parassimpática (vagotonia).",
-        "Answer": "Atividade simpática aumentada"
+        "Answer": "Atividade simpática aumentada",
+        "AlternativeAnswers": ["Mais simpático", "Aumento simpático", "Estímulo simpático"]
     },
     "O que caracteriza o sistema de controle hormonal da Pressão Arterial, como o SRAA?": {
         "Hint 1": "É um sistema de regulação de longo prazo.",
         "Hint 2": "O SRAA é um exemplo e é ativado para elevar a PA.",
         "Hint 3": "Responde a situações de queda na PA.",
         "Hint 4": "É considerado um sistema lento de controle.",
-        "Answer": "Regulação longo prazo"
+        "Answer": "Regulação longo prazo",
+        "AlternativeAnswers": ["Controle lento", "Ação demorada", "Sistema hormonal"]
     },
     "O que é o néfron?": {
         "Hint 1": "É a estrutura microscópica complexa onde ocorrem os processos renais.",
         "Hint 2": "Realiza a filtração, reabsorção e secreção.",
         "Hint 3": "É responsável pelo manejo do plasma e formação da urina.",
         "Hint 4": "É a unidade funcional e estrutural fundamental do rim.",
-        "Answer": "Unidade funcional rim"
+        "Answer": "Unidade funcional rim",
+        "AlternativeAnswers": ["Unidade renal", "Célula rim", "Estrutura rim"]
     },
     "O que é o Glomérulo no contexto da função renal?": {
         "Hint 1": "É uma rede de capilares de alta pressão.",
         "Hint 2": "Realiza a filtração inicial do plasma.",
         "Hint 3": "O filtrado vai para o lúmen da cápsula de Bowman.",
         "Hint 4": "É o sítio primário da filtração do plasma.",
-        "Answer": "Filtração do plasma"
+        "Answer": "Filtração do plasma",
+        "AlternativeAnswers": ["Filtro plasma", "Rede capilares", "Início filtração"]
     },
     "Quais são os quatro processos básicos que determinam o manejo de um soluto pelos rins?": {
         "Hint 1": "O manejo de solutos pelo rim é a soma de processos.",
         "Hint 2": "Começa com a entrada (Filtração).",
         "Hint 3": "Continua com a saída (Reabsorção) e outra entrada (Secreção).",
         "Hint 4": "Resulta na saída para o exterior (Excreção).",
-        "Answer": "Filtração reabsorção secreção"
+        "Answer": "Filtração reabsorção secreção",
+        "AlternativeAnswers": ["Filtrar reabsorver secretar", "Processos renais", "Filtra reabsorve excreta"]
     },
     "O que é o processo de Reabsorção na fisiologia renal?": {
         "Hint 1": "O manejo de solutos pelo rim é a soma da filtração, reabsorção, secreção e excreção.",
         "Hint 2": "É um movimento de substâncias para fora do lúmen do néfron.",
-        "Hint 3": "As substâncias voltam para o sangue.",
+        "Hint 3": "As substâncias voltam para the sangue.",
         "Hint 4": "O destino são os capilares peritubulares.",
-        "Answer": "Lúmen para sangue"
+        "Answer": "Lúmen para sangue",
+        "AlternativeAnswers": ["Néfron para sangue", "Retorno sangue", "Volta ao sangue"]
     },
     "O que é a Taxa de Filtração Glomerular (TFG)?": {
         "Hint 1": "É a medida da velocidade com que o sangue é filtrado nos rins.",
         "Hint 2": "Seu valor médio é de aproximadamente 125 mL/min.",
         "Hint 3": "Mede o volume de plasma filtrado.",
         "Hint 4": "Ocorre dos capilares glomerulares para a cápsula de Bowman.",
-        "Answer": "Velocidade filtração renal"
+        "Answer": "Velocidade filtração renal",
+        "AlternativeAnswers": ["Taxa filtração", "Volume filtrado", "TFG renal"]
     },
     "O que é o Aparelho Justaglomerular (AJG)?": {
         "Hint 1": "É o local onde ocorre o feedback tubuloglomerular.",
         "Hint 2": "Suas células granulares secretam renina.",
         "Hint 3": "A secreção de renina inicia o SRAA.",
         "Hint 4": "É um complexo de células granulares e a mácula densa.",
-        "Answer": "Autorregulação da TFG"
+        "Answer": "Autorregulação da TFG",
+        "AlternativeAnswers": ["Controle TFG", "Feedback renal", "Complexo renal"]
     },
     "O que é a Aldosterona em relação ao sistema renal?": {
         "Hint 1": "Atua no rim para reter Na+ (e água por osmose).",
         "Hint 2": "Atua também para secretar K+.",
         "Hint 3": "Regula o volume sanguíneo e a pressão arterial.",
         "Hint 4": "É um hormônio esteroide.",
-        "Answer": "Retém sódio"
+        "Answer": "Retém sódio",
+        "AlternativeAnswers": ["Reabsorve Na+", "Retém Na+", "Hormônio renal"]
     },
     "O que é a Vasopressina (AVP), também conhecida como Hormônio Antidiurético (ADH)?": {
         "Hint 1": "Atua estimulando a inserção de canais de aquaporina.",
         "Hint 2": "Permite a reabsorção de água.",
         "Hint 3": "Promove a conservação de fluido corporal.",
         "Hint 4": "É um peptídeo liberado pela neuro-hipófise.",
-        "Answer": "Reabsorve água"
+        "Answer": "Reabsorve água",
+        "AlternativeAnswers": ["Retém água", "Hormônio ADH", "Antidiurético"]
     },
     "O que é a Veia Porta Hepática?": {
         "Hint 1": "É formada pela confluência da veia mesentérica superior e da veia esplênica.",
         "Hint 2": "Leva ao fígado tudo o que foi absorvido no intestino.",
         "Hint 3": "O material absorvido passa por processamento inicial no fígado.",
         "Hint 4": "Coleta sangue rico em nutrientes do trato gastrointestinal.",
-        "Answer": "Nutrientes para fígado"
+        "Answer": "Nutrientes para fígado",
+        "AlternativeAnswers": ["Transporte hepático", "Sangue ao fígado", "Veia hepática"]
     },
     "O que é um Sistema Porta na circulação?": {
         "Hint 1": "O sangue de um leito capilar viaja por um vaso para um segundo leito capilar.",
         "Hint 2": "Isso ocorre antes de se unir à circulação sistêmica.",
         "Hint 3": "Um exemplo é o sistema porta hipofisário.",
         "Hint 4": "Outro exemplo é no fígado.",
-        "Answer": "Dois leitos capilares"
+        "Answer": "Dois leitos capilares",
+        "AlternativeAnswers": ["Dois capilares", "Capilares seguidos", "Circulação porta"]
     },
     "O que é a Cápsula de Bowman em relação ao Glomérulo?": {
         "Hint 1": "É o recipiente inicial que recebe o fluido (filtrado).",
         "Hint 2": "O fluido extravasa do glomérulo.",
         "Hint 3": "Envolve os capilares glomerulares.",
         "Hint 4": "É um saco oco e esférico.",
-        "Answer": "Coleta o filtrado"
+        "Answer": "Coleta o filtrado",
+        "AlternativeAnswers": ["Recibe filtrado", "Envolve glomérulo", "Saco renal"]
     },
     "O que são os tampões (buffers) no contexto do equilíbrio ácido-base?": {
         "Hint 1": "Funcionam como a primeira linha de defesa do pH.",
         "Hint 2": "Neutralizam ácidos ou bases adicionados.",
         "Hint 3": "Minimizam a alteração do pH.",
         "Hint 4": "Combinam-se com H+ livre ou liberam H+.",
-        "Answer": "Moderam mudanças pH"
+        "Answer": "Moderam mudanças pH",
+        "AlternativeAnswers": ["Buffers de pH", "Tampão pH", "Estabilizam pH"]
     },
     "Quais são as três principais linhas de defesa que atuam na homeostase do pH?": {
         "Hint 1": "São três sistemas interdependentes.",
         "Hint 2": "Regulam a concentração de H+ no corpo.",
         "Hint 3": "Inclui os Tampões e a Ventilação Pulmonar.",
         "Hint 4": "O terceiro é a Regulação Renal de H+ e HCO3−.",
-        "Answer": "Tampões ventilação rins"
+        "Answer": "Tampões ventilação rins",
+        "AlternativeAnswers": ["Químico respiratório renal", "Tampão pulmão rim", "Sistemas de defesa"]
     },
     "O que são ácidos, conforme definido no contexto das moléculas que se dissolvem em água?": {
         "Hint 1": "O aumento da concentração de H+ em uma solução é sua característica.",
         "Hint 2": "Liberam íons hidrogênio (H+).",
         "Hint 3": "Ocorre quando se dissolvem em água.",
         "Hint 4": "São moléculas.",
-        "Answer": "Liberam íons H+"
+        "Answer": "Liberam íons H+",
+        "AlternativeAnswers": ["Doador de H+", "Soltam H+", "Ácidos H+"]
     },
     "Qual é a principal consequência fisiológica de uma mudança significativa no pH plasmático?": {
         "Hint 1": "A alteração na concentração de H+ interfere nas pontes de hidrogênio.",
         "Hint 2": "Afeta a estrutura e função das proteínas e enzimas.",
         "Hint 3": "Rompe a estrutura tridimensional das proteínas.",
         "Hint 4": "Causa a desnaturação de proteínas.",
-        "Answer": "Desnaturação de proteínas"
+        "Answer": "Desnaturação de proteínas",
+        "AlternativeAnswers": ["Proteínas estragam", "Perda função proteica", "Dano proteico"]
     },
     "O que é Acidose Respiratória, e qual é a sua causa primária?": {
         "Hint 1": "A retenção de CO2 move o equilíbrio do ácido carbônico para a direita.",
         "Hint 2": "Isso eleva a concentração de H+ e reduz o pH.",
         "Hint 3": "É causada pela retenção de CO2.",
         "Hint 4": "A causa é a hipoventilação.",
-        "Answer": "Hipoventilação retenção CO2"
+        "Answer": "Hipoventilação retenção CO2",
+        "AlternativeAnswers": ["Muito CO2", "Pouca respiração", "Acidose por CO2"]
     },
     "O que acontece como compensação respiratória para a Acidose Metabólica?": {
         "Hint 1": "O aumento de H+ e de CO2 estimula o centro respiratório.",
         "Hint 2": "Isso força a equação do equilíbrio ácido-base para a esquerda.",
         "Hint 3": "O objetivo é reduzir a concentração de ácido.",
         "Hint 4": "Ocorre um estímulo à ventilação (hiperventilação).",
-        "Answer": "Hiperventilação"
+        "Answer": "Hiperventilação",
+        "AlternativeAnswers": ["Respirar rápido", "Aumento ventilação", "Sopro de CO2"]
     },
     "O que o sistema tampão Bicarbonato (HCO3−) faz?": {
         "Hint 1": "Sua importância deriva de ser o tampão primário no LEC.",
         "Hint 2": "É regulado por dois sistemas de excreção separados.",
         "Hint 3": "É acoplado ao sistema respiratório e renal.",
         "Hint 4": "É o principal tampão do líquido extracelular (LEC).",
-        "Answer": "Tampão extracelular principal"
+        "Answer": "Tampão extracelular principal",
+        "AlternativeAnswers": ["Tampão bicarbonato", "Principal buffer LEC", "Buffer sangue"]
     },
     "O que representa a Hemoglobina (Hb) no contexto do equilíbrio ácido-base no sangue?": {
         "Hint 1": "Ao ligar-se a H+ nos eritrócitos, impede grande alteração de pH.",
         "Hint 2": "Impede que o CO2 transportado aumente o pH do sangue venoso significativamente.",
         "Hint 3": "Tampona H+ durante o transporte de CO2.",
         "Hint 4": "É um tampão proteico intracelular (da hemácia).",
-        "Answer": "Tampão intracelular hemácia"
+        "Answer": "Tampão intracelular hemácia",
+        "AlternativeAnswers": ["Hb tampão", "Tampão eritrócito", "Buffer hemoglobina"]
     },
     "O que é a Anidrase Carbônica (AC) e qual é seu papel crucial?": {
         "Hint 1": "É essencial para a rápida interconversão de CO2 em H2CO3 e HCO3-.",
         "Hint 2": "Facilita o transporte e a regulação renal/pulmonar de ácidos.",
         "Hint 3": "Acelera a reação reversível entre CO2 e H2O.",
         "Hint 4": "O produto da reação é o ácido carbônico (H2CO3).",
-        "Answer": "Catalisa reação CO2"
+        "Answer": "Catalisa reação CO2",
+        "AlternativeAnswers": ["Enzima do CO2", "Acelera interconversão", "AC catalisador"]
     },
     "O que é Acidose Metabólica e qual é a principal compensação respiratória?": {
         "Hint 1": "A hiperventilação remove CO2 (o componente ácido volátil).",
         "Hint 2": "Isso força a reação para a esquerda, o que consome H+.",
         "Hint 3": "O resultado é a elevação do pH em direção ao normal.",
         "Hint 4": "É a diminuição primária de HCO3− ou o aumento de H+.",
-        "Answer": "Hiperventilação"
+        "Answer": "Hiperventilação",
+        "AlternativeAnswers": ["Respirar mais", "Excluir CO2", "Aumentar respiração"]
     },
     "O que caracteriza a Alcalose Metabólica e quais são suas causas mais comuns?": {
         "Hint 1": "A perda de ácido do estômago é uma causa.",
         "Hint 2": "A ingestão de bicarbonato por antiácidos é outra causa.",
         "Hint 3": "Resulta em uma diminuição primária de H+.",
         "Hint 4": "Causas comuns são vômitos excessivos e ingestão de antiácidos.",
-        "Answer": "Vômitos e antiácidos"
+        "Answer": "Vômitos e antiácidos",
+        "AlternativeAnswers": ["Perda H+", "Excesso bicarbonato", "Vômito antiácido"]
     },
     "O que é a Alcalose Respiratória?": {
         "Hint 1": "A hiperventilação elimina mais CO2 (ácido volátil).",
         "Hint 2": "Isso reduz sua concentração no sangue.",
         "Hint 3": "O pH sanguíneo fica elevado (alcalino).",
         "Hint 4": "É causada pela hiperventilação.",
-        "Answer": "Hiperventilação perda CO2"
+        "Answer": "Hiperventilação perda CO2",
+        "AlternativeAnswers": ["Pouco CO2", "Respirar em excesso", "Baixa PCO2"]
     },
     "O que é o Sistema Endócrino em termos de sua função primordial?": {
         "Hint 1": "Atua por meio de sinais químicos na corrente sanguínea.",
         "Hint 2": "Regula processos lentos e duradouros como o metabolismo.",
         "Hint 3": "Utiliza mensageiros químicos (hormônios).",
         "Hint 4": "Integra e mantém a homeostasia de longo prazo.",
-        "Answer": "Comunicação via hormônios"
+        "Answer": "Comunicação via hormônios",
+        "AlternativeAnswers": ["Controle hormonal", "Sinalização química", "Sistema de hormônios"]
     },
     "O que são os Hormônios Peptídicos (ex: Insulina), em termos de sua estrutura e solubilidade?": {
         "Hint 1": "A natureza peptídica e hidrossolúvel exige receptores de membrana.",
         "Hint 2": "Utilizam sistemas de segundo mensageiro.",
         "Hint 3": "São hidrossolúveis (lipofóbicos).",
         "Hint 4": "São cadeias de aminoácidos (peptídeos ou proteínas).",
-        "Answer": "Cadeias aminoácidos hidrossolúveis"
+        "Answer": "Cadeias aminoácidos hidrossolúveis",
+        "AlternativeAnswers": ["Hormônios solúveis", "Peptídeos hidrossolúveis", "Proteínas sinalizadoras"]
     },
     "O que é o processo de Síntese e Secreção dos Hormônios Peptídicos?": {
         "Hint 1": "A necessidade de serem armazenados em vesículas é essencial.",
         "Hint 2": "Permite que a célula possa liberá-los rapidamente quando necessário.",
         "Hint 3": "A liberação é por exocitose mediada por cálcio.",
         "Hint 4": "São produzidos no ribossomo/RE e armazenados em vesículas secretoras.",
-        "Answer": "Armazenamento e exocitose"
+        "Answer": "Armazenamento e exocitose",
+        "AlternativeAnswers": ["Vesículas e exocitose", "Produção e liberação", "RE e vesículas"]
     },
     "O que é o Sistema de Segundo Mensageiro (ex: AMPc, cálcio)?": {
         "Hint 1": "É ativado após a ligação de um hormônio lipofóbico a um receptor de membrana.",
         "Hint 2": "O receptor de membrana é o 'Primeiro Mensageiro'.",
         "Hint 3": "Amplifica o sinal e medeia a resposta celular.",
         "Hint 4": "É uma molécula intracelular.",
-        "Answer": "Amplificação sinal celular"
+        "Answer": "Amplificação sinal celular",
+        "AlternativeAnswers": ["Segundo mensageiro", "Cascata sinal", "Ação intracelular"]
     },
     "O que é o Pâncreas (porção endócrina) em sua regulação da glicose sanguínea?": {
         "Hint 1": "É uma glândula mista (exócrina e endócrina).",
         "Hint 2": "O equilíbrio entre insulina e glucagon é vital.",
         "Hint 3": "Produz insulina (hipoglicemiante).",
         "Hint 4": "Produz glucagon (hiperglicemiante).",
-        "Answer": "Insulina e glucagon"
+        "Answer": "Insulina e glucagon",
+        "AlternativeAnswers": ["Ilhotas de Langerhans", "Regula glicose", "Controle glicemia"]
     },
     "O que é o mecanismo de amplificação de sinal no Sistema de Segundo Mensageiro do AMPc?": {
         "Hint 1": "O mecanismo de amplificação em cascata é o ponto chave.",
         "Hint 2": "Permite uma resposta celular rápida e potente a baixas concentrações hormonais.",
         "Hint 3": "Uma única molécula de hormônio ativa muitas moléculas de Proteína G.",
         "Hint 4": "Estas, por sua vez, ativam milhares de outras moléculas, multiplicando a resposta.",
-        "Answer": "Cascata de sinalização"
+        "Answer": "Cascata de sinalização",
+        "AlternativeAnswers": ["Amplificação sinal", "Cascata AMPc", "Efeito cascata"]
     },
     "Quais são os efeitos primários dos hormônios glicocorticoides (ex: Cortisol) no metabolismo?": {
         "Hint 1": "São essenciais para mobilizar e manter os níveis de glicose.",
         "Hint 2": "Atuam durante períodos de jejum e estresse.",
         "Hint 3": "Aumentam a glicemia pela gliconeogênese.",
         "Hint 4": "Favorecem a lipólise (quebra de gordura) para fornecer combustível.",
-        "Answer": "Gliconeogênese e lipólise"
+        "Answer": "Gliconeogênese e lipólise",
+        "AlternativeAnswers": ["Mais glicose", "Quebra gordura", "Ação cortisol"]
     },
     "Qual exemplo ilustra claramente a interação de Antagonismo?": {
         "Hint 1": "Os dois hormônios têm efeitos opostos.",
         "Hint 2": "Afetam a concentração de glicose.",
         "Hint 3": "Um promove a captação de glicose (insulina).",
         "Hint 4": "O outro estimula a liberação de glicose (glucagon).",
-        "Answer": "Insulina e glucagon"
+        "Answer": "Insulina e glucagon",
+        "AlternativeAnswers": ["Ação oposta", "Efeitos contrários", "Antagonistas glicose"]
     },
     "Qual cenário representa a interação hormonal de Permissividade?": {
         "Hint 1": "O Estrogênio 'permite' a ação completa da Ocitocina.",
         "Hint 2": "Isso ocorre ao aumentar o número de seus receptores no útero.",
         "Hint 3": "Um hormônio precisa da ação prévia de outro para agir.",
         "Hint 4": "A ocitocina causa contrações uterinas.",
-        "Answer": "Estrogênio e ocitocina"
+        "Answer": "Estrogênio e ocitocina",
+        "AlternativeAnswers": ["Ajuda prévia", "Permissão hormonal", "Estrogênio ajuda"]
     },
     "O que caracteriza a interação hormonal de Sinergismo?": {
         "Hint 1": "O efeito combinado é maior que a soma dos efeitos individuais.",
         "Hint 2": "Dois ou mais hormônios atuam juntos.",
         "Hint 3": "A resposta é potencializada.",
         "Hint 4": "É uma interação que aumenta a magnitude da resposta.",
-        "Answer": "Efeito combinado potencializado"
+        "Answer": "Efeito combinado potencializado",
+        "AlternativeAnswers": ["Ação conjunta", "Soma maior", "Trabalho em equipe"]
     }
 }
