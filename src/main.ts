@@ -22,6 +22,7 @@ const correctWrongContainer = document.getElementById('correct-wrong-container')
 const nextQuestionButton = document.getElementById('next-question-button');
 const themeSwitch = document.getElementById('checkbox') as HTMLInputElement;
 const scoreDisplayElement = document.getElementById('score-display');
+const roundProgressElement = document.getElementById('round-progress');
 
 // --- State Management ---
 let currentTopicQuestions: { [key: string]: any } = {};
@@ -124,6 +125,11 @@ function pickRandomQuestion() {
 
     const randomIndex = Math.floor(Math.random() * unansweredQuestions.length);
     selectedQuestionName = unansweredQuestions[randomIndex]!;
+
+    if (roundProgressElement) {
+        const currentInRound = (questionsAnsweredCount % 5) + 1;
+        roundProgressElement.textContent = `Questão: ${currentInRound}/5`;
+    }
 
     if (questionTextElement && selectedQuestionName) {
         questionTextElement.textContent = selectedQuestionName;
@@ -279,11 +285,15 @@ function resetQuestionStateAndSpinRoulette() {
     if (rouletteDisplayElement) rouletteDisplayElement.textContent = ''; // Clear topic display
 
     questionsAnsweredCount++;
+
     if (questionsAnsweredCount % 5 === 0) {
         alert(`Fim da rodada! Sua pontuação total: ${score} pontos.`);
-        // Optionally reset score for next round or continue accumulating
-        // score = 0; // Uncomment to reset score every 5 questions
+        score = 0; // Reset score for the next round
+        if (roundProgressElement) {
+            roundProgressElement.textContent = `Questão: 0/5`;
+        }
     }
+
     if (scoreDisplayElement) {
         scoreDisplayElement.textContent = `Score: ${score}`;
     }

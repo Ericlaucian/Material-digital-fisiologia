@@ -57,6 +57,13 @@ header {
     margin-bottom: 2rem;
 }
 
+#status-bar {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .hidden {
     display: none;
 }
