@@ -21,6 +21,7 @@ var correctWrongContainer = document.getElementById("correct-wrong-container");
 var nextQuestionButton = document.getElementById("next-question-button");
 var themeSwitch = document.getElementById("checkbox");
 var scoreDisplayElement = document.getElementById("score-display");
+var roundProgressElement = document.getElementById("round-progress");
 var currentTopicQuestions = {};
 var answeredQuestions = [];
 var selectedQuestionName = null;
@@ -117,6 +118,10 @@ function pickRandomQuestion() {
   }
   const randomIndex = Math.floor(Math.random() * unansweredQuestions.length);
   selectedQuestionName = unansweredQuestions[randomIndex];
+  if (roundProgressElement) {
+    const currentInRound = questionsAnsweredCount % 5 + 1;
+    roundProgressElement.textContent = `Questão: ${currentInRound}/5`;
+  }
   if (questionTextElement && selectedQuestionName) {
     questionTextElement.textContent = selectedQuestionName;
   }
@@ -278,6 +283,10 @@ function resetQuestionStateAndSpinRoulette() {
   questionsAnsweredCount++;
   if (questionsAnsweredCount % 5 === 0) {
     alert(`Fim da rodada! Sua pontuação total: ${score} pontos.`);
+    score = 0;
+    if (roundProgressElement) {
+      roundProgressElement.textContent = `Questão: 0/5`;
+    }
   }
   if (scoreDisplayElement) {
     scoreDisplayElement.textContent = `Score: ${score}`;
@@ -372,6 +381,11 @@ if (nextHintButton) {
 }
 if (answerNowButton) {
   answerNowButton.addEventListener("click", () => {
+    clearTimeout(hintCountdownTimer);
+    if (hintCountdownTimer !== undefined) {
+      clearInterval(hintCountdownTimer);
+      hintCountdownTimer = undefined;
+    }
     if (hintTimerControls)
       hintTimerControls.classList.add("hidden");
     if (userAnswerContainer)
