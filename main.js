@@ -10,12 +10,15 @@ var hintTimerControls = document.getElementById("hint-timer-controls");
 var nextHintButton = document.getElementById("next-hint-button");
 var answerNowButton = document.getElementById("answer-now-button");
 var hintTimerDisplay = document.getElementById("hint-timer-display");
+var userAnswerContainer = document.getElementById("user-answer-container");
+var userAnswerInput = document.getElementById("user-answer-input");
+var submitAnswerButton = document.getElementById("submit-answer-button");
+var feedbackMessage = document.getElementById("feedback-message");
 var showAnswerButton = document.getElementById("show-answer-button");
 var answerContainer = document.getElementById("answer-container");
 var answerTextElement = document.getElementById("answer-text");
 var correctWrongContainer = document.getElementById("correct-wrong-container");
-var gotRightButton = document.getElementById("got-right-button");
-var gotWrongButton = document.getElementById("got-wrong-button");
+var nextQuestionButton = document.getElementById("next-question-button");
 var themeSwitch = document.getElementById("checkbox");
 var scoreDisplayElement = document.getElementById("score-display");
 var currentTopicQuestions = {};
@@ -144,6 +147,15 @@ function startQuestion() {
     hintsContainer.innerHTML = "";
   if (hintTimerControls)
     hintTimerControls.classList.remove("hidden");
+  if (userAnswerContainer)
+    userAnswerContainer.classList.add("hidden");
+  if (feedbackMessage) {
+    feedbackMessage.classList.add("hidden");
+    feedbackMessage.textContent = "";
+    feedbackMessage.className = "";
+  }
+  if (userAnswerInput)
+    userAnswerInput.value = "";
   if (answerContainer)
     answerContainer.classList.add("hidden");
   if (correctWrongContainer)
@@ -207,6 +219,11 @@ function startHintTimer() {
         clearInterval(hintCountdownTimer);
       }
       hintCountdownTimer = undefined;
+      if (feedbackMessage) {
+        feedbackMessage.textContent = "Tempo esgotado!";
+        feedbackMessage.classList.add("incorrect-feedback");
+        feedbackMessage.classList.remove("hidden");
+      }
       revealAnswer();
     }
   }, 1000);
@@ -249,6 +266,13 @@ function resetQuestionStateAndSpinRoulette() {
     hintTimerDisplay.textContent = "";
   if (showAnswerButton)
     showAnswerButton.classList.add("hidden");
+  if (feedbackMessage) {
+    feedbackMessage.classList.add("hidden");
+    feedbackMessage.textContent = "";
+    feedbackMessage.className = "";
+  }
+  if (userAnswerContainer)
+    userAnswerContainer.classList.add("hidden");
   if (rouletteDisplayElement)
     rouletteDisplayElement.textContent = "";
   questionsAnsweredCount++;
@@ -260,6 +284,26 @@ function resetQuestionStateAndSpinRoulette() {
   }
   spinRoulette();
 }
+function checkAnswer() {
+  if (!selectedQuestionName || !currentTopicQuestions[selectedQuestionName])
+    return;
+  const userAnswer = userAnswerInput.value.trim().toLowerCase().replace(/\s+/g, " ");
+  const correctAnswer = currentTopicQuestions[selectedQuestionName].Answer.trim().toLowerCase().replace(/\s+/g, " ");
+  if (feedbackMessage) {
+    feedbackMessage.classList.remove("hidden");
+    if (userAnswer === correctAnswer) {
+      feedbackMessage.textContent = "Correto!";
+      feedbackMessage.classList.add("correct-feedback");
+      score += calculateScore(hintsUsedInQuestion);
+    } else {
+      feedbackMessage.textContent = `Incorreto! A resposta correta era: ${currentTopicQuestions[selectedQuestionName].Answer}`;
+      feedbackMessage.classList.add("incorrect-feedback");
+    }
+  }
+  if (userAnswerContainer)
+    userAnswerContainer.classList.add("hidden");
+  revealAnswer();
+}
 function revealAnswer() {
   clearTimeout(hintCountdownTimer);
   if (hintCountdownTimer !== undefined) {
@@ -268,6 +312,8 @@ function revealAnswer() {
   }
   if (hintTimerControls)
     hintTimerControls.classList.add("hidden");
+  if (userAnswerContainer)
+    userAnswerContainer.classList.add("hidden");
   if (showAnswerButton)
     showAnswerButton.classList.add("hidden");
   if (!selectedQuestionName || !currentTopicQuestions[selectedQuestionName]) {
@@ -325,16 +371,27 @@ if (nextHintButton) {
   nextHintButton.addEventListener("click", revealNextHint);
 }
 if (answerNowButton) {
-  answerNowButton.addEventListener("click", revealAnswer);
-}
-if (gotRightButton) {
-  gotRightButton.addEventListener("click", () => {
-    score += calculateScore(hintsUsedInQuestion);
-    resetQuestionStateAndSpinRoulette();
+  answerNowButton.addEventListener("click", () => {
+    if (hintTimerControls)
+      hintTimerControls.classList.add("hidden");
+    if (userAnswerContainer)
+      userAnswerContainer.classList.remove("hidden");
+    if (userAnswerInput)
+      userAnswerInput.focus();
   });
 }
-if (gotWrongButton) {
-  gotWrongButton.addEventListener("click", () => {
+if (submitAnswerButton) {
+  submitAnswerButton.addEventListener("click", checkAnswer);
+}
+if (userAnswerInput) {
+  userAnswerInput.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+      checkAnswer();
+    }
+  });
+}
+if (nextQuestionButton) {
+  nextQuestionButton.addEventListener("click", () => {
     resetQuestionStateAndSpinRoulette();
   });
 }
