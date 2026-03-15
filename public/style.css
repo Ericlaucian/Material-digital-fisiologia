@@ -114,6 +114,42 @@ header {
     border-color: var(--revealed-hint-border-color);
 }
 
+#user-answer-container {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#user-answer-input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+}
+
+#feedback-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.correct-feedback {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    border: 1px solid #81c784;
+}
+
+.incorrect-feedback {
+    background-color: #ffcdd2;
+    color: #c62828;
+    border: 1px solid #e57373;
+}
+
 .action-button {
     background-color: var(--action-button-bg-color);
     color: var(--action-button-text-color);

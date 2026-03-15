@@ -11,12 +11,15 @@ const hintTimerControls = document.getElementById('hint-timer-controls');
 const nextHintButton = document.getElementById('next-hint-button');
 const answerNowButton = document.getElementById('answer-now-button');
 const hintTimerDisplay = document.getElementById('hint-timer-display');
+const userAnswerContainer = document.getElementById('user-answer-container');
+const userAnswerInput = document.getElementById('user-answer-input') as HTMLInputElement;
+const submitAnswerButton = document.getElementById('submit-answer-button');
+const feedbackMessage = document.getElementById('feedback-message');
 const showAnswerButton = document.getElementById('show-answer-button'); // This button is functionally replaced by answerNowButton but may still be in HTML
 const answerContainer = document.getElementById('answer-container');
 const answerTextElement = document.getElementById('answer-text');
 const correctWrongContainer = document.getElementById('correct-wrong-container');
-const gotRightButton = document.getElementById('got-right-button');
-const gotWrongButton = document.getElementById('got-wrong-button');
+const nextQuestionButton = document.getElementById('next-question-button');
 const themeSwitch = document.getElementById('checkbox') as HTMLInputElement;
 const scoreDisplayElement = document.getElementById('score-display');
 
@@ -150,6 +153,13 @@ function startQuestion() {
     if (questionSection) questionSection.classList.remove('hidden');
     if (hintsContainer) hintsContainer.innerHTML = ''; // Clear previous hints
     if (hintTimerControls) hintTimerControls.classList.remove('hidden');
+    if (userAnswerContainer) userAnswerContainer.classList.add('hidden');
+    if (feedbackMessage) {
+        feedbackMessage.classList.add('hidden');
+        feedbackMessage.textContent = '';
+        feedbackMessage.className = '';
+    }
+    if (userAnswerInput) userAnswerInput.value = '';
     if (answerContainer) answerContainer.classList.add('hidden');
     if (correctWrongContainer) correctWrongContainer.classList.add('hidden');
     if (showAnswerButton) showAnswerButton.classList.add('hidden'); // This button is replaced by answerNowButton
@@ -218,6 +228,11 @@ function startHintTimer() {
                 clearInterval(hintCountdownTimer);
             }
             hintCountdownTimer = undefined;
+            if (feedbackMessage) {
+                feedbackMessage.textContent = "Tempo esgotado!";
+                feedbackMessage.classList.add('incorrect-feedback');
+                feedbackMessage.classList.remove('hidden');
+            }
             revealAnswer(); // Timer runs out, reveal answer
         }
     }, 1000);
@@ -255,6 +270,12 @@ function resetQuestionStateAndSpinRoulette() {
     if (hintTimerControls) hintTimerControls.classList.add('hidden');
     if (hintTimerDisplay) hintTimerDisplay.textContent = '';
     if (showAnswerButton) showAnswerButton.classList.add('hidden');
+    if (feedbackMessage) {
+        feedbackMessage.classList.add('hidden');
+        feedbackMessage.textContent = '';
+        feedbackMessage.className = '';
+    }
+    if (userAnswerContainer) userAnswerContainer.classList.add('hidden');
     if (rouletteDisplayElement) rouletteDisplayElement.textContent = ''; // Clear topic display
 
     questionsAnsweredCount++;
@@ -271,6 +292,29 @@ function resetQuestionStateAndSpinRoulette() {
 }
 
 
+function checkAnswer() {
+    if (!selectedQuestionName || !currentTopicQuestions[selectedQuestionName]) return;
+
+    const userAnswer = userAnswerInput.value.trim().toLowerCase().replace(/\s+/g, ' ');
+    const correctAnswer = currentTopicQuestions[selectedQuestionName].Answer.trim().toLowerCase().replace(/\s+/g, ' ');
+
+    if (feedbackMessage) {
+        feedbackMessage.classList.remove('hidden');
+        if (userAnswer === correctAnswer) {
+            feedbackMessage.textContent = "Correto!";
+            feedbackMessage.classList.add('correct-feedback');
+            score += calculateScore(hintsUsedInQuestion);
+        } else {
+            feedbackMessage.textContent = `Incorreto! A resposta correta era: ${currentTopicQuestions[selectedQuestionName].Answer}`;
+            feedbackMessage.classList.add('incorrect-feedback');
+        }
+    }
+
+    if (userAnswerContainer) userAnswerContainer.classList.add('hidden');
+    revealAnswer();
+}
+
+
 function revealAnswer() {
     clearTimeout(hintCountdownTimer);
     if (hintCountdownTimer !== undefined) {
@@ -279,6 +323,7 @@ function revealAnswer() {
     }
 
     if (hintTimerControls) hintTimerControls.classList.add('hidden');
+    if (userAnswerContainer) userAnswerContainer.classList.add('hidden');
     if (showAnswerButton) showAnswerButton.classList.add('hidden'); // Hide the old show answer button
 
     if (!selectedQuestionName || !currentTopicQuestions[selectedQuestionName]) {
@@ -350,18 +395,32 @@ if (nextHintButton) {
 }
 
 if (answerNowButton) {
-    answerNowButton.addEventListener('click', revealAnswer);
-}
-
-if (gotRightButton) {
-    gotRightButton.addEventListener('click', () => {
-        score += calculateScore(hintsUsedInQuestion);
-        resetQuestionStateAndSpinRoulette();
+    answerNowButton.addEventListener('click', () => {
+        clearTimeout(hintCountdownTimer);
+        if (hintCountdownTimer !== undefined) {
+            clearInterval(hintCountdownTimer);
+            hintCountdownTimer = undefined;
+        }
+        if (hintTimerControls) hintTimerControls.classList.add('hidden');
+        if (userAnswerContainer) userAnswerContainer.classList.remove('hidden');
+        if (userAnswerInput) userAnswerInput.focus();
     });
 }
 
-if (gotWrongButton) {
-    gotWrongButton.addEventListener('click', () => {
+if (submitAnswerButton) {
+    submitAnswerButton.addEventListener('click', checkAnswer);
+}
+
+if (userAnswerInput) {
+    userAnswerInput.addEventListener('keyup', (event) => {
+        if (event.key === 'Enter') {
+            checkAnswer();
+        }
+    });
+}
+
+if (nextQuestionButton) {
+    nextQuestionButton.addEventListener('click', () => {
         resetQuestionStateAndSpinRoulette();
     });
 }
