@@ -1,3 +1,3 @@
-# Simple 4 hints game
+# Material digital de fisiologia para UERJ
 
-Some readme file that will be updated latter
+Em fase de construção
