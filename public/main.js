@@ -210,7 +210,6 @@ function startHintTimer() {
   let timeLeft = 15;
   if (hintTimerDisplay)
     hintTimerDisplay.textContent = `Tempo para a próxima dica/resposta: ${timeLeft}s`;
-  clearTimeout(hintCountdownTimer);
   if (hintCountdownTimer !== undefined) {
     clearInterval(hintCountdownTimer);
   }
@@ -328,17 +327,18 @@ function revealAnswer() {
     userAnswerContainer.classList.add("hidden");
   if (showAnswerButton)
     showAnswerButton.classList.add("hidden");
-  if (!selectedQuestionName || !currentTopicQuestions[selectedQuestionName]) {
+  const currentQuestionData = selectedQuestionName ? currentTopicQuestions[selectedQuestionName] : undefined;
+  if (!selectedQuestionName || !currentQuestionData) {
     console.error("revealAnswer called but question data is missing.");
     console.error("selectedQuestionName:", selectedQuestionName);
-    console.error("currentTopicQuestions for selectedQuestionName:", currentTopicQuestions[selectedQuestionName]);
+    console.error("currentTopicQuestions for selectedQuestionName:", currentQuestionData);
     resetQuestionStateAndSpinRoulette();
     return;
   }
   if (!answeredQuestions.includes(selectedQuestionName)) {
     answeredQuestions.push(selectedQuestionName);
   }
-  const questionData = currentTopicQuestions[selectedQuestionName];
+  const questionData = currentQuestionData;
   if (answerTextElement) {
     answerTextElement.textContent = questionData.Answer;
   }

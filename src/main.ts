@@ -3,23 +3,23 @@ const AVAILABLE_TOPICS = ['fisiologia'];
 // --- DOM Elements ---
 const rouletteSection = document.getElementById('roulette-section');
 const rouletteDisplayElement = document.getElementById('roulette-wheel');
-const spinButton = document.getElementById('spin-button');
+const spinButton = document.getElementById('spin-button') as HTMLButtonElement | null;
 const questionSection = document.getElementById('question-section');
 const questionTextElement = document.getElementById('question-text');
 const hintsContainer = document.getElementById('hints-container');
 const hintTimerControls = document.getElementById('hint-timer-controls');
-const nextHintButton = document.getElementById('next-hint-button');
-const answerNowButton = document.getElementById('answer-now-button');
+const nextHintButton = document.getElementById('next-hint-button') as HTMLButtonElement | null;
+const answerNowButton = document.getElementById('answer-now-button') as HTMLButtonElement | null;
 const hintTimerDisplay = document.getElementById('hint-timer-display');
 const userAnswerContainer = document.getElementById('user-answer-container');
 const userAnswerInput = document.getElementById('user-answer-input') as HTMLInputElement;
-const submitAnswerButton = document.getElementById('submit-answer-button');
+const submitAnswerButton = document.getElementById('submit-answer-button') as HTMLButtonElement | null;
 const feedbackMessage = document.getElementById('feedback-message');
-const showAnswerButton = document.getElementById('show-answer-button'); // This button is functionally replaced by answerNowButton but may still be in HTML
+const showAnswerButton = document.getElementById('show-answer-button') as HTMLButtonElement | null; // This button is functionally replaced by answerNowButton but may still be in HTML
 const answerContainer = document.getElementById('answer-container');
 const answerTextElement = document.getElementById('answer-text');
 const correctWrongContainer = document.getElementById('correct-wrong-container');
-const nextQuestionButton = document.getElementById('next-question-button');
+const nextQuestionButton = document.getElementById('next-question-button') as HTMLButtonElement | null;
 const themeSwitch = document.getElementById('checkbox') as HTMLInputElement;
 const scoreDisplayElement = document.getElementById('score-display');
 const roundProgressElement = document.getElementById('round-progress');
@@ -28,7 +28,7 @@ const roundProgressElement = document.getElementById('round-progress');
 let currentTopicQuestions: { [key: string]: any } = {};
 let answeredQuestions: string[] = [];
 let selectedQuestionName: string | null = null;
-let hintCountdownTimer: number | undefined; // Specific timer for hints
+let hintCountdownTimer: NodeJS.Timeout | undefined; // Specific timer for hints
 let hintsUsedInQuestion: number = 0;
 let currentHintIndex: number = 0;
 let score: number = 0;
@@ -219,9 +219,9 @@ function startHintTimer() {
     let timeLeft = 15; // 15 seconds for hints
     if (hintTimerDisplay) hintTimerDisplay.textContent = `Tempo para a próxima dica/resposta: ${timeLeft}s`;
 
-    clearTimeout(hintCountdownTimer); // Clear any setTimeout
+    // Clear any previous timer
     if (hintCountdownTimer !== undefined) {
-        clearInterval(hintCountdownTimer); // Clear any setInterval
+        clearInterval(hintCountdownTimer);
     }
     hintCountdownTimer = undefined;
 
@@ -342,10 +342,11 @@ function revealAnswer() {
     if (userAnswerContainer) userAnswerContainer.classList.add('hidden');
     if (showAnswerButton) showAnswerButton.classList.add('hidden'); // Hide the old show answer button
 
-    if (!selectedQuestionName || !currentTopicQuestions[selectedQuestionName]) {
+    const currentQuestionData = selectedQuestionName ? currentTopicQuestions[selectedQuestionName] : undefined;
+    if (!selectedQuestionName || !currentQuestionData) {
         console.error("revealAnswer called but question data is missing.");
         console.error("selectedQuestionName:", selectedQuestionName);
-        console.error("currentTopicQuestions for selectedQuestionName:", currentTopicQuestions[selectedQuestionName]);
+        console.error("currentTopicQuestions for selectedQuestionName:", currentQuestionData);
         resetQuestionStateAndSpinRoulette(); // Go to next question if no answer
         return;
     }
@@ -355,7 +356,7 @@ function revealAnswer() {
         answeredQuestions.push(selectedQuestionName);
     }
 
-    const questionData = currentTopicQuestions[selectedQuestionName];
+    const questionData = currentQuestionData;
     if (answerTextElement) {
         answerTextElement.textContent = questionData.Answer;
     }
