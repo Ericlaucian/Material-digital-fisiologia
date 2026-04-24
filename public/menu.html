@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Menu Principal</h1>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Bem-vindo ao Material Digital de Fisiologia</h2>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="index.html" style="text-decoration: none;">
+                        <button class="action-button" style="margin-top: 0;">
+                            🎮 Jogo das 4 Dicas
+                        </button>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        // Theme switcher functionality
+        const checkbox = document.getElementById('checkbox');
+        const html = document.documentElement;
+
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                document.body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.body.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Load saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            checkbox.checked = true;
+            document.body.classList.add('dark-theme');
+        }
+    </script>
+</body>
+
+</html>
