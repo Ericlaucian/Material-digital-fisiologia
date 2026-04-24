@@ -23,6 +23,7 @@ body {
     background-color: var(--primary-bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+    position: relative;
 }
 
 body.dark-theme {
@@ -51,9 +52,9 @@ body.dark-theme {
 }
 
 .back-button {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    position: fixed;
+    top: calc(50% - 400px + 2rem);
+    left: calc(50% - 40% + 2rem);
     background-color: var(--action-button-bg-color);
     color: var(--action-button-text-color);
     border: none;
@@ -66,6 +67,7 @@ body.dark-theme {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     padding: 0;
+    z-index: 10;
 }
 
 .back-button:hover {
@@ -106,7 +108,7 @@ header {
 
 .topic-button {
     padding: 1rem 2rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--action-button-bg-color);
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -127,7 +129,7 @@ header {
 
 .hint-button {
     padding: 0.8rem 1.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--action-button-bg-color);
     border-radius: 4px;
     background-color: var(--hint-bg-color);
     cursor: pointer;
@@ -141,8 +143,8 @@ header {
 
 .hint-button:disabled {
     cursor: default;
-    background-color: #DFB6B2;
-    color: #522B5B;
+    background-color: var(--button-bg-color);
+    color: var(--action-button-bg-color);
 }
 
 .revealed-hint {
@@ -159,7 +161,7 @@ header {
 
 #user-answer-input {
     padding: 0.8rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--action-button-bg-color);
     border-radius: 4px;
     font-size: 1rem;
     background-color: var(--button-bg-color);
@@ -175,15 +177,15 @@ header {
 }
 
 .correct-feedback {
-    background-color: #DFB6B2;
-    color: #2B124C;
-    border: 1px solid #854F8C;
+    background-color: var(--button-bg-color);
+    color: var(--action-button-bg-color);
+    border: 1px solid var(--action-button-bg-color);
 }
 
 .incorrect-feedback {
-    background-color: #854F8C;
-    color: #FBE4D8;
-    border: 1px solid #522B5B;
+    background-color: var(--action-button-bg-color);
+    color: var(--action-button-text-color);
+    border: 1px solid var(--action-button-hover-bg-color);
 }
 
 .action-button {
@@ -220,7 +222,7 @@ header {
 }
 
 .slider {
-    background-color: #522B5B;
+    background-color: var(--revealed-hint-bg-color);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -231,7 +233,7 @@ header {
 }
 
 .slider:before {
-    background-color: #FBE4D8;
+    background-color: var(--primary-bg-color);
     bottom: 4px;
     content: "";
     height: 26px;
@@ -242,7 +244,7 @@ header {
 }
 
 input:checked+.slider {
-    background-color: #854F8C;
+    background-color: var(--action-button-bg-color);
 }
 
 input:checked+.slider:before {

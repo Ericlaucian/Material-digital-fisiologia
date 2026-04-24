@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Fisiologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="back-button" class="back-button" title="Voltar ao Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+    </button>
+
+    <div id="app">
+        <header>
+            <h1>Explorar Fisiologia</h1>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </header>
+        <main style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex: 1;">
+            <section id="game-section" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; padding: 1rem;">
+                <div id="game-container" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; aspect-ratio: 16/9;">
+                    <canvas id="gameCanvas" width="1600" height="900" style="border: 2px solid var(--action-button-bg-color); border-radius: 8px; background-color: var(--primary-bg-color); width: 100%; height: 100%; display: block;"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="text-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: var(--secondary-bg-color); border: 2px solid var(--action-button-bg-color); border-radius: 8px; padding: 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); z-index: 100; display: none; min-width: 300px; max-width: 500px;">
+        <button id="close-popup" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--action-button-bg-color);">✕</button>
+        <div id="popup-content" style="text-align: center; color: var(--text-color);">
+            <h2 style="margin-top: 0;">Descoberta!</h2>
+            <p id="popup-text">teste</p>
+        </div>
+    </div>
+
+    <script>
+        // Theme switcher functionality
+        const checkbox = document.getElementById('checkbox');
+        const backButton = document.getElementById('back-button');
+
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                document.body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.body.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Load saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            checkbox.checked = true;
+            document.body.classList.add('dark-theme');
+        }
+
+        // Back button functionality
+        if (backButton) {
+            backButton.addEventListener('click', () => {
+                window.location.href = 'menu.html';
+            });
+        }
+
+        // Game logic
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Carregar a imagem do bloco
+        const blockImage = new Image();
+        blockImage.src = 'image.png';
+
+        // Posição inicial do quadrado  
+        let x = canvas.width / 2 - 25;
+        let y = canvas.height / 2 - 25;
+        const size = 50;
+        const speed = 5;
+
+        // Objeto fixo rosa maior que o personagem
+        const obstacleSize = 70;
+        const obstacleX = Math.floor(Math.random() * (canvas.width - obstacleSize));
+        const obstacleY = Math.floor(Math.random() * (canvas.height - obstacleSize));
+
+        // Direções
+        let dx = 0;
+        let dy = 0;
+
+        // Estados das teclas
+        const keys = {};
+
+        // Função para desenhar
+        function draw() {
+            // Fundo usando variáveis CSS
+            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--primary-bg-color').trim();
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Objeto fixo rosa
+            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--action-button-bg-color').trim();
+            ctx.fillRect(obstacleX, obstacleY, obstacleSize, obstacleSize);
+
+            // Bloco com imagem
+            if (blockImage.complete && blockImage.naturalWidth !== 0) {
+                ctx.drawImage(blockImage, x, y, size, size);
+            } else {
+                ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim();
+                ctx.fillRect(x, y, size, size);
+            }
+        }
+
+        function isColliding(ax, ay, aw, ah, bx, by, bw, bh) {
+            return ax < bx + bw && ax + aw > bx && ay < by + bh && ay + ah > by;
+        }
+
+        function getDistance(x1, y1, x2, y2) {
+            const dx = x1 - x2;
+            const dy = y1 - y2;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        let popupShown = false;
+        const proximityThreshold = 150;
+
+        // Função de atualização
+        function update() {
+            const nextX = x + dx;
+            const nextY = y + dy;
+
+            // Movimento horizontal com colisão
+            if (dx !== 0) {
+                if (!isColliding(nextX, y, size, size, obstacleX, obstacleY, obstacleSize, obstacleSize)) {
+                    x = nextX;
+                } else {
+                    if (dx > 0) {
+                        x = obstacleX - size;
+                    } else {
+                        x = obstacleX + obstacleSize;
+                    }
+                }
+            }
+
+            // Movimento vertical com colisão
+            if (dy !== 0) {
+                if (!isColliding(x, nextY, size, size, obstacleX, obstacleY, obstacleSize, obstacleSize)) {
+                    y = nextY;
+                } else {
+                    if (dy > 0) {
+                        y = obstacleY - size;
+                    } else {
+                        y = obstacleY + obstacleSize;
+                    }
+                }
+            }
+
+            // Limites da tela
+            if (x < 0) x = 0;
+            if (x + size > canvas.width) x = canvas.width - size;
+            if (y < 0) y = 0;
+            if (y + size > canvas.height) y = canvas.height - size;
+
+            // Verificar proximidade com o objeto
+            const blockCenterX = x + size / 2;
+            const blockCenterY = y + size / 2;
+            const obstacleCenterX = obstacleX + obstacleSize / 2;
+            const obstacleCenterY = obstacleY + obstacleSize / 2;
+            const distance = getDistance(blockCenterX, blockCenterY, obstacleCenterX, obstacleCenterY);
+
+            if (distance < proximityThreshold) {
+                if (!popupShown) {
+                    document.getElementById('text-popup').style.display = 'block';
+                    popupShown = true;
+                }
+            } else {
+                if (popupShown) {
+                    document.getElementById('text-popup').style.display = 'none';
+                    popupShown = false;
+                }
+            }
+        }
+
+        // Loop do jogo
+        function gameLoop() {
+            update();
+            draw();
+            requestAnimationFrame(gameLoop);
+        }
+
+        // Eventos de teclado
+        document.addEventListener('keydown', (e) => {
+            keys[e.key] = true;
+
+            if (e.key === 'ArrowUp') dy = -speed;
+            if (e.key === 'ArrowDown') dy = speed;
+            if (e.key === 'ArrowLeft') dx = -speed;
+            if (e.key === 'ArrowRight') dx = speed;
+        });
+
+        document.addEventListener('keyup', (e) => {
+            keys[e.key] = false;
+            if (e.key === 'ArrowUp' || e.key === 'ArrowDown') dy = 0;
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') dx = 0;
+        });
+
+        // Iniciar o jogo
+        blockImage.onload = () => {
+            draw();
+            gameLoop();
+        };
+
+        // Redraw when theme changes
+        checkbox.addEventListener('change', () => {
+            draw();
+        });
+
+        // Close popup button
+        document.getElementById('close-popup').addEventListener('click', () => {
+            document.getElementById('text-popup').style.display = 'none';
+            popupShown = false;
+        });
+    </script>
+</body>
+</html>
