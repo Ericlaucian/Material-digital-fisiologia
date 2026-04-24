@@ -1,6 +1,6 @@
 :root {
-    --primary-bg-color: #2B124C;
-    --secondary-bg-color: #FBE4D8;
+    --primary-bg-color: #FBE4D8;
+    --secondary-bg-color: #DFB6B2;
     --text-color: #2B124C;
     --button-bg-color: #DFB6B2;
     --button-hover-bg-color: #854F8C;
@@ -191,7 +191,7 @@ header {
 }
 
 .slider {
-    background-color: #DFB6B2;
+    background-color: #522B5B;
     bottom: 0;
     cursor: pointer;
     left: 0;
