@@ -22,6 +22,7 @@ var nextQuestionButton = document.getElementById("next-question-button");
 var themeSwitch = document.getElementById("checkbox");
 var scoreDisplayElement = document.getElementById("score-display");
 var roundProgressElement = document.getElementById("round-progress");
+var backButton = document.getElementById("back-button");
 var currentTopicQuestions = {};
 var answeredQuestions = [];
 var selectedQuestionName = null;
@@ -410,5 +411,31 @@ if (userAnswerInput) {
 if (nextQuestionButton) {
   nextQuestionButton.addEventListener("click", () => {
     resetQuestionStateAndSpinRoulette();
+  });
+}
+if (backButton) {
+  backButton.addEventListener("click", () => {
+    score = 0;
+    questionsAnsweredCount = 0;
+    answeredQuestions = [];
+    currentTopicQuestions = {};
+    hintsUsedInQuestion = 0;
+    currentHintIndex = 0;
+    if (scoreDisplayElement) {
+      scoreDisplayElement.textContent = "Score: 0";
+    }
+    if (roundProgressElement) {
+      roundProgressElement.textContent = "Questão: 0/5";
+    }
+    if (questionSection) {
+      questionSection.classList.add("hidden");
+    }
+    if (rouletteSection) {
+      rouletteSection.classList.add("hidden");
+    }
+    if (answerContainer) {
+      answerContainer.classList.add("hidden");
+    }
+    window.location.href = "menu.html";
   });
 }
