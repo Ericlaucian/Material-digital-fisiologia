@@ -53,7 +53,7 @@ body.dark-theme {
 
 .back-button {
     position: fixed;
-    top: calc(50% - 400px + 2rem);
+    top: calc(50% - 350px + 2rem);
     left: calc(50% - 40% + 2rem);
     background-color: var(--action-button-bg-color);
     color: var(--action-button-text-color);

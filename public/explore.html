@@ -32,11 +32,10 @@
         </main>
     </div>
 
-    <div id="text-popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: var(--secondary-bg-color); border: 2px solid var(--action-button-bg-color); border-radius: 8px; padding: 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); z-index: 100; display: none; min-width: 300px; max-width: 500px;">
-        <button id="close-popup" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--action-button-bg-color);">✕</button>
+    <div id="text-popup" style="position: fixed; top: 50%; right: 20px; transform: translateY(-50%); background-color: var(--secondary-bg-color); border: 2px solid var(--action-button-bg-color); border-radius: 8px; padding: 1.5rem 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); z-index: 100; display: none; min-width: 280px; max-width: 400px;">
         <div id="popup-content" style="text-align: center; color: var(--text-color);">
-            <h2 style="margin-top: 0;">Descoberta!</h2>
-            <p id="popup-text">teste</p>
+            <h2 style="margin: 0; font-size: 1.2rem;">🔍 Descoberta!</h2>
+            <p id="popup-text" style="margin: 0.5rem 0 0 0;">teste</p>
         </div>
     </div>
 
@@ -88,6 +87,11 @@
         const obstacleX = Math.floor(Math.random() * (canvas.width - obstacleSize));
         const obstacleY = Math.floor(Math.random() * (canvas.height - obstacleSize));
 
+        // Objeto fixo roxo (apenas obstáculo, sem mensagem)
+        const obstacleSize2 = 60;
+        const obstacle2X = Math.floor(Math.random() * (canvas.width - obstacleSize2));
+        const obstacle2Y = Math.floor(Math.random() * (canvas.height - obstacleSize2));
+
         // Direções
         let dx = 0;
         let dy = 0;
@@ -101,9 +105,13 @@
             ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--primary-bg-color').trim();
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // Objeto fixo rosa
+            // Objeto fixo rosa (com mensagem)
             ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--action-button-bg-color').trim();
             ctx.fillRect(obstacleX, obstacleY, obstacleSize, obstacleSize);
+
+            // Objeto fixo roxo (apenas obstáculo)
+            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--revealed-hint-bg-color').trim();
+            ctx.fillRect(obstacle2X, obstacle2Y, obstacleSize2, obstacleSize2);
 
             // Bloco com imagem
             if (blockImage.complete && blockImage.naturalWidth !== 0) {
@@ -125,37 +133,39 @@
         }
 
         let popupShown = false;
-        const proximityThreshold = 150;
+        const proximityThreshold = 80;
 
         // Função de atualização
         function update() {
             const nextX = x + dx;
             const nextY = y + dy;
 
-            // Movimento horizontal com colisão
-            if (dx !== 0) {
-                if (!isColliding(nextX, y, size, size, obstacleX, obstacleY, obstacleSize, obstacleSize)) {
-                    x = nextX;
-                } else {
-                    if (dx > 0) {
-                        x = obstacleX - size;
-                    } else {
-                        x = obstacleX + obstacleSize;
-                    }
-                }
+            // Verificar colisão horizontal e vertical com ambos os obstáculos
+            let canMoveX = true;
+            let canMoveY = true;
+
+            // Verificar colisão com obstáculo 1 (rosa)
+            if (isColliding(nextX, y, size, size, obstacleX, obstacleY, obstacleSize, obstacleSize)) {
+                canMoveX = false;
+            }
+            if (isColliding(x, nextY, size, size, obstacleX, obstacleY, obstacleSize, obstacleSize)) {
+                canMoveY = false;
             }
 
-            // Movimento vertical com colisão
-            if (dy !== 0) {
-                if (!isColliding(x, nextY, size, size, obstacleX, obstacleY, obstacleSize, obstacleSize)) {
-                    y = nextY;
-                } else {
-                    if (dy > 0) {
-                        y = obstacleY - size;
-                    } else {
-                        y = obstacleY + obstacleSize;
-                    }
-                }
+            // Verificar colisão com obstáculo 2 (roxo)
+            if (isColliding(nextX, y, size, size, obstacle2X, obstacle2Y, obstacleSize2, obstacleSize2)) {
+                canMoveX = false;
+            }
+            if (isColliding(x, nextY, size, size, obstacle2X, obstacle2Y, obstacleSize2, obstacleSize2)) {
+                canMoveY = false;
+            }
+
+            // Aplicar movimento apenas se não houver colisão
+            if (canMoveX) {
+                x = nextX;
+            }
+            if (canMoveY) {
+                y = nextY;
             }
 
             // Limites da tela
@@ -164,7 +174,7 @@
             if (y < 0) y = 0;
             if (y + size > canvas.height) y = canvas.height - size;
 
-            // Verificar proximidade com o objeto
+            // Verificar proximidade com o objeto rosa (com mensagem)
             const blockCenterX = x + size / 2;
             const blockCenterY = y + size / 2;
             const obstacleCenterX = obstacleX + obstacleSize / 2;
@@ -216,12 +226,6 @@
         // Redraw when theme changes
         checkbox.addEventListener('change', () => {
             draw();
-        });
-
-        // Close popup button
-        document.getElementById('close-popup').addEventListener('click', () => {
-            document.getElementById('text-popup').style.display = 'none';
-            popupShown = false;
         });
     </script>
 </body>
