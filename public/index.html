@@ -20,7 +20,7 @@
         
         <header>
             <h1>Jogo das 4 dicas</h1>
-            <div id="status-bar">
+            <div id="status-bar" class="status-bar">
                 <div id="score-display">Score: 0</div>
                 <div id="round-progress">Questão: 0/5</div>
             </div>
@@ -37,16 +37,22 @@
                 <div id="topics-container"></div>
             </section>
             <section id="roulette-section">
-                <h2>Perguntas Aleatórias</h2>
+                <!-- <h2 id="perguntas-aleatorias">Perguntas Aleatórias</h2> -->
                 <div id="roulette-wheel"></div>
                 <button id="spin-button" class="action-button">Girar Roleta</button>            </section>
             <section id="question-section" class="hidden">
                 <h3 id="question-text"></h3>
-                <div id="hints-container"></div>
-                <div id="hint-timer-controls" class="hidden">
+                <div class="hints-n-timer-container" style="display: flex; justify-content: center; align-items: center; gap: 4rem; margin-top: 1rem;">
+                    <div id="possible-score-display" style="text-align: center; font-size: 1.2rem; font-weight: bold; color: var(--action-button-bg-color); min-width: 100px;">
+                        <div>Pontuação Possível</div>
+                        <div id="possible-score" style="font-size: 2rem;">100</div>
+                    </div>
+                    <div id="hints-container"></div>
+                    <div id="hint-timer-display" class="time-display"></div>
+                </div>
+                <div id="hint-timer-controls" class="hidden" style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 1rem;">
                     <button id="next-hint-button" class="action-button">Próxima Dica</button>
                     <button id="answer-now-button" class="action-button">Responder Agora</button>
-                    <div id="hint-timer-display"></div>
                 </div>
                 <div id="user-answer-container" class="hidden">
                     <input type="text" id="user-answer-input" placeholder="Digite sua resposta aqui...">
@@ -54,10 +60,10 @@
                 </div>
                 <div id="feedback-message" class="hidden"></div>
                 <button id="show-answer-button" class="action-button">Mostrar Resposta</button>
-                <div id="timer-display"></div>
+                <div id="timer-display" ></div>
                 <div id="answer-container" class="hidden">
                     <p id="answer-text"></p>
-                    <div id="correct-wrong-container" class="hidden">
+                    <div id="correct-wrong-container" class="hidden" style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 1rem;">
                         <button id="next-question-button" class="action-button">Próxima Pergunta</button>
                     </div>
                 </div>

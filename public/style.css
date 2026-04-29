@@ -34,7 +34,7 @@ body.dark-theme {
     --button-hover-bg-color: #DFB6B2;
     --hint-bg-color: #854F8C;
     --hint-hover-bg-color: #DFB6B2;
-    --revealed-hint-bg-color: #190019;
+    --revealed-hint-bg-color: #c93fc9;
     --revealed-hint-border-color: #DFB6B2;
     --action-button-bg-color: #DFB6B2;
     --action-button-hover-bg-color: #FBE4D8;
@@ -43,10 +43,9 @@ body.dark-theme {
 
 #app {
     position: relative;
-    width: 80%;
-    max-width: 800px;
+    width: 60%;
     background-color: var(--secondary-bg-color);
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -91,7 +90,7 @@ header {
 #status-bar {
     display: flex;
     gap: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -125,6 +124,7 @@ header {
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 1rem;
+    align-items: center;
 }
 
 .hint-button {
@@ -148,7 +148,6 @@ header {
 }
 
 .revealed-hint {
-    background-color: var(--revealed-hint-bg-color);
     border-color: var(--revealed-hint-border-color);
 }
 
@@ -157,6 +156,10 @@ header {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+#user-answer-container.hidden {
+    display: none !important;
 }
 
 #user-answer-input {
@@ -257,4 +260,44 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+#roulette-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.center-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.time-display {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    background-color: var(--button-bg-color);
+    padding: 1rem 1rem;
+    border-radius: 10%;
+}
+
+#question-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--text-color);
+    color: var(--action-button-text-color);
+    padding: 1rem;
+    border-radius: 2rem;
+}   
+
+#roulette-wheel {
+    font-size: 2rem;
+    font-weight: bold;
+    
 }

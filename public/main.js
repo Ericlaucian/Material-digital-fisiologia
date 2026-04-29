@@ -23,6 +23,7 @@ var themeSwitch = document.getElementById("checkbox");
 var scoreDisplayElement = document.getElementById("score-display");
 var roundProgressElement = document.getElementById("round-progress");
 var backButton = document.getElementById("back-button");
+var possibleScoreElement = document.getElementById("possible-score");
 var currentTopicQuestions = {};
 var answeredQuestions = [];
 var selectedQuestionName = null;
@@ -31,6 +32,7 @@ var hintsUsedInQuestion = 0;
 var currentHintIndex = 0;
 var score = 0;
 var questionsAnsweredCount = 0;
+var currentPossibleScore = 100;
 async function selectTopic(topicName) {
   console.log(`Selected topic: ${topicName}`);
   try {
@@ -170,6 +172,10 @@ function startQuestion() {
     showAnswerButton.classList.add("hidden");
   currentHintIndex = 0;
   hintsUsedInQuestion = 0;
+  currentPossibleScore = 100;
+  if (possibleScoreElement) {
+    possibleScoreElement.textContent = "100";
+  }
   revealNextHint();
 }
 function revealNextHint() {
@@ -197,6 +203,7 @@ function revealNextHint() {
       hintsUsedInQuestion++;
     }
     currentHintIndex++;
+    updatePossibleScore();
     if (nextHintButton) {
       nextHintButton.disabled = currentHintIndex >= 4;
     }
@@ -210,7 +217,7 @@ function revealNextHint() {
 function startHintTimer() {
   let timeLeft = 15;
   if (hintTimerDisplay)
-    hintTimerDisplay.textContent = `Tempo para a próxima dica/resposta: ${timeLeft}s`;
+    hintTimerDisplay.textContent = `${timeLeft}s`;
   if (hintCountdownTimer !== undefined) {
     clearInterval(hintCountdownTimer);
   }
@@ -218,7 +225,7 @@ function startHintTimer() {
   hintCountdownTimer = setInterval(() => {
     timeLeft--;
     if (hintTimerDisplay)
-      hintTimerDisplay.textContent = `Tempo para a próxima dica/resposta: ${timeLeft}s`;
+      hintTimerDisplay.textContent = `${timeLeft}s`;
     if (timeLeft <= 0) {
       if (hintCountdownTimer !== undefined) {
         clearInterval(hintCountdownTimer);
@@ -229,21 +236,33 @@ function startHintTimer() {
         feedbackMessage.classList.add("incorrect-feedback");
         feedbackMessage.classList.remove("hidden");
       }
+      if (hintTimerControls)
+        hintTimerControls.classList.add("hidden");
+      if (nextHintButton)
+        nextHintButton.classList.add("hidden");
+      if (answerNowButton)
+        answerNowButton.classList.add("hidden");
       revealAnswer();
     }
   }, 1000);
+}
+function updatePossibleScore() {
+  currentPossibleScore = calculateScore(hintsUsedInQuestion);
+  if (possibleScoreElement) {
+    possibleScoreElement.textContent = currentPossibleScore;
+  }
 }
 function calculateScore(hintsUsed) {
   switch (hintsUsed) {
     case 0:
     case 1:
-      return 100;
+      return 15;
     case 2:
-      return 75;
+      return 11;
     case 3:
-      return 50;
+      return 7;
     case 4:
-      return 25;
+      return 3;
     default:
       return 0;
   }
@@ -307,6 +326,7 @@ function checkAnswer() {
       feedbackMessage.textContent = "Correto!";
       feedbackMessage.classList.add("correct-feedback");
       score += calculateScore(hintsUsedInQuestion);
+      updatePossibleScore();
     } else {
       feedbackMessage.textContent = `Incorreto! A resposta correta era: ${questionData.Answer}`;
       feedbackMessage.classList.add("incorrect-feedback");
