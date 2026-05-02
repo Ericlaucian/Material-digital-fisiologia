@@ -1,5 +1,5 @@
 // src/main.ts
-var AVAILABLE_TOPICS = ["fisiologia"];
+var AVAILABLE_TOPICS = ["fisiologia", "cardiologia"];
 var rouletteSection = document.getElementById("roulette-section");
 var rouletteDisplayElement = document.getElementById("roulette-wheel");
 var spinButton = document.getElementById("spin-button");
@@ -24,6 +24,8 @@ var scoreDisplayElement = document.getElementById("score-display");
 var roundProgressElement = document.getElementById("round-progress");
 var backButton = document.getElementById("back-button");
 var possibleScoreElement = document.getElementById("possible-score");
+var randomQuestionsButton = document.getElementById("random-questions-button");
+var cardiologyButton = document.getElementById("cardiology-button");
 var currentTopicQuestions = {};
 var answeredQuestions = [];
 var selectedQuestionName = null;
@@ -60,6 +62,32 @@ async function selectTopic(topicName) {
     }
   }
 }
+
+
+if(randomQuestionsButton){
+  randomQuestionsButton.addEventListener('click', function() {
+      localStorage.removeItem("topic");
+      localStorage.setItem("topic", "0");
+    });
+}; 
+
+if(cardiologyButton){
+  cardiologyButton.addEventListener('click', function() {
+      localStorage.removeItem("topic");
+      localStorage.setItem("topic", "1");
+  });
+};
+
+function getStoredTopicIndex() {
+  const storedTopic = localStorage.getItem("topic");
+  const topicIndex = Number(storedTopic);
+  if (!Number.isInteger(topicIndex) || topicIndex < 0 || topicIndex >= AVAILABLE_TOPICS.length) {
+    localStorage.setItem("topic", "0");
+    return 0;
+  }
+  return topicIndex;
+}
+
 function spinRoulette() {
   if (questionSection)
     questionSection.classList.add("hidden");
@@ -75,7 +103,10 @@ function spinRoulette() {
     rouletteSection.classList.remove("hidden");
   if (spinButton)
     spinButton.classList.remove("hidden");
-  const chosenTopic = AVAILABLE_TOPICS[0];
+
+  const topicIndex = getStoredTopicIndex();
+  const chosenTopic = AVAILABLE_TOPICS[topicIndex];
+
   if (rouletteDisplayElement && spinButton) {
     rouletteDisplayElement.textContent = `Girando...`;
     spinButton.disabled = true;
