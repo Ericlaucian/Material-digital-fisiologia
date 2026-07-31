@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das 4 Dicas Objetivas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="scroll-page">
+    <a href="index.html" id="back-button" class="back-button" title="Voltar ao Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+    </a>
+
+    <div id="app">
+        <header>
+            <h2 style="font-size: 1.25rem;">Jogo das 4 dicas objetivas</h2>
+            <div id="status-bar" class="status-bar">
+                <div id="score-display">Score: 0</div>
+                <div id="round-progress">Questão: 0/5</div>
+            </div>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </header>
+
+        <main>
+            <section id="question-section">
+                <div class="question-top-row" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
+                    <div id="round-progress-small" class="info-pill">Questão 0/5</div>
+                    <div id="question-score" class="score-display" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:50px;min-height:50px;border-radius:50%;">
+                        <div style="font-size:.85rem;opacity:.9;">Pontuação</div>
+                        <div id="score-large" style="font-size:1.6rem;font-weight:700;">100</div>
+                    </div>
+                    <div id="hints-count" class="info-pill" style="text-align:center;">4 Dicas</div>
+                </div>
+
+                <div class="question-card">
+                    <div class="hint-label">Dica</div>
+                    <h3 id="question-title" style="margin: .4rem 0 .2rem 0;font-size:1.25rem;">Pergunta 01</h3>
+                    <p id="question-text" style="opacity:.95;font-size:1rem;margin:0;">Texto da pergunta aparecerá aqui.</p>
+                </div>
+
+                <div id="hints-container" style="display:flex;flex-direction:column;gap:1rem;margin-top:1rem;"></div>
+
+                <div id="answer-area" class="hidden" style="margin-top:1rem;display:flex;flex-direction:column;gap:.8rem;">
+                    <div id="options-container" class="options-grid"></div>
+                    <div id="feedback-message" class="hidden"></div>
+                    <button id="next-question-button" class="action-button hidden">Próxima Pergunta</button>
+                </div>
+
+                <div id="hint-timer-controls" style="display:flex;justify-content:center;align-items:center;gap:1rem;margin-top:.6rem;">
+                    <button id="next-hint-button" class="action-button">Próxima Dica</button>
+                    <button id="answer-now-button" class="action-button">Responder Agora</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="objetivas.js"></script>
+</body>
+
+</html>

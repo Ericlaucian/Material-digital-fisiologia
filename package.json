@@ -1,0 +1,17 @@
+{
+  "name": "pid-4questions",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "bun build src/main.ts --outdir public",
+    "dev": "bun build src/main.ts --outdir public --watch",
+    "postbuild": "cp -r src/data public/"
+  }
+}

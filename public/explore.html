@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Fisiologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="back-button" class="back-button" title="Voltar ao Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+    </button>
+
+    <div id="app">
+        <header>
+            <h1>Explorar Fisiologia</h1>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </header>
+        <div id="coin-score" class="score-display">Moedas: 0</div>
+        <main style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex: 1;">
+            <section id="game-section" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; padding: 1rem;">
+                <div id="game-container" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; aspect-ratio: 16/9;">
+                    <canvas id="gameCanvas" tabindex="0" width="1600" height="900" style="border: 2px solid var(--action-button-bg-color); border-radius: 8px; background-color: var(--primary-bg-color); width: 100%; height: 100%; display: block;"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="text-popup" style="position: fixed; top: 50%; right: 20px; transform: translateY(-50%); background-color: var(--secondary-bg-color); border: 2px solid var(--action-button-bg-color); border-radius: 8px; padding: 1.5rem 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); z-index: 100; display: none; min-width: 280px; max-width: 400px;">
+        <div id="popup-content" style="text-align: center; color: var(--text-color);">
+            <h2 style="margin: 0; font-size: 1.2rem;">🔍 Descoberta!</h2>
+            <p id="popup-text" style="margin: 0.5rem 0 0 0;">teste</p>
+        </div>
+    </div>
+
+    <script>
+        // Theme switcher functionality
+        const checkbox = document.getElementById('checkbox');
+        const backButton = document.getElementById('back-button');
+
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                document.body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.body.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Load saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            checkbox.checked = true;
+            document.body.classList.add('dark-theme');
+        }
+
+        // Back button functionality
+        if (backButton) {
+            backButton.addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        }
+
+        // Game logic
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Carregar a imagem do bloco
+        const blockImage = new Image();
+        blockImage.src = 'image.png';
+
+        // Posição inicial do quadrado  
+        let x = canvas.width / 2 - 25;
+        let y = canvas.height / 2 - 25;
+        const size = 50;
+        const speed = 5;
+
+        // Objeto fixo rosa maior que o personagem
+        const obstacleSize = 70;
+        const obstacleX = Math.floor(Math.random() * (canvas.width - obstacleSize));
+        const obstacleY = Math.floor(Math.random() * (canvas.height - obstacleSize));
+
+        // Objeto fixo roxo (apenas obstáculo, sem mensagem)
+        const obstacleSize2 = 60;
+        const obstacle2X = Math.floor(Math.random() * (canvas.width - obstacleSize2));
+        const obstacle2Y = Math.floor(Math.random() * (canvas.height - obstacleSize2));
+
+        // Moedas coletáveis
+        const coinSize = 30;
+        const coinCount = 5;
+        const coins = Array.from({ length: coinCount }, () => ({
+            x: Math.floor(Math.random() * (canvas.width - coinSize)),
+            y: Math.floor(Math.random() * (canvas.height - coinSize)),
+            collected: false,
+        }));
+        let score = 0;
+
+        function updateCoinScore() {
+            const scoreElement = document.getElementById('coin-score');
+            if (scoreElement) {
+                scoreElement.textContent = `Score: ${score}`;
+            }
+        }
+
+        updateCoinScore();
+
+        // Direções
+        let dx = 0;
+        let dy = 0;
+
+        // Estados das teclas
+        const keys = {};
+
+        // Função para desenhar
+        function draw() {
+            // Fundo usando variáveis CSS
+            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--primary-bg-color').trim();
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Objeto fixo rosa (com mensagem)
+            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--action-button-bg-color').trim();
+            ctx.fillRect(obstacleX, obstacleY, obstacleSize, obstacleSize);
+
+            // Objeto fixo roxo (apenas obstáculo)
+            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--revealed-hint-bg-color').trim();
+            ctx.fillRect(obstacle2X, obstacle2Y, obstacleSize2, obstacleSize2);
+
+            // Moedas coletáveis
+            coins.forEach((coin) => {
+                if (!coin.collected) {
+                    ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--hint-bg-color').trim();
+                    ctx.beginPath();
+                    ctx.arc(coin.x + coinSize / 2, coin.y + coinSize / 2, coinSize / 2, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            });
+
+            // Bloco com imagem
+            if (blockImage.complete && blockImage.naturalWidth !== 0) {
+                ctx.drawImage(blockImage, x, y, size, size);
+            } else {
+                ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim();
+                ctx.fillRect(x, y, size, size);
+            }
+        }
+
+        function isColliding(ax, ay, aw, ah, bx, by, bw, bh) {
+            return ax < bx + bw && ax + aw > bx && ay < by + bh && ay + ah > by;
+        }
+
+        function getDistance(x1, y1, x2, y2) {
+            const dx = x1 - x2;
+            const dy = y1 - y2;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        let popupShown = false;
+        const proximityThreshold = 80;
+
+        // Função de atualização
+        function update() {
+            const nextX = x + dx;
+            const nextY = y + dy;
+
+            // Verificar colisão horizontal e vertical com ambos os obstáculos
+            let canMoveX = true;
+            let canMoveY = true;
+
+            // Verificar colisão com obstáculo 1 (rosa)
+            if (isColliding(nextX, y, size, size, obstacleX, obstacleY, obstacleSize, obstacleSize)) {
+                canMoveX = false;
+            }
+            if (isColliding(x, nextY, size, size, obstacleX, obstacleY, obstacleSize, obstacleSize)) {
+                canMoveY = false;
+            }
+
+            // Verificar colisão com obstáculo 2 (roxo)
+            if (isColliding(nextX, y, size, size, obstacle2X, obstacle2Y, obstacleSize2, obstacleSize2)) {
+                canMoveX = false;
+            }
+            if (isColliding(x, nextY, size, size, obstacle2X, obstacle2Y, obstacleSize2, obstacleSize2)) {
+                canMoveY = false;
+            }
+
+            // Verificar colisão com as moedas
+            coins.forEach((coin) => {
+                if (!coin.collected && isColliding(nextX, nextY, size, size, coin.x, coin.y, coinSize, coinSize)) {
+                    coin.collected = true;
+                    score += 10;
+                    updateCoinScore();
+                }
+            });
+
+            // Aplicar movimento apenas se não houver colisão
+            if (canMoveX) {
+                x = nextX;
+            }
+            if (canMoveY) {
+                y = nextY;
+            }
+
+            // Limites da tela
+            if (x < 0) x = 0;
+            if (x + size > canvas.width) x = canvas.width - size;
+            if (y < 0) y = 0;
+            if (y + size > canvas.height) y = canvas.height - size;
+
+            // Verificar proximidade com o objeto rosa (com mensagem)
+            const blockCenterX = x + size / 2;
+            const blockCenterY = y + size / 2;
+            const obstacleCenterX = obstacleX + obstacleSize / 2;
+            const obstacleCenterY = obstacleY + obstacleSize / 2;
+            const distance = getDistance(blockCenterX, blockCenterY, obstacleCenterX, obstacleCenterY);
+
+            if (distance < proximityThreshold) {
+                if (!popupShown) {
+                    document.getElementById('text-popup').style.display = 'block';
+                    popupShown = true;
+                }
+            } else {
+                if (popupShown) {
+                    document.getElementById('text-popup').style.display = 'none';
+                    popupShown = false;
+                }
+            }
+        }
+
+        // Loop do jogo
+        function gameLoop() {
+            update();
+            draw();
+            requestAnimationFrame(gameLoop);
+        }
+
+        // Eventos de teclado no canvas
+        canvas.addEventListener('keydown', (e) => {
+            keys[e.key] = true;
+
+            if (e.key === 'ArrowUp') dy = -speed;
+            if (e.key === 'ArrowDown') dy = speed;
+            if (e.key === 'ArrowLeft') dx = -speed;
+            if (e.key === 'ArrowRight') dx = speed;
+        });
+
+        canvas.addEventListener('keyup', (e) => {
+            keys[e.key] = false;
+            if (e.key === 'ArrowUp' || e.key === 'ArrowDown') dy = 0;
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') dx = 0;
+        });
+
+        canvas.addEventListener('click', () => {
+            canvas.focus();
+        });
+
+        canvas.addEventListener('blur', () => {
+            if (keys['ArrowUp']) keys['ArrowUp'] = false;
+            if (keys['ArrowDown']) keys['ArrowDown'] = false;
+            if (keys['ArrowLeft']) keys['ArrowLeft'] = false;
+            if (keys['ArrowRight']) keys['ArrowRight'] = false;
+            dx = 0;
+            dy = 0;
+        });
+
+        document.addEventListener('click', (event) => {
+            if (event.target !== canvas && !canvas.contains(event.target)) {
+                canvas.blur();
+            }
+        });
+
+        // Iniciar o jogo
+        blockImage.onload = () => {
+            draw();
+            gameLoop();
+        };
+
+        // Redraw when theme changes
+        checkbox.addEventListener('change', () => {
+            draw();
+        });
+    </script>
+</body>
+</html>
