@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from flask import Flask, jsonify, request, send_from_directory, render_template
+from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
 from google import genai as google_genai
 
@@ -20,7 +20,8 @@ except Exception:
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    # return render_template("index.html")
+    return "dale"
 
 
 @app.route('/receber_dados', methods=['POST'])
