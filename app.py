@@ -4,11 +4,8 @@ from flask import Flask, jsonify, request, send_from_directory, render_template
 from flask_cors import CORS
 from google import genai as google_genai
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-app = Flask(__name__,
-        template_folder=os.path.join(BASE_DIR, '../templates')
-)
+app = Flask(__name__)
 CORS(app)
 
 load_dotenv()
@@ -197,4 +194,5 @@ def gerar_mensagem_resposta_errada(question, user_answer, correct_answer, altern
     
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
