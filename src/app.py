@@ -4,7 +4,11 @@ from flask import Flask, jsonify, request, send_from_directory, render_template
 from flask_cors import CORS
 from google import genai as google_genai
 
-app = Flask(__name__)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+app = Flask(__name__,
+        template_folder=os.path.join(BASE_DIR, '../templates')
+)
 CORS(app)
 
 load_dotenv()
@@ -19,7 +23,7 @@ except Exception:
 
 @app.route('/')
 def index():
-    return send_from_directory('../templates', 'index.html')
+    return render_template("index.html")
 
 
 @app.route('/receber_dados', methods=['POST'])
