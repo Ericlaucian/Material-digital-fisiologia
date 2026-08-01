@@ -20,8 +20,7 @@ except Exception:
 
 @app.route('/')
 def index():
-    # return render_template("index.html")
-    return "dale"
+    return render_template('index.html')
 
 
 @app.route('/receber_dados', methods=['POST'])
