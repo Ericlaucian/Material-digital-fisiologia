@@ -38,3 +38,5 @@ gemini.md
 
 # Build files
 public/data
+
+.env
