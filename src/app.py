@@ -1,12 +1,16 @@
 import os
-from flask import Flask, jsonify, request
+from dotenv import load_dotenv
+from flask import Flask, jsonify, request, send_from_directory, render_template
 from flask_cors import CORS
+from google import genai as google_genai
 
 app = Flask(__name__)
 CORS(app)
-api_key = "AQ.Ab8RN6JS7Rft0PmL2iCkEksQdyM5KVXtjgi7HqK_Ztr-LUiktQ"
+
+load_dotenv()
+
+api_key = os.getenv("API_KEY")
 try:
-    from google import genai as google_genai
 
     gemini_client = google_genai.Client( api_key= api_key)
 except Exception:
@@ -15,7 +19,7 @@ except Exception:
 
 @app.route('/')
 def index():
-    return jsonify({'message': 'Welcome to the Flask API'}), 200
+    return send_from_directory('../templates', 'index.html')
 
 
 @app.route('/receber_dados', methods=['POST'])
