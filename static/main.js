@@ -67,9 +67,9 @@ async function selectTopic(topicName) {
     let fileUrl;
     
     if (shouldLoadBaseFile) {
-      fileUrl = `./data/${topicName.toLowerCase()}.json`;
+      fileUrl = `/static/data/${topicName.toLowerCase()}.json`;
     } else {
-      fileUrl = `./data/${topicName.toLowerCase()}_${difficulty}.json`;
+      fileUrl = `/static/data/${topicName.toLowerCase()}_${difficulty}.json`;
     }
     
     console.log(`Loading file: ${fileUrl}`);
@@ -77,7 +77,7 @@ async function selectTopic(topicName) {
     
     if (!response.ok) {
       console.warn(`File not found: ${fileUrl}, trying base file...`);
-      response = await fetch(`./data/${topicName.toLowerCase()}.json`);
+      response = await fetch(`/static/data/${topicName.toLowerCase()}.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

@@ -107,15 +107,15 @@ async function loadQuestions() {
     const shouldLoadBaseFile = difficulty === 'aleatorio' || isAlwaysRandomTopic;
 
     if (shouldLoadBaseFile) {
-        fileUrl = `./data/${topicName.toLowerCase()}.json`;
+        fileUrl = `/static/data/${topicName.toLowerCase()}.json`;
     } else {
-        fileUrl = `./data/${topicName.toLowerCase()}_${difficulty}.json`;
+        fileUrl = `/static/data/${topicName.toLowerCase()}_${difficulty}.json`;
     }
 
     try {
         const response = await fetch(fileUrl);
         if (!response.ok) {
-            const fallback = `./data/${topicName.toLowerCase()}.json`;
+            const fallback = `/static/data/${topicName.toLowerCase()}.json`;
             const fallbackResponse = await fetch(fallback);
             if (!fallbackResponse.ok) throw new Error('Falha ao carregar arquivo');
             currentTopicQuestions = await fallbackResponse.json();
