@@ -22,6 +22,18 @@ except Exception:
 def index():
     return render_template('index.html')
 
+@app.route('/opcoes_tema')
+def opcoes_tema():  
+    return render_template('opcoes_tema.html')
+
+@app.route('/discursivas')
+def discursivas():
+    return render_template('discursivas.html')
+
+@app.route('/objetivas')
+def objetivas():
+    return render_template('objetivas.html')
+
 
 @app.route('/receber_dados', methods=['POST'])
 def receber_dados():
