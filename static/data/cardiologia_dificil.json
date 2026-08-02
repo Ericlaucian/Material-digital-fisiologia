@@ -1,0 +1,42 @@
+{
+    "Qual é o mecanismo molecular da contração do miocárdio através da interação actina-miosina?": {
+        "Hint 1": "Envolve a hidrólise de ATP e mudanças conformacionais nas cabeças de miosina.",
+        "Hint 2": "A miosina hidrolisa ATP e usa essa energia para formar o estado de 'força'.",
+        "Hint 3": "A tropomiosina e troponina regulam a ligação de miosina à actina.",
+        "Hint 4": "O cálcio se liga à troponina C, causando deslocamento da tropomiosina.",
+        "Answer": "Cálcio → Troponina → Deslizamento de tropomiosina → Ligação actina-miosina → Encurtamento",
+        "AlternativeAnswers": ["Mecanismo de deslizamento dos filamentos", "Teoria dos miofilamentos deslizantes", "Acoplamento éxcito-contração"]
+    },
+    "Descreva o potencial de ação cardíaco e as diferenças entre miócitos ventriculares e células do nó sinoatrial (NSA)": {
+        "Hint 1": "O potencial de ação ventricular tem 4 fases: depolarização rápida, repolarização inicial, platô e repolarização final.",
+        "Hint 2": "As células do NSA têm depolarização lenta, causada por canais de cálcio L e T.",
+        "Hint 3": "O NSA carece de potencial de repouso negativo estável (-60mV vs -90mV dos ventrículos).",
+        "Hint 4": "A duração do potencial de ação é mais longa no coração (200-300ms) do que em neurônios.",
+        "Answer": "NSA: automaticidade por depolarização lenta; Ventrículos: despolarização rápida com platô prolongado",
+        "AlternativeAnswers": ["Diferenças entre automaticidade e excitabilidade", "Canais iônicos distintos em NSA vs ventrículo", "Propriedades marcapasso do NSA"]
+    },
+    "Qual é a relevância clínica da isquemia miocárdica e seu mecanismo de morte celular?": {
+        "Hint 1": "A isquemia reduz fornecimento de oxigênio e combustíveis ao miocárdio.",
+        "Hint 2": "Leva ao esgotamento de ATP e falha de transportadores iônicos (ATPases Na+/K+).",
+        "Hint 3": "Resulta em aumento de Ca2+ intracelular, ativando caspases e calpaínas.",
+        "Hint 4": "A reperfusão pode paradoxalmente piorar o dano através de estresse oxidativo.",
+        "Answer": "Falha de ATP → sobrecarga de Ca2+ → morte celular por apoptose e necrose",
+        "AlternativeAnswers": ["Mecanismo de morte celular isquêmica", "Dano por reperfusão", "Cascata de Ca2+ após isquemia"]
+    },
+    "Descreva a regulação do débito cardíaco através de mecanismos intrínsecos (Frank-Starling) e extrínsecos (simpático/parassimpático)": {
+        "Hint 1": "Frank-Starling: aumenta carga de pré-carga → maior estiramento → força contráctil aumentada (até um ponto).",
+        "Hint 2": "Mecanismo molecular: estiramento aumenta sensibilidade do filamento fino a Ca2+.",
+        "Hint 3": "Estímulo simpático aumenta frequência e força via β1-adrenérgicos; parassimpático reduz frequência via M2.",
+        "Hint 4": "Estimulação simpática aumenta fosforilação de troponina I, reduzindo afinidade por Ca2+.",
+        "Answer": "Frank-Starling (pré-carga) + Regulação autonômica (frequência e contratividade)",
+        "AlternativeAnswers": ["Mecanismos intrínseco e extrínseco de débito", "Controle de débito cardíaco", "Sensibilidade ao estiramento e modulação adrenérgica"]
+    },
+    "Qual é o papel das proteínas contráteis acessórias (titina, nebulina, distrofina) na estrutura e função do sarcômero?": {
+        "Hint 1": "A titina é uma megaproteína elástica que conecta a linha Z ao disco M.",
+        "Hint 2": "Fornece rigidez passiva e restitui o sarcômero após contração.",
+        "Hint 3": "A nebulina auxilia na nucleação de actina e regulação da célula.",
+        "Hint 4": "A distrofina ancora o citoesqueleto à matriz extracelular via complexo DPC (distrofina-proteoglicano).",
+        "Answer": "Titina (elasticidade) + Nebulina (nucleação de actina) + Distrofina (ancoragem) = estabilidade sarcômera",
+        "AlternativeAnswers": ["Proteínas de suporte estrutural", "Manutenção da arquitetura sarcômera", "Ancoragem e elasticidade"]
+    }
+}

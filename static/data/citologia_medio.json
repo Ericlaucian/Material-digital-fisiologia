@@ -1,0 +1,495 @@
+{
+
+  "Qual complexo macromolecular atua como interruptor molecular sensível ao cálcio e fosforila proteínas utilizando ATP para regular a contração muscular?": {
+    "Hint 1": "Complexo macromolecular responsivo à concentração de Ca²⁺ citosólico, atuando como um interruptor molecular que controla processos como contração e transcrição gênica.",
+    "Hint 2": "Quando ativada, fosforila proteínas-alvo utilizando ATP como doador de fosfato, alterando sua conformação e atividade funcional.",
+    "Hint 3": "A contração muscular depende da ativação dessa enzima, que fosforila a cadeia leve da miosina (MLCK) no músculo liso, ou expõe sítios de ligação da actina no músculo esquelético via troponina.",
+    "Hint 4": "Enzima dependente de cálcio que adiciona grupos fosfato a proteínas.",
+    "Answer": "Proteína quinase dependente de Ca²⁺",
+    "AlternativeAnswers": ["Calmodulina-quinase", "MLCK", "Cinase dependente de cálcio"],
+    "Options": [
+      "Proteína quinase dependente de Ca²⁺",
+      "Adenilato ciclase",
+      "Proteína fosfatase 1",
+      "Glicogênio sintase quinase"
+    ]
+  },
+  "Qual canal iônico ativado por mudanças elétricas na membrana gera a rápida entrada de sódio necessária para propagar o potencial de ação no sarcolema?": {
+    "Hint 1": "Canal iônico dependente de voltagem que sofre mudança conformacional em resposta à despolarização da membrana, sendo essencial para fenômenos eletrofisiológicos.",
+    "Hint 2": "Permite a entrada rápida de sódio na célula, gerando o potencial de ação que se propaga ao longo do sarcolema.",
+    "Hint 3": "Durante um salto de profundidade (pliometria), a ativação desse canal no sarcolema e nos túbulos T é o primeiro evento elétrico que precede a liberação de Ca²⁺ do retículo sarcoplasmático.",
+    "Hint 4": "Canal que se abre quando a diferença de carga elétrica através da membrana se torna menos negativa.",
+    "Answer": "Canal de sódio dependente de voltagem",
+    "AlternativeAnswers": ["Canal de sódio voltagem-dependente", "Naᵥ", "Canal de Na+ dependente de voltagem"],
+    "Options": [
+      "Canal de potássio retificador interno",
+      "Canal de sódio dependente de voltagem",
+      "Trocador sódio-cálcio (NCX)",
+      "Canal de cloro dependente de ligante"
+    ]
+  },
+  "Qual segundo mensageiro de estrutura cíclica é sintetizado pela adenilato ciclase a partir de ATP e activa a via da PKA para mobilizar substratos energéticos?": {
+    "Hint 1": "Pequena molécula sinalizadora derivada da membrana que atua como mensageiro intracelular, ativando a proteína quinase A (PKA) em cascatas de fosforilação.",
+    "Hint 2": "Sintetizada a partir de ATP pela enzima adenilato ciclase, localizada na membrana plasmática, em resposta a hormônios como adrenalina e glucagon.",
+    "Hint 3": "Durante o exercício prolongado, sua elevação nas fibras musculares ativa vias que mobilizam glicose e ácidos graxos para a oxidação energética (glicogenólise e lipólise).",
+    "Hint 4": "Segundo mensageiro clássico cujo nome deriva de sua estrutura cíclica e do nucleotídeo adenosina.",
+    "Answer": "AMP cíclico",
+    "AlternativeAnswers": ["cAMP", "Monofosfato de adenosina cíclico"],
+    "Options": [
+      "Inositol trifosfato (IP3)",
+      "Diacilglicerol (DAG)",
+      "AMP cíclico",
+      "GMP cíclico"
+    ]
+  },
+  "Quais estruturas do citoesqueleto possuem cerca de 10 nm de diâmetro e utilizam a proteína desmina para estabilizar miofibrilas contra lesões por estiramento?": {
+    "Hint 1": "Estrutura filamentosa do citoesqueleto com diâmetro intermediário (10 nm) entre microfilamentos e microtúbulos, fornecendo resistência mecânica à célula.",
+    "Hint 2": "Nas células musculares, estabiliza a posição dos miofibrilas e conecta o disco Z adjacente à membrana nuclear, transmitindo força gerada durante a contração.",
+    "Hint 3": "Embora todas as células tenham, os maratonistas frequentemente apresentam maior expressão de desmina (uma de suas variantes) nas fibras musculares, conferindo proteção contra lesões por estiramento repetitivo.",
+    "Hint 4": "Filamentos citoesqueléticos que formam uma rede ao redor do núcleo e entre miofibrilas, cujo nome indica espessura mediana.",
+    "Answer": "Filamentos intermediários",
+    "AlternativeAnswers": ["Filamento intermediário", "Rede de filamentos intermediários"],
+    "Options": [
+      "Microfilamentos de actina",
+      "Microtúbulos de tubulina",
+      "Filamentos intermediários",
+      "Filamentos de miosina grossos"
+    ]
+  },
+  "Qual processo genético de morte celular programada ativa caspases para clivar proteínas silenciosamente e pode ser exacerbado pelo overtraining?": {
+    "Hint 1": "Mecanismo de morte celular programada geneticamente controlada, distinta da necrose, que não desencadeia resposta inflamatória.",
+    "Hint 2": "Envolve a ativação de caspases, enzimas que clivam proteínas específicas, levando à condensação da cromatina, fragmentação do DNA e formação de corpos apoptóticos.",
+    "Hint 3": "Em atletas de elite submetidos a treinos extremos (overtraining), pode ocorrer apoptose exacerbada em linfócitos e células musculares, contribuindo para queda de imunidade e fadiga crônica.",
+    "Hint 4": "Morte celular silenciosa, sem vazamento de conteúdo para o interstício, muitas vezes chamada de 'suicídio celular'.",
+    "Answer": "Apoptose",
+    "AlternativeAnswers": ["Morte celular programada", "Suicídio celular"],
+    "Options": [
+      "Necrose tecidual",
+      "Autofagia induzida",
+      "Apoptose",
+      "Piroptose inflamatória"
+    ]
+  },
+  "Qual canal do retículo sarcoplasmático, nomeado em homenagem a uma toxina vegetal, libera cálcio no citosol após o estímulo dos túbulos T?": {
+    "Hint 1": "Canal de liberação de cálcio localizado na membrana do retículo sarcoplasmático, cujo nome deriva do receptor celular para uma toxina vegetal alcaloide.",
+    "Hint 2": "É ativado por aumento de Ca²⁺ no citosol (mecanismo de liberação induzida por cálcio) ou por acoplamento direto com canais de diidropiridina (DHPR) dos túbulos T.",
+    "Hint 3": "Durante a pliometria e o treino explosivo, a eficiência desse canal aumenta, otimizando o acoplamento excitação-contração e permitindo maior força e potência muscular.",
+    "Hint 4": "Canal de Ca²⁺ do retículo sarcoplasmático que leva o nome de uma planta cujo princípio ativo causa rigidez muscular fatal.",
+    "Answer": "Receptor de rianodina",
+    "AlternativeAnswers": ["RyR", "Canal de liberação de Ca2+ do retículo sarcoplasmático"],
+    "Options": [
+      "Receptor de rianodina",
+      "Bomba SERCA",
+      "Receptor de diidropiridina (DHPR)",
+      "Canal de cálcio tipo L"
+    ]
+  },
+  "Qual proteína citosólica ácida atua como o principal sensor e mensageiro de cálcio nas células eucarióticas, ligando até quatro íons Ca²⁺ para ativar enzimas?": {
+    "Hint 1": "Proteína citosólica que sequestra e armazena íons cálcio em baixa concentração no repouso (∼100 nM), tamponando oscilações e prevenindo ativação enzimática prematura.",
+    "Hint 2": "Altera sua conformação quando liga quatro íons Ca²⁺, expondo sítios hidrofóbicos que interagem com enzimas-alvo como quinases e fosfatases.",
+    "Hint 3": "Em exercícios excêntricos prolongados (como corrida em declive), a fadiga pode estar associada à dessensibilização dessa proteína, comprometendo a sinalização do cálcio para a contração.",
+    "Hint 4": "Proteína ácida termoestável que atua como o principal sensor e mensageiro intracelular de cálcio em todas as células eucarióticas.",
+    "Answer": "Calmodulina",
+    "AlternativeAnswers": ["CaM"],
+    "Options": [
+      "Troponina C",
+      "Calmodulina",
+      "Calsequestrina",
+      "Calreticulina"
+    ]
+  },
+  "Qual organela com membrana única degrada o peróxido de hidrogênio gerado por suas oxidases e atua na oxidação de ácidos graxos de cadeia muito longa?": {
+    "Hint 1": "Organela envolvida por membrana única que contém enzimas oxidases e catalase, consumindo oxigênio para gerar e degradar peróxido de hidrogênio (H₂O₂).",
+    "Hint 2": "Atua na β-oxidação de ácidos graxos de cadeia muito longa e na detoxificação de espécies reativas de oxigênio produzidas por outras organelas.",
+    "Hint 3": "No exercício aeróbio prolongado (maratona), os peroxissomos das fibras musculares tipo I complementam a oxidação lipídica iniciada pelas mitocôndrias, metabolizando ácidos graxos que não são substratos mitocondriais eficientes.",
+    "Hint 4": "Organela que decompõe água oxigenada e oxida ácidos graxos, nomeada pela presença de peróxido em seu metabolismo.",
+    "Answer": "Peroxissomo",
+    "AlternativeAnswers": ["Peroxissomos", "Microcorpos", "Peroxissoma"],
+    "Options": [
+      "Lisossomo",
+      "Peroxissomo",
+      "Lipossomo estrutural",
+      "Aparato de Golgi"
+    ]
+  },
+  "Qual par cilíndrico de microtúbulos serve como centro organizador de microtúbulos (MTOC) e orienta a formação do fuso mitótico na divisão celular?": {
+    "Hint 1": "Estrutura cilíndrica composta por 9 tripletos de microtúbulos (padrão 9+0), geralmente na forma de um par perpendicular (díplossomo) localizado próximo ao núcleo.",
+    "Hint 2": "Serve como centro organizador de microtúbulos (MTOC), ancorando microtúbulos do citoesqueleto e formando o fuso mitótico durante a divisão celular.",
+    "Hint 3": "Fibroblastos e células satélites musculares ativadas por lesão induzida pelo exercício necessitam dessas estruturas para proliferar e regenerar as fibras musculares esqueléticas danificadas.",
+    "Hint 4": "Par de pequenos cilindros de microtúbulos que organiza o citoesqueleto e atua na divisão celular.",
+    "Answer": "Centríolo",
+    "AlternativeAnswers": ["Centríolos", "Centrossomo", "Díplossomo"],
+    "Options": [
+      "Corpo denso",
+      "Axonema flagelar",
+      "Cinetócoro mitótico",
+      "Centríolo"
+    ]
+  },
+  "Qual organela especializada da célula muscular utiliza a bomba SERCA para sequestrar e armazenar íons cálcio essenciais para a contração?": {
+    "Hint 1": "Tipo especializado de retículo endoplasmático liso que armazena alta concentração de Ca²⁺ (∼10.000x maior que o citosol) através da bomba SERCA (Ca²⁺-ATPase).",
+    "Hint 2": "Libera cálcio através de canais de rianodina (RyR) em resposta ao potencial de ação dos túbulos T, desencadeando o acoplamento excitação-contração.",
+    "Hint 3": "Treinamento de salto (vôlei, basquete) aumenta a densidade desse sistema nas fibras tipo II, melhorando a velocidade e potência da contração muscular explosiva.",
+    "Hint 4": "Organela específica da célula muscular que sequestra e libera cálcio para iniciar a contração.",
+    "Answer": "Retículo sarcoplasmático",
+    "AlternativeAnswers": ["RS", "Retículo sarcoplasmático muscular"],
+    "Options": [
+      "Retículo sarcoplasmático",
+      "Mitocôndria",
+      "Complexo de Golgi",
+      "Túbulo transverso"
+    ]
+  },
+  "Qual propriedade de uma solução descreve sua capacidade de alterar o volume celular por osmose ao considerar apenas solutos não permeantes?": {
+    "Hint 1": "Propriedade de uma solução extracelular que determina a direção e intensidade do movimento osmótico de água através della membrana celular, baseada na concentração de solutos não permeantes.",
+    "Hint 2": "Diferencia-se da osmolaridade (medida física) por considerar apenas solutos que não atravessam livremente a membrana; determina o volume celular final após equilíbrio osmótico.",
+    "Hint 3": "Uma solução hipertônica (ex: água do mar, soro glicosado 50%) puxa água das hemácias, causando crenação; hipotônica (ex: água destilada) faz água invadir a célula, causando lise.",
+    "Hint 4": "Termo que descreve se uma solução faz a célula inchar (hipotônica), murchar (hipertônica) ou permanecer igual (isotônica).",
+    "Answer": "Tonicidade",
+    "AlternativeAnswers": ["Tonicidade da solução", "Efeito osmótico"],
+    "Options": [
+      "Osmolaridade térmica",
+      "Tonicidade",
+      "Condutibilidade iônica",
+      "Molaridade ideal"
+    ]
+  },
+  "Como é denominado o tipo de transporte membranoso que consome ATP diretamente para bombear íons contra seu gradiente, como na bomba de sódio-potássio?": {
+    "Hint 1": "Mecanismo de translocação de íons contra seu gradiente eletroquímico utilizando hidrólise direta de ATP como fonte energética, realizado por proteínas do tipo P-ATPase.",
+    "Hint 2": "Mantém gradientes iônicos fundamentais: bomba Na⁺/K⁺-ATPase (3 Na⁺ para fora, 2 K⁺ para dentro), bomba de Ca²⁺ (SERCA e PMCA) e bomba de H⁺ (células parietais, lisossomos).",
+    "Hint 3": "Durante o exercício de alta intensidade, a bomba Na⁺/K⁺-ATPase muscular é ativada para restaurar os gradientes iônicos despolarizados pelos potenciais de ação repetitivos; falha contribui para a fadiga eletrofisiológica.",
+    "Hint 4": "Transporte que usa ATP diretamente para bombear solutos contra o gradiente, como a bomba de sódio-potássio (Na⁺/K⁺-ATPase).",
+    "Answer": "Transporte ativo primário",
+    "AlternativeAnswers": ["Transporte ativo direto", "Bomba iônica primária"],
+    "Options": [
+      "Difusão facilitada",
+      "Transporte ativo primário",
+      "Transporte ativo secundário",
+      "Difusão simples por canal"
+    ]
+  },
+  "Qual mecanismo de transporte utiliza indiretamente o gradiente eletroquímico de um íon para mover outra molécula contra seu gradiente, como no simporte de glicose?": {
+    "Hint 1": "Mecanismo acoplado que utiliza a energia armazenada no gradiente eletroquímico de um íon (gerado pelo transporte ativo primário) para transportar outra molécula contra seu gradiente.",
+    "Hint 2": "Divide-se em simporte (solutos movem na mesma direção, ex: SGLT1 transporta glicose junto com Na⁺) e antiporte (direções opostas, ex: trocador Na⁺/Ca²⁺, NCX).",
+    "Hint 3": "Na célula muscular em exercício, o trocador Na⁺/Ca²⁺ (NCX) opera após a contração para expulsar Ca²⁺ do citosol, auxiliando o relaxamento e prevenindo tetania.",
+    "Hint 4": "Transporte indireto que usa um íon descendo seu gradiente (geralmente Na⁺) para 'puxar' outra substância contra seu gradiente.",
+    "Answer": "Transporte ativo secundário",
+    "AlternativeAnswers": ["Cotransporte", "Simporte ou antiporte", "Transporte ativo indireto"],
+    "Options": [
+      "Transporte ativo primário",
+      "Ultrafiltração capilar",
+      "Difusão facilitada por carreador",
+      "Transporte ativo secundário"
+    ]
+  },
+  "Qual processo vesicular de invaginação da membrana celular engloba material extracelular e pode atuar no reparo do sarcolema após lesões musculares?": {
+    "Hint 1": "Processo de internalização de material extracelular por invaginação da membrana plasmática e formação de vesículas endocíticas revestidas (clatrina, caveolina, ou sem revestimento).",
+    "Hint 2": "Divide-se em fagocitose (ingestão de partículas grandes >0,5 µm, ato de 'comer'), pinocitose (captação de fluidos e solutos, 'beber') e endocitose mediada por receptor (captação seletiva de LDL, ferro, etc.).",
+    "Hint 3": "Após exercício excêntrico (descida, pliometria), o dano sarcolemal é reparado por endocitose rápida que remove fragmentos membranosos danificados e recicla lipídios para novas áreas.",
+    "Hint 4": "Processo de 'engolfar' material externo formando vesículas para dentro da célula; oposto da exocitose.",
+    "Answer": "Endocitose",
+    "AlternativeAnswers": ["Internalização vesicular", "Endocitose mediada"],
+    "Options": [
+      "Exocitose",
+      "Plasmólise",
+      "Endocitose",
+      "Brotamento celular"
+    ]
+  },
+  "Qual processo de fusão vesicular com a membrana plasmática libera substâncias no meio extracelular, como a liberação de acetilcolina na junção neuromuscular?": {
+    "Hint 1": "Processo de fusão de vesículas intracelulares (secretoras ou de transporte) com a membrana plasmática, liberando seu conteúdo para o meio extracelular.",
+    "Hint 2": "Qualificada como constitutiva (secreção contínua, ex: liberação de colágeno por fibroblastos) ou regulada (requer sinal, ex: liberação de neurotransmissores, hormônios).",
+    "Hint 3": "Na junção neuromuscular do velocista, a chegada do potencial de ação pré-sináptico desencadeia esse processo em milissegundos, liberando acetilcolina para ativar a placa motora.",
+    "Hint 4": "Vesículas se fundem com a membrana para jogar conteúdo para fora; usado por neurônios para liberar neurotransmissores.",
+    "Answer": "Exocitose",
+    "AlternativeAnswers": ["Secreção vesicular", "Degranulação"],
+    "Options": [
+      "Exocitose",
+      "Fagocitose ativa",
+      "Pinocitose fluida",
+      "Transcitose epitelial"
+    ]
+  },
+
+  "Qual via catabólica direciona componentes celulares danificados ou proteínas contráteis exaustas para a digestão e reciclagem nos lisossomos?": {
+    "Hint 1": "Processo catabólico lisossomal de degradação e reciclagem de componentes celulares danificados ou desnecessários (organelas envelhecidas, proteínas agregadas, patógenos citosólicos).",
+    "Hint 2": "Divide-se em macroautofagia (formação de autofagossomo que se funde com lisossomo), microautofagia (invaginação direta no lisossomo) e autofagia mediada por chaperonas (CMA).",
+    "Hint 3": "Em atletas de ultramaratona em jejum, a autofagia muscular é ativada para degradar proteínas contráteis danificadas, fornecendo aminoácidos para gliconeogênese e remodelamento tecidual.",
+    "Hint 4": "Processo de 'autodigestão' celular que recicla organelas velhas e proteínas defeituosas dentro do lisossomo.",
+    "Answer": "Autofagia",
+    "AlternativeAnswers": ["Macroautofagia", "Autodigestão celular", "Autofagocitose"],
+    "Options": [
+      "Apoptose",
+      "Ubiquitinação proteica",
+      "Autofagia",
+      "Glicogenólise mitocondrial"
+    ]
+  },
+  "Qual mecanismo de morte celular programada é ativado pelas vias intrínseca ou extrínseca e envolve a fragmentação do DNA por caspases sem gerar inflamação?": {
+    "Hint 1": "Mecanismo de morte celular programada geneticamente, ativado por vias intrínseca (mitocondrial, estresse celular) ou extrínseca (receptores de morte, ex: Fas, TNF).",
+    "Hint 2": "Caracterizada por ativação de caspases (proteases específicas), condensação da cromatina, fragmentação do DNA, encolhimento celular e formação de corpos apoptóticos sem inflamação.",
+    "Hint 3": "No overtraining (excesso crônico de treino sem recuperação), apoptose acelerada em linfócitos e células musculares compromete a imunidade e contribui para a síndrome do overtraining.",
+    "Hint 4": "'Suicídio celular' limpo e silencioso, programado geneticamente, sem causar inflamação (diferente da necrose).",
+    "Answer": "Apoptose",
+    "AlternativeAnswers": ["Morte celular programada", "Suicídio celular"],
+    "Options": [
+      "Necrose isquêmica",
+      "Apoptose",
+      "Autofagia celular",
+      "Crenação osmótica"
+    ]
+  },
+  "Qual processo nuclear consiste na síntese de uma molécula de RNA mensageiro a partir de um molde de DNA catalisado pela enzima RNA polimerase II?": {
+    "Hint 1": "Processo de síntese de RNA mensageiro (RNAm) a partir de um molde de DNA catalisado pela RNA polimerase II, iniciado por fatores de transcrição ligados ao promotor.",
+    "Hint 2": "Inclui etapas de iniciação (recrutamento da polimerase), alongamento (adição de ribonucleotídeos complementares) e terminação (sinal de poliadenilação).",
+    "Hint 3": "O treinamento de força crônico aumenta a transcrição do gene da miogenina e do IGF-1 nas células satélites musculares, promovendo hipertrofia de fibras tipo II.",
+    "Hint 4": "Processo de copiar uma instrução do DNA (gene) para uma molécula de RNA mensageiro, dentro do núcleo.",
+    "Answer": "Transcrição gênica",
+    "AlternativeAnswers": ["Transcrição", "Síntese de RNAm", "Transcrição de RNA"],
+    "Options": [
+      "Replicação do DNA",
+      "Tradução ribossômica",
+      "Splicing alternativo",
+      "Transcrição gênica"
+    ]
+  },
+  "Qual etapa da síntese proteica ocorre nos ribossomos e traduz a sequência de códons do RNAm em uma cadeia linear de aminoácidos?": {
+    "Hint 1": "Processo de decodificação da sequência de nucleotídeos do RNA mensageiro (RNAm) em uma sequência de aminoácidos, realizado nos ribossomos (livres ou aderidos ao RER).",
+    "Hint 2": "Divide-se em iniciação (ribossomo se assemble no códon AUG), alongamento (RNAt traz aminoácidos, peptidiltransferase forma ligações peptídicas) e terminação (códon de parada).",
+    "Hint 3": "Durante o período pós-treino (janela anabólica de 24-48h), o ribossomo traduz ativamente RNAm de actina, miosina e proteínas ribossômicas, promovendo hipertrofia muscular.",
+    "Hint 4": "Leitura do RNA mensageiro para montar uma proteína, feita pelos ribossomos; ocorre no citosol ou RER.",
+    "Answer": "Tradução",
+    "AlternativeAnswers": ["Tradução gênica", "Síntese proteica", "Tradução do RNAm"],
+    "Options": [
+      "Transcrição",
+      "Tradução",
+      "Fosforilação",
+      "Metilação"
+    ]
+  },
+  "Como são chamadas as moléculas intracelulares, como o cAMP e o IP₃, que transmitem e amplificam os sinais recebidos por receptores de membrana?": {
+    "Hint 1": "Cascata de eventos onde um ligante extracelular (primeiro mensageiro) ativa um receptor que gera pequenas moléculas sinalizadoras intracelulares (segundos mensageiros), amplificando o sinal.",
+    "Hint 2": "Inclui AMP cíclico (cAMP, ativa PKA), trifosfato de inositol (IP₃, libera Ca²⁺ do RE), diacilglicerol (DAG, ativa PKC) e Ca²⁺ (ativa calmodulina-quinase).",
+    "Hint 3": "Durante o exercício, adrenalina ativa receptor β-adrenérgico → aumenta cAMP → ativa PKA que fosforila enzimas da glicogenólise e lipólise, mobilizando energia.",
+    "Hint 4": "Molécula produzida dentro da célula (ex: cAMP, IP₃, Ca²⁺) que amplifica e transmite um sinal recebido na membrana.",
+    "Answer": "Segundo mensageiro",
+    "AlternativeAnswers": ["Segundos mensageiros", "Mensageiros secundários", "Sinalizadores intracelulares"],
+    "Options": [
+      "Hormônio peptídico",
+      "Segundo mensageiro",
+      "Fator de crescimento",
+      "Canal iônico regulado"
+    ]
+  },
+  "Qual etapa final da respiração aeróbica utiliza os elétrons do NADH e do FADH₂ para bombear prótons e acionar a síntese mitocondrial de ATP?": {
+    "Hint 1": "Etapa final da respiração celular (ocorre na membrana mitocondrial interna), onde elétrons transportados por NADH e FADH₂ percorrem a cadeia transportadora de elétrons até o oxigênio (aceptor final).",
+    "Hint 2": "Bombeia prótons (H⁺) da matriz para o espaço intermembranas, gerando gradiente eletroquímico que aciona a ATP sintase (quimiosmose) para produzir ATP.",
+    "Hint 3": "Corredores de maratona têm alta densidade mitocondrial e eficiência nesse processo, permitindo sustentar VO₂ máximo por longos períodos com níveis mínimos de lactato sanguíneo.",
+    "Hint 4": "Produção de ATP na mitocôndria usando oxigênio e gradiente de prótons; onde ocorre a maior parte do ATP aeróbio.",
+    "Answer": "Fosforilação oxidativa",
+    "AlternativeAnswers": ["Cadeia respiratória", "Quimiosmose", "Fosforilação oxidativa mitocondrial"],
+    "Options": [
+      "Glicólise anaeróbia",
+      "Descarboxilação do piruvato",
+      "Ciclo de Krebs",
+      "Fosforilação oxidativa"
+    ]
+  },
+  "Como é denominado o movimento passivo da água que ocorre através de canais transmembrana específicos descobertos por Peter Agre?": {
+    "Hint 1": "Tipo específico de osmose facilitada por canais proteicos transmembrana que aumentam drasticamente a permeabilidade hidráulica (Pf), sem afetar o transporte de solutos.",
+    "Hint 2": "As aquaporinas (AQP1 a AQP12 em humanos) formam poros seletivos para água (excluem íons, incluindo prótons H⁺) em eritrócitos, túbulos renais, pulmões, músculo e sistema nervoso.",
+    "Hint 3": "Exercício intenso no calor aumenta a expressão de aquaporina-4 (AQP4) no músculo esquelético, acelerando a osmose e evitando o inchaço citotóxico por acúmulo de lactato e água.",
+    "Hint 4": "'Canal de água' proteico que facilita a osmose, descoberto por Peter Agre (Prêmio Nobel de 2003).",
+    "Answer": "Osmose mediada por aquaporinas",
+    "AlternativeAnswers": ["Osmose facilitada", "Fluxo osmótico via aquaporinas", "Transporte por aquaporinas"],
+    "Options": [
+      "Osmose mediada por aquaporinas",
+      "Difusão simples lipídica",
+      "Transporte ativo secundário",
+      "Exocitose constitutiva"
+    ]
+  },
+  "Qual propriedade osmótica de uma solução determina as alterações de volume de uma célula devido ao ganho ou perda líquida de água?": {
+    "Hint 1": "Efeito da osmose sobre células em diferentes soluções: hipotônica (água entra, célula incha e pode lisar), hipertônica (água sai, murcha/crena) ou isotônica (sem volume líquido).",
+    "Hint 2": "No eritrócito, a osmose é crítica: hemólise (ruptura por água) em solução hipotônica ou crenação (enrugamento) em hipertônica.",
+    "Hint 3": "Atletas de endurance que bebem apenas água pura após perda intensa de sais pelo suor podem causar hiponatremia dilucional (água entra por osmose nos neurônios, causando edema cerebral).",
+    "Hint 4": "Quando uma célula sanguínea é colocada em água pura, ela incha e estoura (hemólise); em água com muito sal, ela murcha (crenação).",
+    "Answer": "Tonicidade",
+    "AlternativeAnswers": ["Efeito osmótico", "Tonicidade celular", "Osmolaridade efetiva"],
+    "Options": [
+      "Viscosidade citosólica",
+      "Pressão hidrostática",
+      "Tonicidade",
+      "Tensão superficial"
+    ]
+  },
+  "Qual mecanismo de transporte passivo consiste no movimento líquido de pequenos gases e moléculas apolares diretamente através da bicamada lipídica?": {
+    "Hint 1": "Movimento líquido de moléculas pequenas e apolares (O₂, CO₂, NO, etanol, hormônios esteroides) através da bicamada lipídica sem auxílio de proteínas, a favor do gradiente de concentração.",
+    "Hint 2": "Governada pela lei de Fick (fluxo ∝ gradiente de concentração x área de superfície / espessura da membrana), não requer energia, é passiva.",
+    "Hint 3": "Durante o sprint, o O₂ difunde-se por difusão simples dos capilares para a mitocôndria muscular; já o CO₂ produzido segue o caminho inverso para ser eliminado na expiração.",
+    "Hint 4": "Passagem direta de gás ou gordura pela membrana, sem proteína, a favor do gradiente.",
+    "Answer": "Difusão simples",
+    "AlternativeAnswers": ["Difusão passiva", "Difusão não mediada", "Transporte livre"],
+    "Options": [
+      "Difusão simples",
+      "Difusão facilitada por carreador",
+      "Simporte dependente de sódio",
+      "Endocitose"
+    ]
+  },
+  "Como é chamado o transporte passivo de íons através de poros aquosos seletivos dotados de comportas sensíveis a estímulos elétricos ou químicos?": {
+    "Hint 1": "Transporte passivo de íons (Na⁺, K⁺, Ca²⁺, Cl⁻) através de proteínas canal que formam poros aquosos seletivos, abrindo e fechando por mechanisms de 'comporta' (voltagem, ligante, estresse mecânico).",
+    "Hint 2": "Permite fluxo eletroquímico rápido (10⁶-10⁸ íons/segundo) a favor do gradiente eletroquímico, gerando potenciais de ação (canais de Na⁺ e K⁺ voltagem-dependentes).",
+    "Hint 3": "No músculo esquelético do velocista, canais rápidos de Na⁺ dependentes de voltagem no sarcolema propagam o potencial de ação em milissegundos, permitindo contração explosiva.",
+    "Hint 4": "'Portão' proteico que se abre para íons passarem a favor do gradiente elétrico e químico, sem gastar energia.",
+    "Answer": "Difusão facilitada",
+    "AlternativeAnswers": ["Difusão facilitada por canal", "Transporte por canal iônico", "Difusão iônica"],
+    "Options": [
+      "Transporte ativo primário",
+      "Difusão simples",
+      "Difusão facilitada",
+      "Antiporte mitocondrial"
+    ]
+  },
+  "Qual modalidade de transporte passivo mediado utiliza carreadores que sofrem mudanças conformacionais reversíveis para translocar moléculas como a glicose via GLUT4?": {
+    "Hint 1": "Transporte passivo de moléculas maiores (glicose, aminoácidos, nucleosídeos) via proteínas carreadoras que sofrem mudança conformacional, transportando uma ou duas moléculas por vez.",
+    "Hint 2": "Apresenta cinética de saturação (Michaelis-Menten, velocidade máxima Vmax), especificidade, competição e inibição; não gasta ATP.",
+    "Hint 3": "O GLUT4 (transportador de glicose) é translocado para o sarcolema durante o exercício, captando glicose sanguínea para dentro da fibra muscular por difusão facilitada, independente de insulina.",
+    "Hint 4": "Proteína que 'embala' e leva açúcar ou aminoácido através da membrana sem gastar energia, apenas a favor do gradiente.",
+    "Answer": "Difusão facilitada por carreador",
+    "AlternativeAnswers": ["Transporte passivo mediado", "Difusão facilitada por permease", "Transporte por carreadores"],
+    "Options": [
+      "Transporte ativo primário",
+      "Difusão simples lipídica",
+      "Difusão facilitada por carreador",
+      "Pinocitose regulada"
+    ]
+  },
+  "Quais são os dois processos de transporte passivo celular que se diferenciam essencialmente pela necessidade ou ausência de uma proteína integradora de membrana?": {
+    "Hint 1": "Ambos são processos passivos (sem ATP) a favor do gradiente, mas o primeiro requer proteínas de membrana (canais ou carreadores) e o segundo atravessa diretamente a bicamada.",
+    "Hint 2": "A difusão simples é para moléculas pequenas apolares (O₂, CO₂, lipídios); a difusão facilitada é para moléculas polares (glicose, íons, aminoácidos) incapazes de cruzar a bicamada sozinhas.",
+    "Hint 3": "O CO₂ gerado no músculo do ciclista sai da célula por difusão simples; já a glicose entra por difusão facilitada via GLUT4, dois mecanismos distintos operando simultaneamente.",
+    "Hint 4": "Uma usa proteína ajudante (canal ou carreador) e a outra passa direto pela gordura da membrana; ambas sem gasto de energia.",
+    "Answer": "Difusão facilitada versus difusão simples",
+    "AlternativeAnswers": ["Difusão simples e difusão facilitada", "Transporte mediado versus transporte livre"],
+    "Options": [
+      "Transporte ativo primário versus secundário",
+      "Endocitose versus exocitose",
+      "Difusão facilitada versus difusão simples",
+      "Simporte versus antiporte"
+    ]
+  },
+  
+  "Qual complexo proteico do tipo P-ATPase consome energia metabólica direta para exportar 3 íons sódio e importar 2 íons potássio contra seus gradientes?": {
+    "Hint 1": "Proteína P-ATPase que hidrolisa uma molécula de ATP para bombear 3 íons Na⁺ para fora da célula e 2 íons K⁺ para dentro, contra seus gradientes eletroquímicos.",
+    "Hint 2": "Responsável por manter o potencial de repouso da membrana (∼-70mV), regular volume celular e fornecer gradiente de Na⁺ usado no transporte secundário (simporte/antiporte).",
+    "Hint 3": "Durante uma partida de futebol, cada célula muscular realiza milhões de ciclos da Na⁺/K⁺-ATPase para restaurar gradientes; o consumo de ATP por essa bomba pode chegar a 30-40% do gasto energético basal da célula muscular.",
+    "Hint 4": "Bomba que mantém o sódio baixo dentro e potássio alto, usando até 30% do ATP da célula.",
+    "Answer": "Bomba Na⁺/K⁺-ATPase",
+    "AlternativeAnswers": ["Bomba de sódio e potássio", "Bomba de sódio-potássio", "Na+/K+-ATPase"],
+    "Options": [
+      "Bomba de prótons (H+/K+-ATPase)",
+      "Bomba Na⁺/K⁺-ATPase",
+      "Trocador sódio-cálcio (NCX)",
+      "Co-transportador NKCC"
+    ]
+  },
+  "Qual enzima transportadora utiliza hidrólise de ATP para bombear íons cálcio para fora do citosol ou para o lúmen do retículo sarcoplasmático promovendo o relaxamento?": {
+    "Hint 1": "Duas P-ATPases que bombeiam Ca²⁺ contra gradiente: SERCA (Retículo Sarcoplasmático/Endoplasmático) recaptura Ca²⁺ do citosol para o lúmen do RE; PMCA (Membrana Plasmática) joga Ca²⁺ para fora da célula.",
+    "Hint 2": "Essenciais para reduzir Ca²⁺ citosólico após contração (relaxamento muscular), sinalização celular e prevenção de citotoxicidade por excesso de Ca²⁺.",
+    "Hint 3": "No levantamento de peso, entre uma repetição e outra, a SERCA nas fibras musculares bombeia Ca²⁺ de volta ao retículo sarcoplasmático, permitindo o relaxamento e nova contração.",
+    "Hint 4": "Bomba que suga o cálcio do citosol para dentro do depósito (SERCA) ou joga para fora da célula (PMCA).",
+    "Answer": "Bomba de Ca²⁺",
+    "AlternativeAnswers": ["SERCA", "PMCA", "Ca2+-ATPase", "Bomba de cálcio"],
+    "Options": [
+      "Bomba de Ca²⁺",
+      "Calmodulina cinase",
+      "Receptor de rianodina",
+      "Ccanal de cálcio tipo L"
+    ]
+  },
+  "Qual proteína transportadora acoplada realiza o simporte transmembrana de glicose aproveitando o fluxo termodinamicamente favorável de íons sódio?": {
+    "Hint 1": "Transportador acoplado (SGLT1) que usa a energia do gradiente de Na⁺ (mantido pela Na⁺/K⁺-ATPase) para puxar glicose contra seu gradiente, na mesma direção (simporte).",
+    "Hint 2": "Estratégia de absorção intestinal e renal; captura glicose mesmo quando sua concentração extracelular está baixa (ex: após jejum ou exercício prolongado).",
+    "Hint 3": "Durante uma ultramaratona, o SGLT1 no intestino delgado é crucial para absorver glicose mesmo com baixa disponibilidade; atletas treinam 'intestino' para aumentar essa absorção.",
+    "Hint 4": "Proteína que puxa glicose junto com sódio (para dentro da célula), usando o gradiente de sódio como energia.",
+    "Answer": "Simporte Na⁺-glicose",
+    "AlternativeAnswers": ["SGLT1", "Cotransportador de sódio-glicose", "Simporte de sódio e glicose"],
+    "Options": [
+      "Transportador GLUT4",
+      "Trocador anônico AE1",
+      "Simporte Na⁺-glicose",
+      "Bomba de sódio-potássio"
+    ]
+  },
+  "Qual trocador contraspartador da família SLC8 atua na diástole cardíaca expelindo um íon cálcio para cada três íons sódio introduzidos na célula?": {
+    "Hint 1": "Trocador (NCX, família SLC8) que utiliza o gradiente de Na⁺ (direção para dentro) para expulsar um íon Ca²⁺ contra seu gradiente eletroquímico (antiporte: 3 Na⁺ entram, 1 Ca²⁺ sai).",
+    "Hint 2": "Opera no modo direto (exporta Ca²⁺) durante repouso/pós-contração em cardiomiócitos e neurônios; em condições patológicas (isquemia), pode reverter.",
+    "Hint 3": "No coração do atleta durante a diástole (após contração vigorosa), o NCX remove Ca²⁺ do citosol, contribuindo para o relaxamento cardíaco e enchimento ventricular.",
+    "Hint 4": "Trocador que troca sódio que entra por cálcio que sai, usando o gradiente do sódio para eliminar o cálcio.",
+    "Answer": "Antiporte Na⁺/Ca²⁺",
+    "AlternativeAnswers": ["Trocador sódio-cálcio", "NCX", "Antiporte de sódio e cálcio"],
+    "Options": [
+      "Simporte Na+/K+/2Cl-",
+      "Antiporte Na⁺/Ca²⁺",
+      "Bomba de prótons estomacal",
+      "Cotransportador SGLT2"
+    ]
+  },
+  "Como se chama a solução extracelular cuja baixa concentração de solutos não permeantes provoca o influxo de água e o consequente edema ou lise da célula?": {
+    "Hint 1": "Solução com menor concentração de solutos não permeantes em relação ao interior da célula, criando gradiente osmótico que direciona água para dentro do citosol.",
+    "Hint 2": "Causa influxo líquido de água, inchaço celular e, se excessivo, ruptura da membrana (lise osmótica ou citólise), especialmente em hemácias (hemólise) e células sem parede celular.",
+    "Hint 3": "Atletas que bebem apenas água pura após perda intensa de sais pelo suor (maratona, triatlo) podem tornar seu plasma hipotônico; a água então entra por osmose nos neurônios, causando hiponatremia dilucional com edema cerebral potencialmente fatal.",
+    "Hint 4": "Solução 'fraca em sais' que faz a célula inchar e pode estourar; oposto de hipertônica.",
+    "Answer": "Solução hipotônica",
+    "AlternativeAnswers": ["Meio hipotônico", "Fluido hipotônico"],
+    "Options": [
+      "Solução hipertônica",
+      "Solução isotônica",
+      "Solução hipotônica",
+      "Solução coloidal concentrada"
+    ]
+  },
+  "Qual termo qualifica a solução hiperconcentrada que exerce força osmótica capaz de desidratar o citoplasma e provocar a crenação de células sanguíneas?": {
+    "Hint 1": "Solução com maior concentração de solutos não permeantes em relação ao interior da célula, criando gradiente osmótico que extrai água do citosol para o meio extracelular.",
+    "Hint 2": "Causa efluxo líquido de água, desidratação celular, enrugamento da membrana (crenação em hemácias, plasmólise em células vegetais) e aumento da viscosidade citoplasmática.",
+    "Hint 3": "Um halterofilista que ingere bebida extremamente concentrada em carboidratos (sem água suficiente) pode criar plasma hipertônico; a água então sai das células musculares e neuronais para o sangue, causando cãibras e confusão mental.",
+    "Hint 4": "Solução 'concentrada em sais' que suga a água para fora da célula, fazendo-a murchar.",
+    "Answer": "Solução hipertônica",
+    "AlternativeAnswers": ["Meio hiperbárico", "Meio hipertônico", "Fluido hipertônico"],
+    "Options": [
+      "Solução hipotônica",
+      "Solução eletrolítica balanceada",
+      "Solução isotônica",
+      "Solução hipertônica"
+    ]
+  },
+  "Como é denominada a solução balanceada cuja igualdade de pressão osmótica em relação ao citosol impede variações líquidas no volume da célula?": {
+    "Hint 1": "Solução com concentração de solutos não permeantes igual à do interior celular, resultando em fluxo líquido zero de água através da membrana (entrada igual à saída).",
+    "Hint 2": "Mantém volume celular constante, sem edema nem desidratação; exemplos são soro fisiológico 0,9% NaCl e Ringer lactato (usados em reposição volêmica).",
+    "Hint 3": "Bebidas esportivas isotônicas (ex: Gatorade, Powerade) são formuladas para repor água e eletrólitos sem deslocar água das células musculares, otimizando a hidratação durante o exercício prolongado.",
+    "Hint 4": "Solução 'na mesma concentração de sais que a célula' – não faz a célula inchar nem murchar.",
+    "Answer": "Solução isotônica",
+    "AlternativeAnswers": ["Meio isotônico", "Fluido isotônico"],
+    "Options": [
+      "Solução isotônica",
+      "Solução saturada",
+      "Solução hipotônica diluída",
+      "Solução hipertônica plasmática"
+    ]
+  },
+  "Quais proteínas de canal transmembrana são responsáveis por regular finamente a velocidade osmótica e o equilíbrio hídrico tecidual sob estresse térmico ou físico?": {
+    "Hint 1": "Canais proteicos (AQP1 a AQP12) que aumentam a permeabilidade osmótica da membrana em até 1000x, permitindo ajuste rápido do volume celular em resposta a mudanças de tonicidade.",
+    "Hint 2": "Aquaporina-2 (AQP2) no rim é regulada por vasopressina (ADH) para concentrar urina; AQP4 no cérebro e músculo responde a estresse osmótico durante exercício intenso.",
+    "Hint 3": "Treinamento de aclimatação ao calor aumenta a expressão de AQP4 no músculo esquelético de atletas, acelerando osmose para equilibrar volume celular durante sudorese intensa.",
+    "Hint 4": "'Portão de água' que se abre ou fecha para controlar a velocidade com que a célula incha ou murcha pela tonicidade.",
+    "Answer": "Aquaporinas",
+    "AlternativeAnswers": ["Canais de aquaporina", "Canais de água transmembrana", "AQP"],
+    "Options": [
+      "Porinas mitocondriais",
+      "Aquaporinas",
+      "Canais de sódio epiteliais (ENaC)",
+      "Conexinas juncionais"
+    ]
+  }
+}

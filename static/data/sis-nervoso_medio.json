@@ -1,0 +1,452 @@
+{
+  "Qual inversão de polaridade transmembrana se propaga sem atenuação e com amplitude constante ao longo de todo o axônio neuronal?": {
+    "Hint 1": "Sou o mecanismo pelo qual uma alteração no potencial de membrana se propaga ao longo do axônio sem perda de intensidade, seguindo a lei do tudo-ou-nada.",
+    "Hint 2": "Minha função é codificar a intensidade de um estímulo pela minha frequência e garantir a comunicação rápida entre estruturas distantes.",
+    "Hint 3": "Durante um sprint, a taxa de disparo dos meus eventos nos neurônios motores determina a força da contração muscular.",
+    "Hint 4": "É como uma onda que percorre um fio elétrico; uma vez iniciada, mantém sua amplitude constante, e o que varia é o número de ondas por segundo.",
+    "Answer": "Potencial de ação",
+    "AlternativeAnswers": ["Impulso nervoso", "Despolarização axônica"],
+    "Options": [
+      "Potencial graduado decrementante",
+      "Potencial de ação",
+      "Hiperpolarização por influxo",
+      "Corrente eletrotônica passiva"
+    ]
+  },
+  "Qual processo cálcio-dependente consiste na fusão de vesículas com a membrana pré-sináptica para liberar mensageiros na fenda?": {
+    "Hint 1": "Sou o processo de liberação de vesículas sinápticas na fenda, desencadeado pela entrada de cálcio na terminação pré-sináptica.",
+    "Hint 2": "Minha função é permitir a comunicação química entre os neurônios, convertendo o sinal elétrico em mensageiros químicos.",
+    "Hint 3": "A eficácia da transmissão sináptica pode ser modulada pelo treino, aumentando a liberação de neurotransmissores e melhorando a coordenação motora.",
+    "Hint 4": "É como se a chegada do impulso elétrico abrisse uma comporta que libera pequenas 'gotas' de mensageiros para a célula vizinha.",
+    "Answer": "Exocitose de neurotransmissores",
+    "AlternativeAnswers": ["Liberação sináptica", "Secreção de neurotransmissores"],
+    "Options": [
+      "Endocitose de clatrina",
+      "Difusão facilitada passiva",
+      "Exocitose de neurotransmissores",
+      "Transporte retrógrado axonal"
+    ]
+  },
+  "Qual reflexo monossináptico induz a contração imediata de um músculo esquelético em resposta ao estiramento súbito de seus fusos neuromusculares?": {
+    "Hint 1": "Sou um reflexo monossináptico que ocorre quando um músculo é estirado rapidamente, ativando os fusos musculares e gerando uma contração reflexa do mesmo músculo.",
+    "Hint 2": "Minha função é manter o tônus muscular e resistir a estiramentos excessivos, ajudando a manter a postura e a estabilidade articular.",
+    "Hint 3": "Durante um alongamento rápido antes do exercício, posso ser ativado, causando uma contração involuntária que limita a amplitude de movimento — o chamado reflexo miotático.",
+    "Hint 4": "É o reflexo que o médico testa ao bater no seu joelho com um martelinho; a perna estica involuntariamente.",
+    "Answer": "Reflexo de estiramento",
+    "AlternativeAnswers": ["Reflexo miotático", "Reflexo patelar"],
+    "Options": [
+      "Reflexo tendinoso de Golgi",
+      "Reflexo de retirada nociceptivo",
+      "Reflexo de estiramento",
+      "Reflexo flexor cruzado"
+    ]
+  },
+  "Como se denomina o esgotamento temporário das vesículas de neurotransmissores decorrente de uma estimulação repetitiva e de alta frequência?": {
+    "Hint 1": "Sou o fenômeno em que um potencial de ação, ao chegar à terminação pré-sináptica, não consegue mais liberar neurotransmissores devido à exaustão dos estoques.",
+    "Hint 2": "Minha função fisiológica é proteger a sinapse contra a superestimulação, mas pode limitar a transmissão em atividades prolongadas.",
+    "Hint 3": "Em treinos de alta intensidade e longa duração, pode contribuir para a sensação de cansaço muscular central.",
+    "Hint 4": "É como uma torneira que, depois de muito tempo aberta, começa a pingar menos porque a água do reservatório acabou.",
+    "Answer": "Fadiga sináptica",
+    "AlternativeAnswers": ["Depleção vesicular", "Fadiga de transmissão"],
+    "Options": [
+      "Fadiga sináptica",
+      "Dessensibilização de canais",
+      "Bloqueio refratário axonal",
+      "Potenciação pós-tetânica"
+    ]
+  },
+  "Qual manipulação sináptica aumenta a persistência do ligante na fenda por meio do bloqueio de transportadores de recaptação ou de enzimas de degradação?": {
+    "Hint 1": "Sou o mecanismo de prolongamento da ação de um neurotransmissor na fenda sináptica, geralmente por inibição da sua recaptação ou degradação.",
+    "Hint 2": "Minha função é aumentar a intensidade ou a duração do sinal pós-sináptico, modulando a eficácia da transmissão.",
+    "Hint 3": "Algumas substâncias ilícitas, como a cocaína, agem bloqueando a recaptação de dopamina, intensificando a sensação de prazer, mas com riscos para a saúde do atleta.",
+    "Hint 4": "É como se uma escada rolante continuasse a subir mesmo depois que o botão de parar foi acionado, prolongando o efeito.",
+    "Answer": "Potenciação da transmissão sináptica",
+    "AlternativeAnswers": ["Inibição da recaptação", "Potenciação sináptica"],
+    "Options": [
+      "Clivagem enzimática acelerada",
+      "Downregulation de receptores",
+      "Desfasamento quântico",
+      "Potenciação da transmissão sináptica"
+    ]
+  },
+  "Qual mecanismo de plasticidade sináptica de longo prazo consolida a memória biológica aumentando persistentemente a sensibilidade pós-sináptica?": {
+    "Hint 1": "Sou o fenômeno de aumento da eficácia sináptica após uma estimulação repetitiva de alta frequência, associado à memória de curto prazo.",
+    "Hint 2": "Minha função é fortalecer as conexões neurais que foram recentemente ativadas, facilitando a aprendizagem e a adaptação.",
+    "Hint 3": "A repetição de um movimento esportivo, como um chute no futebol, induz esse processo, automatizando a execução e melhorando a precisão.",
+    "Hint 4": "É como se o caminho percorrido por um atalho ficasse mais marcado e fácil de usar cada vez que você o percorre.",
+    "Answer": "Potenciação de longa duração",
+    "AlternativeAnswers": ["LTP", "Long-term potentiation"],
+    "Options": [
+      "Potenciação de longa duração",
+      "Depressão sináptica basal",
+      "Facilitação por brotamento",
+      "Inibição colateral recorrente"
+    ]
+  },
+  "Qual processo plástico duradouro enfraquece a reatividade de uma sinapse através da endocitose de receptores induzida por estímulos de baixa frequência?": {
+    "Hint 1": "Sou o fenômeno oposto ao anterior, em que a estimulação repetitiva de baixa frequência reduz a eficácia sináptica, associado ao esquecimento.",
+    "Hint 2": "Minha função é eliminar conexões neurais pouco utilizadas, permitindo a remodelação e o refinamento dos circuitos.",
+    "Hint 3": "A perda de habilidades motoras quando um atleta interrompe o treino por um período é um exemplo desse processo.",
+    "Hint 4": "É como uma estrada que, quando não usada, começa a ser coberta por vegetação e fica mais difícil de transitar.",
+    "Answer": "Depressão de longa duração",
+    "AlternativeAnswers": ["LTD", "Long-term depression"],
+    "Options": [
+      "Acomodação de membrana",
+      "Fadiga por transmissão",
+      "Depressão de longa duração",
+      "Poda axonal seletiva"
+    ]
+  },
+  "Como se chama a remodelação física de circuitos neurais caracterizada pela brotação axonal e morfogênese de novas espinhas dendríticas?": {
+    "Hint 1": "Sou o processo de formação de novas sinapses ou de fortalecimento das existentes, mediado por fatores neurotróficos como o BDNF.",
+    "Hint 2": "Minha função é permitir a adaptation do sistema nervoso a novas experiências, promovendo a plasticidade estrutural.",
+    "Hint 3": "O exercício físico aeróbico estimula a liberação de BDNF, promovendo a neurogênese e a melhora da função cognitiva.",
+    "Hint 4": "É como se o cérebro estivesse constantemente 'podando' e 'replantando' conexões, fortalecendo as que são mais usadas.",
+    "Answer": "Neuroplasticidade estrutural",
+    "AlternativeAnswers": ["Sinaptogênese", "Plasticidade estrutural"],
+    "Options": [
+      "Neuroplasticidade estrutural",
+      "Mielinização segmentar",
+      "Somação sináptica local",
+      "Diferenciação astrocitária"
+    ]
+  },
+  "Qual estratégia de gradação mecânica ativa progressivamente um número crescente de motoneurônios para escalonar a força contrátil?": {
+    "Hint 1": "Sou o mecanismo pelo qual o sistema nervoso adjusts a força de contração muscular, recrutando unidades motoras de forma gradativa.",
+    "Hint 2": "Minha função é produzir movimentos suaves e graduados, evitando contrações abruptas e descoordenadas.",
+    "Hint 3": "O treinamento de força melhora a capacidade de recrutar unidades motoras de forma eficiente, aumentando a força máxima e o controle.",
+    "Hint 4": "É como acionar cada vez mais velas de um barco para aumentar a potência, em vez de acender todas de uma vez.",
+    "Answer": "Recrutamento de unidades motoras",
+    "AlternativeAnswers": ["Princípio do tamanho de Henneman", "Recrutamento de motoneurônios"],
+    "Options": [
+      "Somação de frequência tetânica",
+      "Sincronização reflexa espinhal",
+      "Recrutamento de unidades motoras",
+      "Coativação de antagonistas"
+    ]
+  },
+  "Qual ajuste fisiológico atenua progressivamente a frequência de disparos de um receptor diante de uma estimulação sensorial ininterrupta e estática?": {
+    "Hint 1": "Sou o processo de ajuste da sensibilidade dos receptores sensoriais a estímulos contínuos, reduzindo a transmissão de informações redundantes.",
+    "Hint 2": "Minha função é economizar recursos neurais e destacar mudanças no ambiente, permitindo a detecção de novidades.",
+    "Hint 3": "Após um longo período sentado, a sensação da roupa na pele desaparece; isso é o resultado desse processo.",
+    "Hint 4": "É como se o sistema deixasse de ouvir um som constante para poder ouvir melhor os novos sons.",
+    "Answer": "Adaptação sensorial",
+    "AlternativeAnswers": ["Acomodação sensorial", "Dessensibilização de receptor"],
+    "Options": [
+      "Potenciação sensorial",
+      "Limiar nociceptivo dinâmico",
+      "Adaptação sensorial",
+      "Discriminação de dois pontos"
+    ]
+  },
+  "Qual modalidade de somação sináptica ocorre quando um único terminal pré-sináptico descarrega potenciais sucessivos em curto intervalo de tempo?": {
+    "Hint 1": "Sou o processo pelo qual múltiplos estímulos que chegam a um neurônio em tempos diferentes, mas através da mesma sinapse, se somam para atingir o limiar de disparo.",
+    "Hint 2": "Minha função é integrar estímulos que ocorrem em rápida sucessão, permitindo que um único neurônio responda a padrões temporais de atividade.",
+    "Hint 3": "Durante um movimento rápido e repetitivo, como a pedalada no ciclismo, meus efeitos determinam se os neurônios motores irão disparar ou não.",
+    "Hint 4": "É como se você empurrasse um balanço várias vezes seguidas: cada empurrão sozinho não o faz ir alto, mas a soma deles ao longo do tempo o coloca em movimento.",
+    "Answer": "Somação temporal",
+    "AlternativeAnswers": ["Integração temporal"],
+    "Options": [
+      "Somação espacial",
+      "Somação temporal",
+      "Convergência dendrítica",
+      "Inibição pré-sináptica"
+    ]
+  },
+  "Qual mecanismo integrativo soma simultaneamente potenciais locais gerados em regiões geograficamente distintas da árvore dendrítica?": {
+    "Hint 1": "Sou o processo pelo qual múltiplos estímulos que chegam a um neurônio ao mesmo tempo, mas através de diferentes sinapses, se somam para atingir o limiar de disparo.",
+    "Hint 2": "Minha função é integrar informações de diferentes fontes simultaneamente, permitindo que o neurônio responda à atividade coordenada de várias entradas.",
+    "Hint 3": "Durante um drible no futebol, meus efeitos determinam se os neurônios motores irão disparar com base na soma de comandos vindos de áreas cerebrais distintas.",
+    "Hint 4": "É como se várias pessoas empurrassem um carro ao mesmo tempo: sozinhas não o movem, mas a soma de suas forças simultâneas o coloca em movimento.",
+    "Answer": "Somação espacial",
+    "AlternativeAnswers": ["Integração espacial"],
+    "Options": [
+      "Somação espacial",
+      "Somação temporal linear",
+      "Divergência axonal",
+      "Facilitação heterossináptica"
+    ]
+  },
+
+  "Qual circuito neuronal coordena o relaxamento ativo de um músculo antagonista simultaneamente à contração do agonista em um arco reflexo?": {
+    "Hint 1": "Sou o mecanismo pelo qual o cérebro inibe os movimentos que não são desejados, facilitando a execução de um comando motor específico.",
+    "Hint 2": "Minha função é permitir a realização de movimentos precisos e coordenados, evitando contrações musculares desnecessárias.",
+    "Hint 3": "Em esportes de precisão, como o tiro com arco, o controle da inibição dos músculos antagonistas é fundamental.",
+    "Hint 4": "É como segurar um copo de água sem derramar: alguns músculos se contraem, enquanto outros se relaxam ativamente.",
+    "Answer": "Inibição recíproca",
+    "AlternativeAnswers": ["Inibição de músculos antagonistas", "Inibição colateral recíproca"],
+    "Options": [
+      "Inibição recorrente de Renshaw",
+      "Facilitação homônima direta",
+      "Inibição recíproca",
+      "Reflexo flexor cruzado"
+    ]
+  },
+  "Como se chama o incremento transiente na liberação de neurotransmissores resultante do acúmulo residual de cálcio intracelular pré-sináptico?": {
+    "Hint 1": "Sou o fenômeno em que a ativação repetida de um neurônio pré-sináptico aumenta a liberação de neurotransmissores em sinapses adjacentes, mesmo não ativadas.",
+    "Hint 2": "Minha função é amplificar a transmissão sináptica em redes neurais, facilitando a propagação de sinais importantes.",
+    "Hint 3": "Em atletas, a prática intensiva de um movimento específico pode levar à facilitação de vias neurais relacionadas, melhorando o desempenho.",
+    "Hint 4": "É como se o trânsito em uma rua ajudasse a abrir os semáforos das ruas vizinhas, agilizando o fluxo.",
+    "Answer": "Facilitação sináptica",
+    "AlternativeAnswers": ["Facilitação de curto prazo"],
+    "Options": [
+      "Depressão homossináptica",
+      "Fadiga de transmissão vesicular",
+      "Facilitação sináptica",
+      "Dessensibilização de canais"
+    ]
+  },
+  "Qual comunicação intercelular atua de forma reversa através da fenda, enviando gases como o óxido nítrico da célula pós para a pré-sináptica?": {
+    "Hint 1": "Sou o processo de sinalização retrógrada na sinapse, onde a célula pós-sináptica libera substâncias que modulam a liberação do neurotransmissor pela célula pré-sináptica.",
+    "Hint 2": "Minha função é ajustar a eficácia sináptica de forma bidirecional, contribuindo para a plasticidade de longo prazo.",
+    "Hint 3": "O óxido nítrico (NO) é um mensageiro retrógrado que atua em sinapses, e sua produção é aumentada durante o exercício, melhorando a plasticidade.",
+    "Hint 4": "É como um feedback que o receptor envia ao emissor dizendo: 'a mensagem foi recebida, pode enviar mais ou menos'.",
+    "Answer": "Sinalização retrógrada",
+    "AlternativeAnswers": ["Modulação retrógrada", "Feedback retrógrado sináptico"],
+    "Options": [
+      "Exocitose anterógrada clássica",
+      "Sinalização retrógrada",
+      "Condução saltatória reversa",
+      "Fluxo axoplasmático rápido"
+    ]
+  },
+  "Qual remodelação topográfica redistribui campos receptivos e representações somatotópicas do córtex motor e somatossensorial?": {
+    "Hint 1": "Sou o processo de reorganização do mapa cortical após uma lesão ou treino intenso, redistribuindo áreas de representação sensorial ou motora.",
+    "Hint 2": "Minha função é permitir a recuperação de funções perdidas e o aprimoramento de habilidades específicas.",
+    "Hint 3": "O treino de membros superiores em paraplégicos pode levar à expansão da área cortical correspondente, otimizando o uso da cadeira de rodas.",
+    "Hint 4": "É como se o cérebro realocasse 'espaço' para as partes do corpo mais usadas, como ocorre com o polegar em digitadores.",
+    "Answer": "Plasticidade cortical",
+    "AlternativeAnswers": ["Reorganização cortical", "Remapeamento cortical"],
+    "Options": [
+      "Mielinização segmentar",
+      "Degeneração Walleriana",
+      "Gliose astrocitária cicatricial",
+      "Plasticidade cortical"
+    ]
+  },
+  "Qual função homeostática astrocitária remove ativamente excessos iônicos de potássio e o excesso de glutamato para evitar a excitotoxicidade?": {
+    "Hint 1": "Sou o mecanismo pelo qual os astrócitos regulam a concentração de íons e neurotransmissores no espaço extracellular, mantendo o ambiente propício para a transmissão.",
+    "Hint 2": "Minha função é evitar a excitotoxicidade, removendo o excesso de glutamato e mantendo a homeostase iônica.",
+    "Hint 3": "Durante o exercício intenso, a eficiência desse processo pode ser desafiada pelo aumento da atividade neuronal, contribuindo para a fadiga central.",
+    "Hint 4": "É como um sistema de filtragem que mantém a água limpa para os peixes; sem ele, o ambiente fica tóxico.",
+    "Answer": "Homeostase sináptica",
+    "AlternativeAnswers": ["Clareamento de glutamato", "Tamponamento espacial de potássio", "Homeostase do microambiente neuronal"],
+    "Options": [
+      "Homeostase sináptica",
+      "Barreira hematoencefálica seletiva",
+      "Secreção de líquido cefalorraquidiano",
+      "Mielinização central oligodendrocitária"
+    ]
+  },
+  "Qual mecanismo neurocognitivo suprime de forma aferente sinais somatossensoriais de fundo irrelevantes para focar a atenção na tarefa executiva?": {
+    "Hint 1": "Sou o processo pelo qual o sistema nervoso aprende a ignorar estímulos irrelevantes, focando nos importantes para a tarefa em trabalho.",
+    "Hint 2": "Minha função é otimizar o processamento sensorial, evitando distrações que possam prejudicar o desempenho motor.",
+    "Hint 3": "Em esportes de alto rendimento, a capacidade de inibir ruídos sensoriais (como a torcida) é essencial para a concentração.",
+    "Hint 4": "É como ouvir uma conversa em um ambiente barulhento: o cérebro filtra o que não interessa para focar no que importa.",
+    "Answer": "Filtragem sensorial",
+    "AlternativeAnswers": ["Gating sensorial", "Inibição sensorial central"],
+    "Options": [
+      "Reflexo somatomotor somado",
+      "Sensibilização nociceptiva primária",
+      "Filtragem sensorial",
+      "Divergência proprioceptiva"
+    ]
+  },
+  "Qual índice de desempenho motor quantifica a latência temporal exata entre a aplicação de um estímulo e a deflagração da primeira resposta motora?": {
+    "Hint 1": "Sou a medida da rapidez com que um estímulo sensorial é processado e uma resposta motora é iniciada, uma importante variável do desempenho esportivo.",
+    "Hint 2": "Minha função é avaliar a integridade das vias neurais e a velocidade de processamento central.",
+    "Hint 3": "O treino de reação em esportes como o atletismo pode reduzir o meu valor, tornando o atleta mais ágil.",
+    "Hint 4": "Durante uma largada de corrida, o intervalo entre o tiro do juiz e o movimento do corredor é um exemplo direto de mim.",
+    "Answer": "Tempo de reação",
+    "AlternativeAnswers": ["Latência motora", "Tempo de resposta reflexa"],
+    "Options": [
+      "Velocidade angular máxima",
+      "Tempo de reação",
+      "Fase de aceleração estática",
+      "Período de condução axonal"
+    ]
+  },
+  "Qual parâmetro biofísico axonal dita o limite superior de disparos que um motoneurônio consegue propagar em um intervalo de um segundo?": {
+    "Hint 1": "Sou a frequência máxima de disparo de um neurônio motor, determinada pelo seu período refratário e pela capacidade do axônio de conduzir impulsos.",
+    "Hint 2": "Minha função é limitar a força máxima de contração muscular, pois a frequência de disparo regula a ativação das fibras musculares.",
+    "Hint 3": "Em atletas de força, o treino pode aumentar a capacidade de disparo de neurônios motores, elevando a produção de força.",
+    "Hint 4": "É como a taxa de tiros de uma metralhadora; quanto maior a frequência, maior a potência do tiro contínuo.",
+    "Answer": "Frequência de disparo neuronal",
+    "AlternativeAnswers": ["Frequência de disparo", "Taxa de disparo axônico", "Frequência de descarga motora"],
+    "Options": [
+      "Velocidade de condução saltatória",
+      "Amplitude do potencial eletrotônico",
+      "Frequência de disparo neuronal",
+      "Constante de tempo dendrítica"
+    ]
+  },
+  "Qual potencial de repouso elétrico transmembrana é mantido por condutâncias de vazamento e dita o quão distante a célula está de seu limiar?": {
+    "Hint 1": "Sou o valor da diferença de potencial entre o interior e o exterior de um neurônio em repouso, condicionado pela permeabilidade iônica.",
+    "Hint 2": "Minha função é definir o limiar de excitabilidade do neurônio, influenciando a probabilidade de disparo.",
+    "Hint 3": "Alterações nesse valor, como a hiperpolarização, podem tornar o neurônio menos responsivo, afetando o estado de alerta do atleta.",
+    "Hint 4": "É como a tensão de uma bateria; se a tensão cair, o equipamento pode não funcionar corretamente.",
+    "Answer": "Potencial de membrana em repouso",
+    "AlternativeAnswers": ["Potencial de repouso", "Potencial transmembrana de repouso"],
+    "Options": [
+      "Potencial de membrana em repouso",
+      "Potencial de reversão do cloro",
+      "Pico do overshoot de sódio",
+      "Potencial pós-hiperpolarizante"
+    ]
+  },
+  "Qual voltagem crítica de despolarização representa o ponto de não-retorno iônico necessário para abrir canais rápidos de sódio voltagem-dependentes?": {
+    "Hint 1": "Sou o valor mínimo de despolarização necessário para desencadear um potencial de ação, que deve ser atingido pela somação de estímulos.",
+    "Hint 2": "Minha função é garantir que apenas estímulos significativos gerem uma resposta, evitando falsos alarmes.",
+    "Hint 3": "O limiar pode ser modulado por substâncias como a cafeína, que reduz esse valor, aumentando a excitabilidade do atleta.",
+    "Hint 4": "É como a altura de uma barreira; para pular, você precisa alcançar essa altura mínima.",
+    "Answer": "Limiar de excitabilidade",
+    "AlternativeAnswers": ["Limiar de disparo", "Limiar de potencial de ação", "Voltagem limiar"],
+    "Options": [
+      "Equilíbrio de Nernst",
+      "Potencial pós-sináptico inibitório",
+      "Nível de saturação metabólica",
+      "Limiar de excitabilidade"
+    ]
+  },
+  "Qual propriedade celular mensura a reatividade biofísica global de circuitos neurais e sua facilidade estrutural de disparar potenciais de ação?": {
+    "Hint 1": "Sou a capacidade do sistema nervoso de gerar potencial de ação em resposta a um estímulo, refletindo a saúde neuronal.",
+    "Hint 2": "Minha função é avaliar a integridade das vias motoras e sensitivas, sendo um importante parâmetro clínico.",
+    "Hint 3": "A desidratação e o esgotamento de glicogênio durante o exercício podem reduzir a excitabilidade, contribuindo para a fadiga.",
+    "Hint 4": "É como a sensibilidade de um alarme; se estiver muito sensível, dispara a qualquer coisa; se pouco, não detecta perigo.",
+    "Answer": "Excitabilidade neuronal",
+    "AlternativeAnswers": ["Irritabilidade celular", "Excitabilidade de membrana"],
+    "Options": [
+      "Resistência de membrana interna",
+      "Capacitância lipídica axial",
+      "Excitabilidade neuronal",
+      "Plasticidade retrógrada homonímica"
+    ]
+  },
+  "Qual intervalo biofísico impede absolutamente a deflagração de um novo potencial devido à inativação conformacional dos canais de sódio?": {
+    "Hint 1": "Sou a duração do período refratário absoluto, que define o intervalo mínimo entre dois potenciais de ação em um mesmo neurônio.",
+    "Hint 2": "Minha função é limitar a frequência máxima de disparo, protegendo o neurônio contra a exaustão.",
+    "Hint 3": "O período refratário mais longo pode reduzir a capacidade de gerar contrações rápidas, prejudicando atletas de esportes de explosão.",
+    "Hint 4": "É como o tempo de recarga de uma arma; durante esse tempo, o neurônio não pode atirar novamente.",
+    "Answer": "Período refratário absoluto",
+    "AlternativeAnswers": ["Fase refratária absoluta", "Inativação refratária absoluta"],
+    "Options": [
+      "Período refratário relativo",
+      "Retardo sináptico químico",
+      "Período refratário absoluto",
+      "Fase de hiperpolarização tardia"
+    ]
+  },
+  "Qual propriedade física expressa em metros por segundo é determinada pelo diâmetro interno da fibra axônica e pela resistência da mielina?": {
+    "Hint 1": "Sou a variável que mede a eficiência da condução nervosa, influenciada pelo diâmetro do axônio e pela mielinização.",
+    "Hint 2": "Minha função é determinar a rapidez com que um sinal chega ao seu destino, afetando o tempo de resposta.",
+    "Hint 3": "Atletas com maior velocidade de condução nervosa apresentam tempos de reação mais rápidos, vantajosos em esportes de combate.",
+    "Hint 4": "É como a velocidade de um carro em uma estrada; quanto mais rápida, mais cedo se chega ao destino.",
+    "Answer": "Velocidade de condução nervosa",
+    "AlternativeAnswers": ["Velocidade de propagação do impulso", "Taxa de condução axonal"],
+    "Options": [
+      "Velocidade de condução nervosa",
+      "Constante de espaço espacial",
+      "Fluxo axoplasmático retrógrado",
+      "Taxa de difusão de fenda"
+    ]
+  },
+  "Qual indicador cinético reflete o percentual e a proporção de unidades motoras ativas e funcionais simultaneamente no ventre muscular?": {
+    "Hint 1": "Sou a proporção de unidades motoras ativadas em um músculo durante uma contração, determinando a força gerada.",
+    "Hint 2": "Minha função é quantificar o recrutamento neural, essencial para a produção de força e potência.",
+    "Hint 3": "O treinamento de força aumenta a capacidade de recrutar um maior número de unidades motoras, melhorando a performance.",
+    "Hint 4": "É como o número de cilindros de um motor; quanto mais cilindros ativos, mais potência.",
+    "Answer": "Taxa de recrutamento de unidades motoras",
+    "AlternativeAnswers": ["Intensidade de recrutamento", "Nível de ativação neural"],
+    "Options": [
+      "Grau de fadiga periférica",
+      "Eficiência eletromiográfica passiva",
+      "Taxa de recrutamento de unidades motoras",
+      "Coeficiente de coativação reflexa"
+    ]
+  },
+
+  "Qual oscilação elétrica local e decremental varia proporcionalmente à intensidade do estímulo em vez de seguir a lei eletrofisiológica do tudo-ou-nada?": {
+    "Hint 1": "Sou a variação do potencial de membrana em resposta a um estímulo, que pode ser graduada e se propagar de forma decremental.",
+    "Hint 2": "Minha função é codificar a intensidade do estímulo, sendo a base da integração sináptica.",
+    "Hint 3": "Em exercícios de propriocepção, a precisão dos potenciais graduados é fundamental para o equilíbrio e a coordenação.",
+    "Hint 4": "É como um sinal de rádio que enfraquece com a distância, carregando informações sobre a força do estímulo.",
+    "Answer": "Potencial graduado",
+    "AlternativeAnswers": ["Potencial local", "Resposta graduada de membrana"],
+    "Options": [
+      "Potencial de ação saltatório",
+      "Potencial graduado",
+      "Corrente reversa de overshoot",
+      "Hiperpolarização refratária"
+    ]
+  },
+  "Qual período temporal compreende o somatório biofísico dos intervalos refratários absoluto e relativo de uma membrana excitável?": {
+    "Hint 1": "Sou o tempo necessário para a recuperação do potencial de membrana após um potencial de ação, dividido em períodos absoluto e relativo.",
+    "Hint 2": "Minha função é regular a frequência máxima de disparo e a capacidade de resposta a estímulos sucessivos.",
+    "Hint 3": "Em esportes de alta frequência (como o ciclismo), a eficiência desse processo pode influenciar a capacidade de manter a cadência.",
+    "Hint 4": "É como o tempo de descanso entre repetições em um exercício; um tempo adequado melhora a performance.",
+    "Answer": "Período refratário total",
+    "AlternativeAnswers": ["Fase refratária total", "Tempo de refratariedade global"],
+    "Options": [
+      "Retardo sináptico absoluto",
+      "Constante de tempo de membrana",
+      "Período refratário total",
+      "Intervalo de despolarização local"
+    ]
+  },
+  "Qual parâmetro neuromuscular determina a taxa de inclinação do gráfico de força pelo tempo, medindo a velocidade de explosão motora?": {
+    "Hint 1": "Sou a variável que mede a capacidade do sistema nervoso de gerar potência muscular.",
+    "Hint 2": "Minha função é avaliar a capacidade de recrutamento e disparo rápido de unidades motoras, crucial para movimentos explosivos.",
+    "Hint 3": "O treino pliométrico melhora essa capacidade, aumentando a potência de saltos e arremessos.",
+    "Hint 4": "É como a potência de um motor; a rapidez com que ele atinge a velocidade máxima determina a aceleração.",
+    "Answer": "Taxa de desenvolvimento de força",
+    "AlternativeAnswers": ["TDF", "Rate of force development", "RFD"],
+    "Options": [
+      "Taxa de desenvolvimento de força",
+      "Coeficiente de fadiga periférica",
+      "Tensão isométrica máxima",
+      "Frequência de fusão tetânica"
+    ]
+  },
+  "Qual fase eletrofisiológica transitória requer correntes despolarizantes supralimiares por coincidir com a hiperpolarização tardia por canais de potássio?": {
+    "Hint 1": "Sou a janela de tempo que se segue imediatamente após o período em que o neurônio não responde a estímulo algum, onde a excitabilidade está parcialmente restaurada.",
+    "Hint 2": "Minha função é permitir que um novo potencial de ação seja gerado, mas apenas se o estímulo for mais intenso que o normal, pois a membrana ainda está hiperpolarizada.",
+    "Hint 3": "Durante exercícios de alta frequência (como o ciclismo ou a corrida de velocidade), a minha duração influencia a capacidade do sistema nervoso de sustentar disparos repetidos sem fadiga.",
+    "Hint 4": "É como o tempo em que uma mola ainda está parcialmente comprimida: você precisa de mais força para comprimi-la novamente do que quando ela está totalmente relaxada.",
+    "Answer": "Período refratário relativo",
+    "AlternativeAnswers": ["Fase refratária relativa"],
+    "Options": [
+      "Período refratário absoluto",
+      "Platô de despolarização cálcica",
+      "Período refratário relativo",
+      "Fase de repolarização rápida"
+    ]
+  },
+  "Qual reflexo polissináptico protetor inibe e relaxa o músculo homônimo quando os mecanorreceptores Ib captam tensões tendinosas perigosas?": {
+    "Hint 1": "Sou um reflexo polissináptico que ocorre quando a tensão no tendão se torna excessiva, ativando os órgãos tendinosos de Golgi e inibindo a contração do músculo.",
+    "Hint 2": "Minha função é proteger o músculo e o tendão contra lesões por sobrecarga, agindo como um 'limitador de força' que relaxa o músculo quando a tensão é alta demais.",
+    "Hint 3": "Em exercícios de levantamento de peso, a ativação de mim pode limitar a força máxima gerada, sendo um mecanismo de proteção contra rupturas musculares.",
+    "Hint 4": "É como um sensor de segurança que desliga o motor quando a rotação é alta demais para evitar que ele queime.",
+    "Answer": "Reflexo tendinoso de Golgi",
+    "AlternativeAnswers": ["Reflexo miotático inverso", "Reflexo autogênico de inibição"],
+    "Options": [
+      "Reflexo de estiramento monossináptico",
+      "Reflexo tendinoso de Golgi",
+      "Reflexo de retirada nociceptivo",
+      "Reflexo flexor cruzado contralateral"
+    ]
+  },
+  "Qual neurotrofina estimulada pelo exercício físico aeróbico induz a plasticidade, a differentiation celular e a sinaptogênese no hipocampo?": {
+    "Hint 1": "Sou uma proteína produzida pelo cérebro e pelos músculos, que promove o crescimento, a sobrevivência e a diferenciação de novos neurônios e sinapses.",
+    "Hint 2": "Minha função é facilitar a plasticidade sináptica, a neurogênese e a sobrevivência neuronal, sendo fundamental para a memória, a aprendizagem e a recuperação neurológica.",
+    "Hint 3": "O treino de endurance e o exercício de alta intensidade são potentes estímulos para aumentar meus níveis, melhorando a função cognitiva e a saúde mental do atleta.",
+    "Hint 4": "É como um 'fertilizante' natural para o cérebro, que é produzido durante o esforço físico e ajuda a criar e fortalecer as conexões neurais.",
+    "Answer": "BDNF",
+    "AlternativeAnswers": ["Fator neurotrófico derivado do cérebro", "Brain-derived neurotrophic factor"],
+    "Options": [
+      "Acetilcolinesterase",
+      "Mielina periférica associada",
+      "BDNF",
+      "Cortisol livre plasmático"
+    ]
+  }
+}

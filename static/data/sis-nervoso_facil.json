@@ -1,0 +1,509 @@
+{
+
+  "Qual unidade fundamental do sistema nervoso é altamente especializada em excitabilidade elétrica para processar, integrar e transmitir impulsos por todo o organismo?": {
+    "Hint 1": "Sou a unidade fundamental responsável por processar e transmitir informações no organismo, sendo altamente especializada em excitabilidade elétrica.",
+    "Hint 2": "Minha função é receber estímulos, integrá-los e conduzir impulsos nervosos para outras células, garantindo a comunicação rápida no corpo.",
+    "Hint 3": "Durante o aprendizado de um novo movimento esportivo, como um saque no tênis, sou eu quem forma novas conexões e ajusta a intensidade da resposta motora.",
+    "Hint 4": "Quando você toca em uma superfície quente e retira a mão rapidamente, fui eu quem conduziu o sinal de dor até a medula e o comando de volta ao músculo.",
+    "Answer": "Neurônio",
+    "AlternativeAnswers": ["Neurônios", "Célula nervosa"],
+    "Options": [
+      "Astrocite fibroso",
+      "Neurônio",
+      "Oligodendrócito mielinizante",
+      "Célula de Schwann"
+    ]
+  },
+  "Como são chamadas as ramificações curtas do corpo celular do neurônio especializadas em captar estímulos e convertê-los em potenciais graduados?": {
+    "Hint 1": "Sou uma estrutura ramificada e curta que se estende a partir do corpo celular do neurônio, especializada em receber sinais de outras células.",
+    "Hint 2": "Minha função é captar estímulos químicos ou elétricos e convertê-los em pequenas variações de potencial elétrico (potenciais graduados).",
+    "Hint 3": "A integração de informações sensoriais durante um exercício, como a percepção da posição articular, depende da minha capacidade de somar estímulos.",
+    "Hint 4": "Em um neurônio, pareço uma árvore com muitos galhos; minha grande superfície me permite captar mensagens de diversos outros neurônios ao mesmo tempo.",
+    "Answer": "Dendrito",
+    "AlternativeAnswers": ["Dendritos", "Ramificações dendríticas"],
+    "Options": [
+      "Botão sináptico",
+      "Axônio terminal",
+      "Dendrito",
+      "Cone de implantação"
+    ]
+  },
+  "Qual prolongamento único e longo do neurônio atua como um 'cabo elétrico' transmitindo o potencial de ação em direção às terminações sinápticas?": {
+    "Hint 1": "Sou um prolongamento único, geralmente longo, do neurônio, especializado em conduzir o impulso nervoso para longe do corpo celular.",
+    "Hint 2": "Minha função é transmitir o potencial de ação até a terminação sináptica, onde ocorre a liberação de neurotransmissores.",
+    "Hint 3": "A velocidade de condução do impulso nervoso, crucial para o tempo de reação de um atleta, depende do meu diâmetro e da presença de uma bainha isolante.",
+    "Hint 4": "Em um nervo, sou como um cabo elétrico que leva o sinal da central até o destino; quanto mais grosso e isolado, mais rápido o sinal chega.",
+    "Answer": "Axônio",
+    "AlternativeAnswers": ["Axônios", "Fibra nervosa"],
+    "Options": [
+      "Corpúsculo de Nissl",
+      "Dendrito apical",
+      "Microtúbulo ciliar",
+      "Axônio"
+    ]
+  },
+  "Como se denomina a região especializada de comunicação onde ocorre a transferência de informações elétricas ou químicas entre duas células?": {
+    "Hint 1": "Sou a região de comunicação entre dois neurônios ou entre um neurônio e uma célula efetora, onde ocorre a transferência de informações.",
+    "Hint 2": "Minha função é transmitir o sinal de uma célula para outra, geralmente por meio de mensageiros químicos chamados neurotransmissores.",
+    "Hint 3": "A coordenação motora fina, como a execução de um movimento complexo na ginástica olímpica, depende da eficiência de milhares de mim.",
+    "Hint 4": "É nesse ponto que a mensagem elétrica se transforma em química para atravessar um pequeno espaço e ativar a próxima célula, como uma ponte que liga duas margens.",
+    "Answer": "Sinapse",
+    "AlternativeAnswers": ["Sinapses", "Junção sináptica"],
+    "Options": [
+      "Sinapse",
+      "Junção de oclusão",
+      "Desmossomo em faixa",
+      "Fenda nodular"
+    ]
+  },
+  "Qual envoltório lipídico acelera a condução saltatória dos impulsos elétricos ao longo do axônio e é severamente afetado na esclerose múltipla?": {
+    "Hint 1": "Sou uma substância gordurosa que envolve alguns axônios, atuando como um isolante elétrico natural.",
+    "Hint 2": "Minha função é aumentar a velocidade de condução do impulso nervoso e economizar energia, permitindo que o sinal 'salte' de um ponto a outro.",
+    "Hint 3": "Em esportes que exigem reflexos rápidos, como o boxe, a integridade de mim é fundamental para que os comandos motores cheguem aos músculos quase instantaneamente.",
+    "Hint 4": "Doenças que me atacam, como a esclerose múltipla, causam lentidão nos movimentos e perda de coordenação, pois o sinal elétrico perde sua 'via expressa'.",
+    "Answer": "Bainha de mielina",
+    "AlternativeAnswers": ["Mielina", "Capa de mielina"],
+    "Options": [
+      "Ependimócito isolante",
+      "Bainha de mielina",
+      "Neurolema elástico",
+      "Córtex axônico"
+    ]
+  },
+  "Quais são as pequenas interrupções na bainha de mielina que atuam como estações de recarga regenerando o potencial de ação por condução saltatória?": {
+    "Hint 1": "Sou a pequena interrupção na bainha de mielina, onde o axônio fica exposto e ocorre a regeneração do potencial de ação.",
+    "Hint 2": "Minha função é permitir a condução saltatória, fazendo o impulso 'saltar' de um ponto a outro, acelerando a transmission.",
+    "Hint 3": "A velocidade de reação de um goleiro ao defender um pênalti depende da condução saltatória, que é possível graças à minha existência.",
+    "Hint 4": "Sou como uma 'estação de recarga' ao longo de um fio elétrico; o sinal se regenera em mim a cada salto, garantindo que chegue forte ao destino.",
+    "Answer": "Nódulo de Ranvier",
+    "AlternativeAnswers": ["Nódulos de Ranvier", "Nós de Ranvier"],
+    "Options": [
+      "Fenda de Schmidt-Lanterman",
+      "Sulco pós-sináptico",
+      "Nódulo de Ranvier",
+      "Junção neuromuscular"
+    ]
+  },
+  "Qual inversion eletroquímica rápida e transiente da polaridade da membrana segue a lei do 'tudo ou nada' para transmitir sinais pelo axônio?": {
+    "Hint 1": "Sou o potencial elétrico que se propaga ao longo do axônio, uma inversão rápida da polaridade da membrana que segue a lei do 'tudo ou nada'.",
+    "Hint 2": "Minha função é transmitir informações a longas distâncias dentro do sistema nervoso, codificando a intensidade do estímulo pela minha frequência.",
+    "Hint 3": "Durante uma corrida de 100 metros, a frequência dos meus disparos nos neurônios motores determina a força da contração muscular.",
+    "Hint 4": "É como um impulso elétrico que percorre um fio; ele só acontece se o estímulo ultrapassar um limiar, e sua intensidade não varia, apenas sua frequência.",
+    "Answer": "Potencial de ação",
+    "AlternativeAnswers": ["Impulso nervoso", "Despolarização propagada"],
+    "Options": [
+      "Potencial graduado local",
+      "Hiperpolarização reflexa",
+      "Potencial de ação",
+      "Efeito eletrotônico basal"
+    ]
+  },
+  "Qual diferença de potencial elétrico basal (geralmente de -70 mV) mantém o neurônio carregado e pronto para responder a novos estímulos?": {
+    "Hint 1": "Sou a diferença de carga elétrica entre o interior e o exterior da membrana de um neurônio em repouso, geralmente cerca de -70 mV.",
+    "Hint 2": "Minha função é estabelecer uma condição de prontidão, permitindo que o neurônio seja excitado quando receber estímulos adequados.",
+    "Hint 3": "O equilíbrio iônico que me mantém é afetado pela fadiga e pelo desequilíbrio eletrolítico, prejudicando a excitabilidade dos neurônios durante exercícios prolongados.",
+    "Hint 4": "É como uma bateria carregada que espera o momento certo para descarregar; se a carga diminuir, o neurônio fica mais lento para responder.",
+    "Answer": "Potencial de membrana em repouso",
+    "AlternativeAnswers": ["Potencial de repouso", "Potencial de repouso da membrana"],
+    "Options": [
+      "Potencial de membrana em repouso",
+      "Limiar de descarga elétrica",
+      "Pico de despolarização",
+      "Período refratário absoluto"
+    ]
+  },
+  "Como são chamadas as moléculas químicas (como acetilcolina e dopamina) que convertem sinais elétricos em mensagens químicas na fenda sináptica?": {
+    "Hint 1": "Sou uma molécula química liberada na fenda sináptica, responsável por transmitir o sinal de um neurônio para a célula seguinte.",
+    "Hint 2": "Minha função é ativar ou inibir a célula pós-sináptica, ligando-me a receptores específicos e alterando seu potencial de membrana.",
+    "Hint 3": "A dopamina, a serotonina e a noradrenalina são exemplos de mim, e seus níveis influenciam o estado de alerta, a motivação e o humor durante o treino.",
+    "Hint 4": "Quando você sente aquela 'descarga de energia' antes de uma competição, é porque uma grande quantidade de mim está sendo liberada no cérebro.",
+    "Answer": "Neurotransmissor",
+    "AlternativeAnswers": ["Neurotransmissores", "Mensageiros químicos"],
+    "Options": [
+      "Segundos mensageiros AMPc",
+      "Neurotransmissor",
+      "Hormônios endócrinos sistêmicos",
+      "Enzimas hidrolíticas"
+    ]
+  },
+  "Qual estrutura bilateral do sistema nervoso central, contida no crânio, integra dados sensoriais, armazena memórias e planeja movimentos voluntários?": {
+    "Hint 1": "Sou a estrutura principal do sistema nervoso central, localizada dentro do crânio, dividida em duas metades simétricas.",
+    "Hint 2": "Minha função é processar informações sensoriais, planejar movimentos, armazenar memórias e gerar pensamentos e emoções.",
+    "Hint 3": "O treinamento cognitivo e a prática de esportes estimulam minha plasticidade, melhorando a coordenação e o tempo de reação.",
+    "Hint 4": "É o órgão que nos torna conscientes, responsável por toda a nossa experiência subjetiva; é a 'sede' da mente, localizada acima do tronco encefálico.",
+    "Answer": "Cérebro",
+    "AlternativeAnswers": ["Hemisférios cerebrais", "Telencéfalo"],
+    "Options": [
+      "Bulbo raquidiano",
+      "Medula espinhal",
+      "Cérebro",
+      "Hipotálamo autônomo"
+    ]
+  },
+  "Qual porção do encéfalo é a principal coordenadora do equilíbrio, postura e refinamento fino de sequências motoras complexas?": {
+    "Hint 1": "Sou a porção do encéfalo localizada atrás do tronco encefálico, com uma superfície enrugada e dividida em dois hemisférios menores.",
+    "Hint 2": "Minha função é coordenar os movimentos voluntários, manter o equilíbrio e ajustar a postura corporal.",
+    "Hint 3": "O aprendizado de movimentos precisos, como os de um ginasta, depende da minha capacidade de armazenar sequências motoras.",
+    "Hint 4": "Quando um atleta faz um movimento de equilíbrio na trave, estou trabalhando silenciosamente para ajustar cada contração muscular e evitar quedas.",
+    "Answer": "Cerebelo",
+    "AlternativeAnswers": ["Metencéfalo"],
+    "Options": [
+      "Mesencéfalo",
+      "Gânglios da base",
+      "Córtex motor primário",
+      "Cerebelo"
+    ]
+  },
+
+  "Qual região evolutivamente antiga conecta o encéfalo à medula espinhal e abriga centros reflexos autônomos como controle respiratório e cardíaco?": {
+    "Hint 1": "Sou a estrutura que conecta o cérebro e o cerebelo à medula espinhal, abrigando centros vitais para a sobrevivência.",
+    "Hint 2": "Minha função é controlar funções automáticas como a respiração, a frequência cardíaca e a pressão arterial, além de servir como via de trânsito.",
+    "Hint 3": "Durante um esforço máximo, sou eu quem ajusta a ventilação e os batimentos cardíacos para atender à demanda de oxigênio dos músculos.",
+    "Hint 4": "É a parte mais antiga do encéfalo em termos evolutivos; sem mim, você simplesmente para de respirar.",
+    "Answer": "Tronco encefálico",
+    "AlternativeAnswers": ["Tronco cerebral", "Bulbo, ponte e mesencéfalo"],
+    "Options": [
+      "Diencéfalo central",
+      "Tronco encefálico",
+      "Corpo caloso",
+      "Lobo occipital"
+    ]
+  },
+  "Qual cordão cilíndrico de tecido nervoso corre protegido pelas vértebras atuando como via de trânsito bidirecional e centro integrador de reflexos simples?": {
+    "Hint 1": "Sou um longo cordão nervoso que desce pela coluna vertebral, protegido pelas vértebras, e serve como principal via de comunicação com o corpo.",
+    "Hint 2": "Minha função é transmitir impulsos nervosos entre o encéfalo e os nervos periféricos, e também coordenar reflexos simples.",
+    "Hint 3": "A lesão em mim pode causar perda de movimento e sensibilidade abaixo do local do trauma, afetando drasticamente a performance esportiva.",
+    "Hint 4": "É por onde passam todos os sinais que vão do cérebro para os membros e vice-versa; um 'cabo' vital que corre dentro da coluna.",
+    "Answer": "Medula espinhal",
+    "AlternativeAnswers": ["Medula", "Cordão espinhal"],
+    "Options": [
+      "Nervo ciático",
+      "Cauda equina",
+      "Medula espinhal",
+      "Plexo braquial"
+    ]
+  },
+  "Como é classificada a vasta rede de nervos e gânglios anatômicos localizados fora do eixo neuroaxial protetor do crânio e da coluna vertebral?": {
+    "Hint 1": "Sou o conjunto de estruturas nervosas localizadas fora do encéfalo e da medula espinhal, incluindo nervos e gânglios.",
+    "Hint 2": "Minha função é conectar o sistema nervoso central a todas as outras partes do corpo, como músculos, glândulas e órgãos sensoriais.",
+    "Hint 3": "A propriocepção e a sensibilidade periférica, essenciais para o equilíbrio e a coordenação durante o exercício, dependem de mim.",
+    "Hint 4": "Quando você sente uma dor no pé ou contrai um músculo voluntariamente, a mensagem viaja por mim, que sou a 'rede externa' que conecta o cérebro ao resto do corpo.",
+    "Answer": "Sistema nervoso periférico",
+    "AlternativeAnswers": ["SNP"],
+    "Options": [
+      "Sistema nervoso periférico",
+      "Sistema nervoso entérico",
+      "Eixo neuroaxial somático",
+      "Sistema motor piramidal"
+    ]
+  },
+  "Qual subdivisão funcional do sistema nervoso periférico regula involuntariamente a homeostase visceral por meio de ações viscerais recíprocas?": {
+    "Hint 1": "Sou a parte do sistema nervoso que regula funções viscerais involuntárias, como os batimentos cardíacos, a digestão e a sudorese.",
+    "Hint 2": "Minha função é manter a homeostase do corpo, atuando sem controle consciente, por meio de dois ramos opostos.",
+    "Hint 3": "Durante o exercício, sou ativado para aumentar a frequência cardíaca e desviar o fluxo sanguíneo para os músculos, preparando o corpo para a ação.",
+    "Hint 4": "A famosa resposta 'luta ou fuga' que ocorre antes de uma competição é desencadeada por mim, acelerando os batimentos e dilatando as pupilas.",
+    "Answer": "Sistema nervoso autônomo",
+    "AlternativeAnswers": ["SNA", "Sistema nervoso visceral"],
+    "Options": [
+      "Sistema nervoso somático",
+      "Via eferente voluntária",
+      "Sistema nervoso autônomo",
+      "Arco reflexo proprioceptivo"
+    ]
+  },
+  "Qual divisão autonômica atua como 'acelerador' orgânico, mediando as reações de luta ou fuga por meio da liberação de catecolaminas?": {
+    "Hint 1": "Sou o componente do sistema nervoso autônomo responsável por preparar o corpo para situações de estresse e atividade intensa.",
+    "Hint 2": "Minha função é mobilizar energia, aumentar a frequência cardíaca, dilatar as vias aéreas e inibir a digestão, para maximizar o desempenho físico.",
+    "Hint 3": "Antes de uma prova importante, sou ativado, causando aquele frio na barriga e o coração acelerado, mas isso melhora a performance.",
+    "Hint 4": "É o 'acelerador' do sistema nervoso, que entra em ação quando você precisa correr ou lutar, liberando adrenalina e noradrenalina.",
+    "Answer": "Sistema nervoso simpático",
+    "AlternativeAnswers": ["Divisão simpática", "Ramo simpático"],
+    "Options": [
+      "Sistema nervoso simpático",
+      "Sistema nervoso parassimpático",
+      "Sistema entérico colinérgico",
+      "Via somatomotora alfa"
+    ]
+  },
+  "Qual divisão do sistema nervoso autônomo atua como 'freio' homeostático, estimulando funções de repouso, digestão e conservação de energia?": {
+    "Hint 1": "Sou o componente do sistema nervoso autônomo que promove o descanso, a digestão e a recuperação do organismo após o esforço.",
+    "Hint 2": "Minha função é reduzir a frequência cardíaca, estimular a digestão e promover o armazenamento de energia, favorecendo a regeneração.",
+    "Hint 3": "Após uma sessão de treino, a ativação de mim ajuda a diminuir a frequência cardíaca e a iniciar os processos de reparo muscular.",
+    "Hint 4": "É o 'freio' do sistema nervoso, que atua no repouso, na digestão e no sono; o oposto do sistema que te deixa alerta e acelerado.",
+    "Answer": "Sistema nervoso parassimpático",
+    "AlternativeAnswers": ["Divisão parassimpática", "Ramo parassimpático"],
+    "Options": [
+      "Eixo adrenérgico central",
+      "Sistema somatomotor reflexo",
+      "Sistema nervoso simpático",
+      "Sistema nervoso parassimpático"
+    ]
+  },
+  "Qual resposta estereotipada e involuntária a um estímulo sensorial é executada rapidamente sem depender do processamento cortical consciente?": {
+    "Hint 1": "Sou uma resposta motora involuntária e rápida a um estímulo, que ocorre sem a participação consciente do cérebro.",
+    "Hint 2": "Minha função é proteger o corpo contra danos, retraindo rapidamente uma parte do corpo diante de um estímulo nocivo.",
+    "Hint 3": "Quando um jogador de futebol toca a bola com a mão e a retira imediatamente por instinto, é um exemplo de mim, mediado pela medula espinhal.",
+    "Hint 4": "É aquele movimento automático que você faz ao encostar em algo muito quente, sem nem pensar; acontece mais rápido do que o sinal chegar ao cérebro.",
+    "Answer": "Ato reflexo",
+    "AlternativeAnswers": ["Arco reflexo", "Reflexo espinhal", "Reflexo involuntário"],
+    "Options": [
+      "Planejamento motor voluntário",
+      "Ato reflexo",
+      "Coordenação cerebelar",
+      "Praxia aprendida"
+    ]
+  },
+  "Como são chamadas as três membranas conjuntivas concêntricas (dura-máter, aracnoide e pia-máter) que isolam e protegem o neuroeixo central?": {
+    "Hint 1": "Sou uma estrutura membranosa que envolve e protege o sistema nervoso central, composta por três camadas concêntricas.",
+    "Hint 2": "Minha função é proteger o encéfalo e a medula contra impactos, além de servir como barreira e abrigar o líquido cefalorraquidiano.",
+    "Hint 3": "A compressão ou inflamação de mim, como na meningite, pode causar rigidez de nuca e comprometer gravemente a função neurológica do atleta.",
+    "Hint 4": "São três capas que envolvem o cérebro e a medula, como uma embalagem protetora; a mais externa é dura, a do meio é como uma teia de aranha, e a mais interna é fina e aderente.",
+    "Answer": "Meninges",
+    "AlternativeAnswers": ["Membranas meningeas", "Meninge"],
+    "Options": [
+      "Meninges",
+      "Pleuras parietais",
+      "Cápsulas aponeuróticas",
+      "Bainhas mielínicas externas"
+    ]
+  },
+  "Qual fluido acelular incolor amortece o sistema nervoso central contra forças mecânicas e circula ativamente pelo espaço subaracnóideo?": {
+    "Hint 1": "Sou um fluido claro e incolor que circula nos ventrículos do encéfalo e no espaço subaracnóideo, amortecedor e nutritivo.",
+    "Hint 2": "Minha função é proteger o sistema nervoso central contra traumas, fornecer nutrientes e remover metabólitos.",
+    "Hint 3": "A desidratação durante o exercício pode reduzir o meu volume, aumentando o risco de concussões em esportes de contato.",
+    "Hint 4": "É como uma 'almofada líquida' que envolve o cérebro e a medula, ajudando a absorver impactos e a manter a pressão intracraniana estável.",
+    "Answer": "Líquor",
+    "AlternativeAnswers": ["Líquido cefalorraquidiano", "Líquido cerebrospinal", "LCR"],
+    "Options": [
+      "Líquido sinovial articular",
+      "Plasma sanguíneo filtrado",
+      "Líquor",
+      "Ninfa linfática profunda"
+    ]
+  },
+  "Qual célula glial estrelada realiza o tamponamento iônico do interstício e regula os pés vasculares da barreira hematoencefálica?": {
+    "Hint 1": "Sou um tipo de célula da glia, com muitos prolongamentos, que dá suporte estrutural e metabólico aos neurônios.",
+    "Hint 2": "Minha função é regular a composição iônica do ambiente neuronal, fornecer energia e participar da formação da barreira hematoencefálica.",
+    "Hint 3": "A fadiga mental durante o treino pode estar relacionada à alteração da minha capacidade de remover o excesso de glutamato do espaço sináptico.",
+    "Hint 4": "Sou a célula em forma de estrela mais abundante do sistema nervoso central; mantenho o cérebro 'limpo' e nutrido.",
+    "Answer": "Astrócito",
+    "AlternativeAnswers": ["Astrócitos", "Astroglia"],
+    "Options": [
+      "Microglia ativada",
+      "Oligodendrócito satélite",
+      "Célula ependimária",
+      "Astrócito"
+    ]
+  },
+  "Qual densa bainha de tecido conjuntivo colagenoso reveste e estabiliza mecanicamente a periferia externa de um tronco nervoso inteiro?": {
+    "Hint 1": "Sou a camada de proteção que envolve os nervos periféricos, composta por tecido conjuntivo e que envolve feixes de fibras nervosas.",
+    "Hint 2": "Minha função é isolar e proteger os axônios, além de garantir a integridade estrutural dos nervos.",
+    "Hint 3": "Lesões em mim, como a compressão do nervo ciático, podem causar dor irradiada e fraqueza muscular, prejudicando a corrida e o agachamento.",
+    "Hint 4": "É como uma capa protetora que envolve os cabos de um fio elétrico; se for danificada, o sinal pode vazar ou ser bloqueado.",
+    "Answer": "Epineuro",
+    "AlternativeAnswers": ["Bainha epineural", "Bainha conjuntiva do nervo"],
+    "Options": [
+      "Endoneuro",
+      "Perineuro fasticular",
+      "Epineuro",
+      "Sarcolema fibroso"
+    ]
+  },
+  "Como se chama a capacidade intrínseca dos circuitos neurais de remodelar sua eficácia sináptica e conexões em resposta ao aprendizado e lesões?": {
+    "Hint 1": "Sou a capacidade do sistema nervoso de se modificar em resposta à experiência, ao aprendizado e à lesão.",
+    "Hint 2": "Minha função é permitir a adaptação do organismo a novas situações, armazenando memórias e ajustando conexões sinápticas.",
+    "Hint 3": "O treinamento esportivo é um exemplo clássico de mim: a repetição de movimentos fortalece as conexões neurais e automatiza a execução.",
+    "Hint 4": "É o que permite que um iniciante se torne um expert: cada treino 'desenha' novas vias no sistema nervoso, tornando os movimentos mais precisos e eficientes.",
+    "Answer": "Plasticidade neural",
+    "AlternativeAnswers": ["Neuroplasticidade", "Plasticidade sináptica"],
+    "Options": [
+      "Mielinização tardia",
+      "Plasticidade neural",
+      "Reflexo condicionado",
+      "Potenciação estática"
+    ]
+  },
+  "Qual componente funcional do sistema periférico converte variações de energia física ambientais em trens de potenciais de ação em direção ao SNC?": {
+    "Hint 1": "Sou a parte do sistema nervoso que recebe informações do ambiente e do corpo, convertendo estímulos em impulsos nervosos.",
+    "Hint 2": "Minha função é fornecer ao cérebro dados sobre o mundo externo e o estado interno, por meio de receptores especializados.",
+    "Hint 3": "A percepção da posição articular (propriocepção) e a sensação de fadiga durante o exercício dependem da minha atividade.",
+    "Hint 4": "Quando você sente o chão sob seus pés, a temperatura da água ou a dor de uma cãibra, está usando meus componentes para captar essas informações.",
+    "Answer": "Sistema sensorial",
+    "AlternativeAnswers": ["Via aferente", "Sistema eferente sensorial", "Sistema aferente"],
+    "Options": [
+      "Via eferente motora",
+      "Sistema somatomotor",
+      "Sistema sensorial",
+      "Trato corticoanalítico"
+    ]
+  },
+
+  "Qual via neural eferente veicula sinais motores centralizados para coordenar de forma ordenada a contração mecânica dos órgãos efetores?": {
+    "Hint 1": "Sou a parte do sistema nervoso que envia comandos para os músculos e glândulas, gerando ações e respostas.",
+    "Hint 2": "Minha função é executar movimentos voluntários e involuntários, controlando a contração muscular e a secreção glandular.",
+    "Hint 3": "A precisão de um arremesso no basquete depende da minha capacidade de ativar os músculos certos na ordem e intensidade adequadas.",
+    "Hint 4": "É o sistema que 'ordena' o corpo a agir; quando você decide levantar um peso, sou eu quem envia a mensagem para os músculos.",
+    "Answer": "Sistema motor",
+    "AlternativeAnswers": ["Via eferente", "Sistema eferente motor"],
+    "Options": [
+      "Sistema sensorial aferente",
+      "Sistema motor",
+      "Eixo neurovegetativo visceral",
+      "Arco reflexo nociceptivo"
+    ]
+  },
+  "Qual fina camada externa de substância cinzenta telencefálica planeja ações intencionais de alto nível e pondera tomadas de decisão táticas?": {
+    "Hint 1": "Sou a região do encéfalo responsável pela integração de informações sensoriais e pela geração de respostas motoras conscientes.",
+    "Hint 2": "Minha função é associar estímulos a memórias, planejar ações e tomar decisões, atuando como o centro executivo do cérebro.",
+    "Hint 3": "A estratégia de jogo e a tomada de decisão rápida durante uma partida de futebol são mediadas por mim.",
+    "Hint 4": "É a parte mais desenvolvida do cérebro, responsável pela nossa capacidade de raciocinar e agir; está localizada na porção anterior do crânio.",
+    "Answer": "Córtex cerebral",
+    "AlternativeAnswers": ["Córtex", "Substância cinzenta cortical"],
+    "Options": [
+      "Hipotálamo medial",
+      "Gânglios da base",
+      "Córtex cerebral",
+      "Fórnice límbico"
+    ]
+  },
+  "Como se denominam os pequenos agrupamentos nodulares de somas neuronais situados exclusivamente na periferia do sistema nervoso?": {
+    "Hint 1": "Sou um pequeno aglomerado de corpos de neurônios localizado fora do sistema nervoso central, atuando como estação de retransmissão.",
+    "Hint 2": "Minha função é processar e modificar sinais nervosos antes de enviá-los ao sistema nervoso central ou a órgãos efetores.",
+    "Hint 3": "Algumas lesões em mim podem causar dor neuropática, afetando a sensibilidade e o controle motor do atleta.",
+    "Hint 4": "É como uma mini-central telefônica onde os sinais podem ser amplificados ou inibidos antes de seguirem viagem.",
+    "Answer": "Gânglio",
+    "AlternativeAnswers": ["Gânglios", "Gânglios nervosos", "Gânglios periféricos"],
+    "Options": [
+      "Núcleos da base",
+      "Gânglio",
+      "Plexos intramurais",
+      "Fascículos mielinizados"
+    ]
+  },
+  "Qual processo pós-sináptico processa e soma algebricamente potenciais excitatórios e inibitórios para ditar o limiar de disparo axonal?": {
+    "Hint 1": "Sou o processo de integração de múltiplos estímulos sinápticos in um único neurônio, resultando em excitação ou inibição.",
+    "Hint 2": "Minha função é determinar se o neurônio irá ou não disparar um potencial de ação, com base na soma de todas as entradas.",
+    "Hint 3": "A coordenação de movimentos complexos exige que os neurônios realizem continuamente esse processo, ponderando estímulos excitatórios e inibitórios.",
+    "Hint 4": "É como se o neurônio fizesse uma 'média' de todas as mensagens que recebe; se o saldo for positivo o suficiente, ele dispara.",
+    "Answer": "Integração sináptica",
+    "AlternativeAnswers": ["Somação sináptica", "Somação temporal", "Somação espacial"],
+    "Options": [
+      "Período refratário relativo",
+      "Integração sináptica",
+      "Modulação retrógada",
+      "Facilitação homossináptica"
+    ]
+  },
+  "Qual junção sináptica periférica altamente especializada converte o potencial do neurônio motor alfa em despolarização do sarcolema via acetilcolina?": {
+    "Hint 1": "Sou a sinapse especializada entre um neurônio motor e uma fibra muscular esquelética, responsável pela ativação da contração.",
+    "Hint 2": "Minha função é converter o impulso nervoso em contração muscular, garantindo que o comando do cérebro se torne movimento.",
+    "Hint 3": "A eficácia dessa comunicação é fundamental para a força e a precisão dos movimentos, e pode ser aprimorada com o treino.",
+    "Hint 4": "É o ponto de encontro onde o nervo 'se conecta' ao músculo, e a liberação de acetilcolina ali desencadeia a contração.",
+    "Answer": "Junção neuromuscular",
+    "AlternativeAnswers": ["Placa motora", "Sinapse neuromuscular"],
+    "Options": [
+      "Junção neuromuscular",
+      "Fuso neuromuscular",
+      "Órgão tendinoso de Golgi",
+      "Sinapse axoaxônica"
+    ]
+  },
+  "Qual mecanismo protetor reduz preventivamente a ativação de motoneurônios pelo SNC para resguardar o sistema musculoesquelético de danos por exaustão?": {
+    "Hint 1": "Sou o estado de redução temporária da capacidade de gerar força ou de manter o desempenho, com origem no sistema nervoso central.",
+    "Hint 2": "Minha função (quando ocorre) é proteger o organismo contra esforços extremos, mas pode limitar o desempenho esportivo.",
+    "Hint 3": "A sensação de 'cansaço mental' e a perda de motivação durante um treino prolongado são manifestações de mim.",
+    "Hint 4": "É como se o cérebro 'desligasse' voluntariamente alguns comandos para evitar a exaustão total, mesmo que os músculos ainda possam continuar.",
+    "Answer": "Fadiga central",
+    "AlternativeAnswers": ["Fadiga do sistema nervoso central", "Inibição motora central"],
+    "Options": [
+      "Fadiga periférica de lactato",
+      "Depleção de glicogênio",
+      "Fadiga central",
+      "Falha de acoplamento do cálcio"
+    ]
+  },
+  "Como são classificadas as sinapses abundantes do SNC que operam com atraso sináptico devido à exocitose de ligantes que cruzam a fenda sináptica?": {
+    "Hint 1": "Sou a forma de comunicação entre neurônios que utiliza mensageiros químicos para atravessar o espaço entre as células, permitindo uma transmissão modulável e plástica.",
+    "Hint 2": "Minha função é converter o sinal elétrico em químico, liberando neurotransmissores que se ligam a receptores na célula vizinha, podendo excitar ou inibir.",
+    "Hint 3": "A maioria das sinapses do sistema nervoso central e da junção neuromuscular é formada por mim, sendo o alvo de muitos medicamentos e substâncias que afetam o desempenho esportivo.",
+    "Hint 4": "É como um sistema de rádio onde o sinal elétrico é convertido em ondas que viajam pelo ar e são captadas por outro rádio, que as converte de volta em som.",
+    "Answer": "Sinapse química",
+    "AlternativeAnswers": ["Sinapses químicas", "Transmissão química"],
+    "Options": [
+      "Sinapse elétrica",
+      "Acoplamento efáptico",
+      "Sinapse química",
+      "Junção do tipo gap"
+    ]
+  },
+  "Qual modalidade de sinapse veloz une diretamente citoplasmas celulares vizinhos por meio de conexons, dispensando intermediários químicos?": {
+    "Hint 1": "Sou uma forma de comunicação entre duas células que dispensa mensageiros químicos, utilizando canais físicos que conectam diretamente os citoplasmas.",
+    "Hint 2": "Minha função é permitir uma transmissão extremamente rápida e bidirecional, ideal para sincronizar a atividade de grupos celulares.",
+    "Hint 3": "Em tecidos como o músculo cardíaco e a musculatura lisa visceral, sou essencial para a contração coordenada, que é fundamental para o desempenho cardiovascular durante o exercício.",
+    "Hint 4": "É como um telefone com fio direto entre duas pessoas, onde a conversa é instantânea, sem a necessidade de um tradutor ou mensageiro.",
+    "Answer": "Sinapse elétrica",
+    "AlternativeAnswers": ["Sinapses elétricas", "Transmissão eletrônica", "Junções comunicantes"],
+    "Options": [
+      "Sinapse química assimétrica",
+      "Sinapse elétrica",
+      "Placa motora terminal",
+      "Botão sináptico adrenérgico"
+    ]
+  },
+  "Como se denominam genericamente as proteínas integradoras da membrana pós-sináptica encarregadas de traduzir a presença de ligantes em respostas locais?": {
+    "Hint 1": "Sou o local na membrana pós-sináptica onde os neurotransmissores se ligam, podendo assumir duas formas principais: uma com ação ultrarrápida e outra com ação mais lenta e duradoura.",
+    "Hint 2": "Minha função é converter o sinal químico (neurotransmissor) em uma alteração elétrica ou metabólica na célula-alvo, determinando se ela será excitada ou inibida.",
+    "Hint 3": "O treino de coordenação motora pode modificar a sensibilidade e a densidade de mim, otimizando a transmissão sináptica e o controle muscular.",
+    "Hint 4": "É como uma fechadura que pode ser aberta de duas maneiras: uma com uma chave simples que destranca na hora, e outra com uma chave que aciona um mecanismo interno, demorando mais, mas com efeitos mais prolongados.",
+    "Answer": "Receptores pós-sinápticos",
+    "AlternativeAnswers": ["Receptores de neurotransmissores", "Receptores sinápticos"],
+    "Options": [
+      "Enzimas de fenda degradativas",
+      "Transportadores de recaptura",
+      "Vesículas de exocitose",
+      "Receptores pós-sinápticos"
+    ]
+  },
+  "Quais receptores transmembrana atuam diretamente como canais iônicos ativados por ligante gerando variações elétricas quase instantâneas?": {
+    "Hint 1": "Sou um tipo de receptor pós-sináptico que, ao ser ativado, forma um canal iônico que se abre rapidamente, gerando uma resposta elétrica imediata e de curta duração.",
+    "Hint 2": "Minha função é mediar a transmissão sináptica rápida, responsável por potenciais pós-sinápticos excitatórios ou inibitórios que duram apenas milissegundos.",
+    "Hint 3": "Em esportes que exigem reflexos ultrarrápidos, como o boxe, a eficiência dos receptores como eu é crucial para o tempo de reação.",
+    "Hint 4": "É como um interruptor que liga a luz instantaneamente quando pressionado; a resposta é imediata e dura apenas enquanto o botão está acionado.",
+    "Answer": "Receptores ionotrópicos",
+    "AlternativeAnswers": ["Canais iônicos ativados por ligante", "Receptores acoplados a canais iônicos"],
+    "Options": [
+      "Receptores metabotrópicos",
+      "Receptores ionotrópicos",
+      "Receptores citoplasmáticos nucleares",
+      "Cinases acopladas a tirosina"
+    ]
+  },
+  "Quais receptores sinápticos indiretos ativam cascatas intracelulares via proteínas G gerando modulações metabólicas lentas e duradouras?": {
+    "Hint 1": "Sou um tipo de receptor pós-sináptico que, ao ser ativado, aciona uma cascata de segundos mensageiros dentro da célula, gerando uma resposta mais lenta, mas mais duradoura e amplificada.",
+    "Hint 2": "Minha função é mediar efeitos modulatórios de longo prazo, como a alteração da excitabilidade neuronal ou a expressão gênica, através de proteínas G.",
+    "Hint 3": "O efeito de neurotransmissores como a dopamina e a serotonina, que influenciam o humor e a motivação durante o treino, é mediado por receptores como eu.",
+    "Hint 4": "É como um termostato que, ao ser ajustado, demora alguns segundos para mudar a temperatura, mas o efeito dura muito tempo depois que você o ajustou.",
+    "Answer": "Receptores metabotrópicos",
+    "AlternativeAnswers": ["Receptores acoplados à proteína G", "GPCRs"],
+    "Options": [
+      "Canais iônicos dependentes de voltagem",
+      "Receptores enzimáticos intrínsecos",
+      "Receptores metabotrópicos",
+      "Porinas de membrana externa"
+    ]
+  },
+  "Qual processo biológico mitiga o envelhecimento cerebral ao proliferar novos neurônios a partir de células-tronco adultas no hipocampo?": {
+    "Hint 1": "Sou o processo de formação de novos neurônios a partir de células-tronco neurais, que ocorre em regiões específicas do cérebro adulto, como o hipocampo.",
+    "Hint 2": "Minha função é renovar populações neuronais, contribuindo para a plasticidade cerebral, a formação de novas memórias e a recuperação após lesões.",
+    "Hint 3": "O exercício aeróbico regular é um dos mais potentes estímulos para aumentar a minha taxa, melhorando a cognição e a capacidade de aprendizado de novos movimentos.",
+    "Hint 4": "É como uma fábrica de células novas no cérebro que é ativada quando você se exercita, ajudando a manter o cérebro jovem e adaptável.",
+    "Answer": "Neurogênese",
+    "AlternativeAnswers": ["Neurogênese adulta", "Geração de novos neurônios"],
+    "Options": [
+      "Gliose reativa",
+      "Apoptose neuronal seletiva",
+      "Neurogênese",
+      "Sinaptogênese retrógrada"
+    ]
+  }
+}

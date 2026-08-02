@@ -1,0 +1,42 @@
+{
+    "Qual é a estrutura do coração?": {
+        "Hint 1": "É um órgão muscular dividido em câmaras.",
+        "Hint 2": "Tem duas câmaras superiores e duas câmaras inferiores.",
+        "Hint 3": "As câmaras superiores recebem sangue, as inferiores o bombeiam.",
+        "Hint 4": "É protegido por uma dupla membrana chamada pericárdio.",
+        "Answer": "4 câmaras (2 átrios e 2 ventrículos)",
+        "AlternativeAnswers": ["Dois átrios e dois ventrículos", "4 cavidades", "2 atriais e 2 ventriculares"]
+    },
+    "O que é frequência cardíaca?": {
+        "Hint 1": "É o número de vezes que o coração bate por minuto.",
+        "Hint 2": "Medida em batimentos por minuto (bpm).",
+        "Hint 3": "Normal em repouso é entre 60-100 bpm.",
+        "Hint 4": "Aumenta durante exercício e diminui em repouso.",
+        "Answer": "Número de batimentos cardíacos por minuto",
+        "AlternativeAnswers": ["Batimentos por minuto (bpm)", "Frequência de contrações", "Pulso cardíaco"]
+    },
+    "Qual é a função das válvulas cardíacas?": {
+        "Hint 1": "Estruturas que controlam o fluxo de sangue pelo coração.",
+        "Hint 2": "Permiterm que o sangue flua em apenas uma direção.",
+        "Hint 3": "Evitam o refluxo de sangue (retorno).",
+        "Hint 4": "Existem 4 válvulas principais no coração.",
+        "Answer": "Permitir fluxo unidirecional do sangue",
+        "AlternativeAnswers": ["Controlar direção do sangue", "Impedir refluxo", "Fluxo unidirecional"]
+    },
+    "O que é pressão arterial?": {
+        "Hint 1": "A força exercida pelo sangue nas paredes dos vasos.",
+        "Hint 2": "Medida em mmHg (milímetros de mercúrio).",
+        "Hint 3": "Tem uma leitura de pressão sistólica (máxima) e diastólica (mínima).",
+        "Hint 4": "Normal é aproximadamente 120/80 mmHg.",
+        "Answer": "Força do sangue nas paredes arteriais",
+        "AlternativeAnswers": ["Pressão sanguínea", "Força de contrações cardíacas", "Tensão nas artérias"]
+    },
+    "Qual é o caminho do sangue pelo coração?": {
+        "Hint 1": "Começa quando o sangue chega aos átrios.",
+        "Hint 2": "Os átrios se contraem, enviando sangue aos ventrículos.",
+        "Hint 3": "Os ventrículos se contraem, bombeando sangue para fora do coração.",
+        "Hint 4": "O ventrículo direito envia para os pulmões, o esquerdo para o corpo.",
+        "Answer": "Átrios direito/esquerdo → Ventrículos direito/esquerdo → Pulmões e corpo",
+        "AlternativeAnswers": ["Circulação cardíaca", "Fluxo através das câmaras", "Contração sequencial das câmaras"]
+    }
+}

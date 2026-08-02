@@ -1,0 +1,10 @@
+{
+    "coração1?": {
+        "Hint 1": "A Pressão Arterial é o resultado da multiplicação do volume de sangue bombeado por minuto pelo grau de resistência ao fluxo nos vasos sanguíneos.",
+        "Hint 2": "A fórmula envolve o Débito Cardíaco (DC).",
+        "Hint 3": "A fórmula envolve a Resistência Periférica Total (RPT).",
+        "Hint 4": "É o produto (multiplicação) desses dois fatores.",
+        "Answer": "DCxRPT",
+        "AlternativeAnswers": ["DC*RPT", "Produto", "Multiplicação"]
+    }
+}

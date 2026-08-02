@@ -1,0 +1,42 @@
+{
+    "Qual é a fórmula da Pressão Arterial?": {
+        "Hint 1": "A Pressão Arterial é o resultado da multiplicação de dois fatores importantes.",
+        "Hint 2": "Um fator é o volume de sangue bombeado por minuto.",
+        "Hint 3": "O outro fator é o grau de resistência ao fluxo nos vasos sanguíneos.",
+        "Hint 4": "Envolve o Débito Cardíaco (DC) e a Resistência Periférica Total (RPT).",
+        "Answer": "PA = DC × RPT",
+        "AlternativeAnswers": ["Pressão = Débito Cardíaco × Resistência Periférica", "DC × RPT", "Débito × Resistência"]
+    },
+    "Qual é a função das artérias sistêmicas?": {
+        "Hint 1": "São vasos sanguíneos que armazenam energia durante a contração cardíaca.",
+        "Hint 2": "Durante a sístole ventricular, recebem sangue sob alta pressão.",
+        "Hint 3": "Possuem paredes elásticas que se distendem e retornam ao tamanho original.",
+        "Hint 4": "Liberam o sangue armazenado lentamente durante a diástole.",
+        "Answer": "Armazenam e liberam pressão através de elasticidade",
+        "AlternativeAnswers": ["Reservatório de pressão", "Função elástica", "Amortecedoras de pressão"]
+    },
+    "Qual é a função das arteríolas?": {
+        "Hint 1": "São pequenos vasos que conectam artérias aos capilares.",
+        "Hint 2": "Possuem musculatura lisa que pode se contrair ou relaxar.",
+        "Hint 3": "Controlam seletivamente o fluxo de sangue para diferentes tecidos.",
+        "Hint 4": "São o principal local de resistência variável no sistema circulatório.",
+        "Answer": "Controlar resistência e distribuir fluxo sanguíneo",
+        "AlternativeAnswers": ["Regulação de fluxo", "Controle de resistência", "Distribuição sanguínea"]
+    },
+    "O que são Barorreceptores?": {
+        "Hint 1": "São receptores sensoriais especializados na detecção de pressão.",
+        "Hint 2": "Respondem ao estiramento das paredes arteriais.",
+        "Hint 3": "Estão localizados nas artérias carótidas e arco aórtico.",
+        "Hint 4": "Enviam sinais ao centro vasomotor no bulbo para ajustar pressão.",
+        "Answer": "Receptores que detectam mudanças de pressão arterial",
+        "AlternativeAnswers": ["Sensores de pressão", "Mecanorreceptores arteriais", "Detectores de pressão vascular"]
+    },
+    "Qual é o ciclo cardíaco completo?": {
+        "Hint 1": "Compreende a sístole e a diástole.",
+        "Hint 2": "A sístole é quando o coração se contrai.",
+        "Hint 3": "A diástole é quando o coração se relaxa e se enche de sangue.",
+        "Hint 4": "Dura aproximadamente 0,8 segundos em repouso.",
+        "Answer": "Sístole (contração) + Diástole (relaxamento)",
+        "AlternativeAnswers": ["Contração e relaxamento", "Bombeamento e preenchimento", "Fases da batida cardíaca"]
+    }
+}

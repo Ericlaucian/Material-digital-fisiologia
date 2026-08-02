@@ -1,0 +1,479 @@
+{
+  "Qual tecido básico do corpo é caracterizado por células firmemente unidas, pouca matriz extracelular e função de revestimento e secreção glandular?": {
+    "Hint 1": "Sou um dos quatro tipos básicos de tecido que formam o corpo, caracterizado por células firmemente unidas, com pouca matriz extracelular entre elas.",
+    "Hint 2": "Minha principal função é revestir superfícies, como a pele, e as cavidades internas do corpo, além de formar glândulas.",
+    "Hint 3": "Durante um treino, sou eu quem reveste os ductos das glândulas sudoríparas, permitindo a eliminação do suor para a regulação da temperatura corporal.",
+    "Hint 4": "Quando você se corta, sou a primeira camada de tecido lesionada, e minha rápida regeneração é essencial para a cicatrização, desde que a membrana basal esteja intacta.",
+    "Answer": "Tecido epitelial",
+    "AlternativeAnswers": ["Epitélio", "Tecido de revestimento"],
+    "Options": [
+      "Tecido conjuntivo",
+      "Tecido epitelial",
+      "Tecido muscular liso",
+      "Tecido nervoso central"
+    ]
+  },
+  "Qual tecido básico possui abundante matriz extracelular e desempenha funções de sustentação, preenchimento, transporte e defesa?": {
+    "Hint 1": "Sou caracterizado por uma grande quantidade de matriz extracelular, que inclui fibras proteicas e uma substância fundamental amorfa.",
+    "Hint 2": "Minhas funções são diversas: sustentar outros tecidos, preencher espaços, armazenar energia, transportar substâncias e defender o organismo.",
+    "Hint 3": "O tecido adiposo, que serve como reserva de energia para o atleta, e o tecido ósseo, que sustenta o corpo durante a corrida, são meus tipos especiais.",
+    "Hint 4": "Quando você torce o tornozelo, sou o tecido que incha (edema) devido ao acúmulo de líquido na minha matriz, causando a sensação de 'íngua'.",
+    "Answer": "Tecido conjuntivo",
+    "AlternativeAnswers": ["Tecido conectivo"],
+    "Options": [
+      "Tecido epitelial de transição",
+      "Tecido nervoso periférico",
+      "Tecido conjuntivo",
+      "Tecido muscular estriado"
+    ]
+  },
+  "Qual tecido corporal é especializado na geração de força e movimento através da interação entre actina e miosina?": {
+    "Hint 1": "Sou o tecido responsável por todos os movimentos do corpo, graças à minha capacidade única de contrair e gerar força.",
+    "Hint 2": "Minhas células são alongadas e especializadas, chamadas de fibras musculares, e minha contração depende da interação entre as proteínas actina e miosina.",
+    "Hint 3": "O treino de força aumenta meu volume (hipertrofia), enquanto o treino de resistência melhora minha capacidade oxidativa, ambos essenciais para o desempenho esportivo.",
+    "Hint 4": "A dor que você sente no dia seguinte a um treino intenso (a famosa 'dor muscular tardia') é uma resposta inflamatória das minhas fibras ao esforço excessivo.",
+    "Answer": "Tecido muscular",
+    "AlternativeAnswers": ["Músculo", "Sistema muscular"],
+    "Options": [
+      "Tecido hematopoiético",
+      "Tecido conjuntivo denso",
+      "Tecido epitelial glandular",
+      "Tecido muscular"
+    ]
+  },
+  "Qual tecido especializado é responsável pela percepção ambiental, processamento de informações e condução de impulsos por neurônios e glia?": {
+    "Hint 1": "Sou o tecido responsável pela percepção do ambiente, processamento de informações e comando das funções corporais.",
+    "Hint 2": "Sou composto por dois tipos celulares principais: os neurônios, que transmitem impulsos, e as células da glia, que dão suporte e proteção.",
+    "Hint 3": "O aprendizado de um novo movimento motor, como uma tacada no golfe, depende da minha capacidade de formar novas conexões (plasticidade sináptica).",
+    "Hint 4": "A sensação de 'formigamento' ou 'adormecimento' de um membro após uma compressão prolongada ocorre por uma interferência temporária na transmissão dos meus impulsos.",
+    "Answer": "Tecido nervoso",
+    "AlternativeAnswers": ["Sistema nervoso"],
+    "Options": [
+      "Tecido nervoso",
+      "Tecido epitelial sensorial",
+      "Tecido conjuntivo elástico",
+      "Tecido muscular cardíaco"
+    ]
+  },
+  "Qual é a camada mais superficial e avascular da pele, constituída por epitélio estratificado pavimentoso queratinizado?": {
+    "Hint 1": "Sou a camada mais externa da pele, formada por um epitélio estratificado pavimentoso queratinizado.",
+    "Hint 2": "Minha principal função é a proteção contra agentes físicos, químicos e biológicos, além de evitar a perda de água.",
+    "Hint 3": "Durante a prática de esportes ao ar livre, sou eu quem sofre os efeitos da radiação ultravioleta, o que pode levar ao envelhecimento precoce e ao câncer de pele.",
+    "Hint 4": "As 'calosidades' que se formam nas mãos de um ginasta ou remador são um espessamento da minha camada mais superficial, a queratina, como defesa contra o atrito.",
+    "Answer": "Epiderme",
+    "AlternativeAnswers": ["Tecido epidérmico"],
+    "Options": [
+      "Derme papilar",
+      "Hipoderme subcutânea",
+      "Epiderme",
+      "Fáscia muscular profunda"
+    ]
+  },
+  "Qual camada vascularizada da pele localiza-se logo abaixo da epiderme e é ricamente constituída de tecido conjuntivo?": {
+    "Hint 1": "Sou a camada da pele localizada abaixo da epiderme, rica em tecido conjuntivo e vascularizada.",
+    "Hint 2": "Ofereço suporte nutricional e estrutural para a epiderme, além de abrigar vasos sanguíneos, terminações nervosas e anexos como folículos pilosos e glândulas.",
+    "Hint 3": "A cicatrização de uma ferida profunda depende diretamente da minha capacidade de regeneração e da formação de tecido de granulação.",
+    "Hint 4": "Quando você faz uma tatuagem, a agulha depoita a tinta em mim, pois a epiderme, sendo avascular, não reteria o pigmento permanentemente.",
+    "Answer": "Derme",
+    "AlternativeAnswers": ["Tecido dérmico"],
+    "Options": [
+      "Epiderme",
+      "Derme",
+      "Estrato córneo",
+      "Panículo adiposo"
+    ]
+  },
+  "Qual tecido conjuntivo especializado possui uma matriz extracelular rígida e mineralizada, atuando na sustentação e alavanca mecânica?": {
+    "Hint 1": "Sou um tipo especializado de tecido conjuntivo, com uma matriz rígida e mineralizada, que me confere grande resistência.",
+    "Hint 2": "Minhas funções incluem sustentar o corpo, proteger órgãos vitais, servir de alavanca para os músculos e abrigar a medula óssea.",
+    "Hint 3": "A prática de exercícios com impacto, como a corrida, estimula minha remodelação e aumento da densidade, prevenindo condições como a osteoporose.",
+    "Hint 4": "Uma fratura, como a do rádio ao cair com a mão estendida, é uma lesão em mim, e meu processo de consolidação envolve a formação de um calo ósseo.",
+    "Answer": "Tecido ósseo",
+    "AlternativeAnswers": ["Osso", "Matriz óssea"],
+    "Options": [
+      "Tecido cartilaginoso hialino",
+      "Tecido ósseo",
+      "Tecido conjuntivo denso modelado",
+      "Tendão fibrosotecidual"
+    ]
+  },
+  "Qual tecido especializado armazena energia na forma de triglicerídeos e atua como isolante térmico e protetor mecânico?": {
+    "Hint 1": "Sou um tipo de tecido conjuntivo especializado no armazenamento de energia na forma de triglicerídeos.",
+    "Hint 2": "Além de reserva energética, atuo como isolante térmico, protetor mecânico contra choques e na produção de hormônios como a leptina.",
+    "Hint 3": "Atletas de endurance, como maratonistas, buscam reduzir minha quantidade para melhorar a relação peso-potência, enquanto atletas de esportes de contato podem se beneficiar do meu efeito protetor.",
+    "Hint 4": "A 'celulite' é uma alteração estética na qual eu (tecido adiposo) me projeto através do tecido conjuntivo, criando um aspecto ondulado na pele.",
+    "Answer": "Tecido adiposo",
+    "AlternativeAnswers": ["Gordura", "Tecido gorduroso"],
+    "Options": [
+      "Tecido reticular linfóide",
+      "Tecido epitelial de revestimento",
+      "Tecido adiposo",
+      "Tecido cartilaginoso elástico"
+    ]
+  },
+  "Qual é a matriz líquida acelular do tecido sanguíneo que compõe aproximadamente 55% do volume total do sangue?": {
+    "Hint 1": "Sou o componente líquido do tecido conjuntivo sanguíneo, representando cerca de 55% do seu volume.",
+    "Hint 2": "Minha função é transportar células sanguíneas, nutrientes, hormônios, gases e excretas pelo corpo.",
+    "Hint 3": "A desidratação durante o exercício reduz meu volume, aumentando a viscosidade do sangue e dificultando o trabalho do coração.",
+    "Hint 4": "Quando você doa sangue, a bolsa plástica recebe uma solução anticoagulante para evitar que eu coagule, pois sou rico em fibrinogênio.",
+    "Answer": "Plasma sanguíneo",
+    "AlternativeAnswers": ["Plasma", "Porção líquida do sangue"],
+    "Options": [
+      "Líquido intersticial celular",
+      "Soro fisiológico ativo",
+      "Linfócito periférico",
+      "Plasma sanguíneo"
+    ]
+  },
+  "Qual é a unidade funcional e estrutural básica do tecido muscular estriado esquelético, também chamada de miócito?": {
+    "Hint 1": "Sou a unidade funcional básica do tecido muscular estriado esquelético, responsável pela contração.",
+    "Hint 2": "Minha estrutura é organizada em sarcômeros, que são as unidades repetitivas de contração, formados por filamentos de actina e miosina.",
+    "Hint 3": "O treinamento de força aumenta meu diâmetro (hipertrofia), enquanto o treinamento de resistência aumenta minha capacidade de gerar energia aeróbica (aumento de mitocôndrias).",
+    "Hint 4": "Quando você levanta um peso, sou eu que encurto, puxando os ossos através dos tendões, e essa contração é chamada de contração concêntrica.",
+    "Answer": "Fibra muscular",
+    "AlternativeAnswers": ["Miócito", "Célula muscular esquelética"],
+    "Options": [
+      "Miofibrila sarcoplasmática",
+      "Sarcômero estrutural",
+      "Fibra muscular",
+      "Fascículo motor"
+    ]
+  },
+  "Qual processo biológico possibilita a substituição de células danificadas ou senescentes para preservar a homeostase dos tecidos?": {
+    "Hint 1": "Sou o processo pelo qual os tecidos substituem células perdidas ou danificadas, mantendo a homeostase.",
+    "Hint 2": "Esse processo varia em capacidade entre os tecidos: a epiderme se renova rapidamente, enquanto o tecido nervoso tem capacidade limitada.",
+    "Hint 3": "O 'overtraining' pode prejudicar minha eficiência, especialmente em tecidos como o muscular, atrasando a recuperação após lesões microscópicas.",
+    "Hint 4": "A pele descamada após uma queimadura solar é um exemplo clássico de minha atuação, onde novas células substituem as danificadas.",
+    "Answer": "Renovação celular",
+    "AlternativeAnswers": ["Regeneração tecidual", "Turnover celular"],
+    "Options": [
+      "Mutação somática programada",
+      "Renovação celular",
+      "Apoptose patológica",
+      "Diferenciação celular reversa"
+    ]
+  },
+  "Qual resposta imune inata e vascularizada do tecido conjuntivo manifesta-se por calor, rubor, edema e dor após uma lesão?": {
+    "Hint 1": "Sou o processo inflamatório agudo, uma resposta inata do tecido conjuntivo a uma lesão ou infecção.",
+    "Hint 2": "Envolvo a vasodilatação, aumento da permeabilidade vascular e migração de células de defesa (leucócitos) para o local lesionado.",
+    "Hint 3": "Após uma entorse, sou responsável pelos sinais clássicos de calor, rubor, edema e dor, que são parte do processo de reparo.",
+    "Hint 4": "O uso de gelo (crioterapia) após um trauma é uma estratégia para modular minha intensidade, aumentando o conforto e reduzindo a dor.",
+    "Answer": "Inflamação",
+    "AlternativeAnswers": ["Processo inflamatório", "Resposta inflamatória"],
+    "Options": [
+      "Necrose isquêmica",
+      "Choque anafilático",
+      "Autoimunidade humoral",
+      "Inflamação"
+    ]
+  },
+  "Qual processo fisiológico, decorrente na medula óssea vermelha, é responsável pela linhagem e produção dos elementos figurados do sangue?": {
+    "Hint 1": "Sou o processo de formação de novas células sanguíneas, que ocorre principalmente na medula óssea vermelha.",
+    "Hint 2": "Envolvo a diferenciação de células-tronco hematopoiéticas em todos os types de células do sangue: hemácias, leucócitos e plaquetas.",
+    "Hint 3": "O treinamento em altitude estimula minha atividade para aumentar a produção de hemácias, melhorando assim o transporte de oxigênio.",
+    "Hint 4": "Atletas que praticam 'doping sanguíneo' buscam aumentar minha eficiência para elevar a massa de glóbulos vermelhos e a capacidade aeróbica.",
+    "Answer": "Hematopoiese",
+    "AlternativeAnswers": ["Hematopoese", "Produção sanguínea"],
+    "Options": [
+      "Eritroblastose",
+      "Hematopoiese",
+      "Hemólise esplênica",
+      "Leucocitose induzida"
+    ]
+  },
+  "Qual conjunto de mecanismos biológicos integrados reconhece e neutraliza patógenos e corpos estranhos infiltrados nos tecidos?": {
+    "Hint 1": "Sou o mecanismo pelo qual as células do sistema imunológico reconhecem e destroem agentes invasores no tecido conjuntivo.",
+    "Hint 2": "Envolvo células como macrófagos, que fagocitam patógenos, e linfócitos, que produzem anticorpos e atacam células infectadas.",
+    "Hint 3": "O sistema imunológico de um atleta pode ser temporariamente suprimido após um treino extenuante, abrindo uma 'janela de infecção' (a teoria da janela aberta).",
+    "Hint 4": "A inflamação de uma faringe (faringite) é um exemplo de minha atuação contra um vírus ou bactéria, resultando em dor e vermelhidão local.",
+    "Answer": "Resposta imune",
+    "AlternativeAnswers": ["Defesa imunológica", "Sistema imunitário"],
+    "Options": [
+      "Choque anafilático",
+      "Opsonização plaquetária",
+      "Resposta imune",
+      "Cascata de coagulação"
+    ]
+  },
+  "Qual matriz extracelular laminar especializada, rica em colágeno tipo IV, ancora e separa o tecido epitelial do conjuntivo?": {
+    "Hint 1": "Sou uma estrutura em forma de lâmina que separa o tecido epitelial do tecido conjuntivo subjacente, composta por uma rede de colágeno tipo IV e glicoproteínas.",
+    "Hint 2": "Minha função é ancorar o epitélio, filtrar moléculas e orientar a regeneração celular.",
+    "Hint 3": "Quando uma lesão atinge o tissue epitelial, sou eu quem fornece a 'trilha' para a migração das novas células durante o processo de cicatrização.",
+    "Hint 4": "No exame de biópsia, minha espessura e integridade são analisadas para diagnosticar doenças como o pênfigo, onde há uma separação entre mim e o epitélio.",
+    "Answer": "Lâmina basal",
+    "AlternativeAnswers": ["Membrana basal"],
+    "Options": [
+      "Fáscia superficial",
+      "Lâmina basal",
+      "Glicocálix celular",
+      "Zonula occludens"
+    ]
+  },
+  "Qual célula diferenciada do tecido conjuntivo, derivada de linfócitos B, secreta anticorpos e exibe núcleo em 'roda de carroça'?": {
+    "Hint 1": "Sou um tipo de célula do tecido conjuntivo, derivada do linfócito B ativado, com formato característico de 'roda de carroça' devido à cromatina nuclear condensada.",
+    "Hint 2": "Minha função é produzir e secretar anticorpos (imunoglobulinas) para a defesa humoral contra patógenos.",
+    "Hint 3": "Atletas que sofrem de infecções recorrentes podem ter uma alteração na quantidade ou função de células como eu, comprometendo a resposta imune adaptativa.",
+    "Hint 4": "Em um esfregaço de sangue ou tecido linfoide, sou reconhecido pelo meu citoplasma basófilo (rico em RNA) e pela zona clara ao lado do núcleo, onde fica o complexo de Golgi.",
+    "Answer": "Plasmócito",
+    "AlternativeAnswers": ["Célula plasmática"],
+    "Options": [
+      "Fibroblasto",
+      "Mastócito residual",
+      "Macrófago tecidual",
+      "Plasmócito"
+    ]
+  },
+  "Qual célula adiposa madura armazena lipídeos em uma única e volumosa gotícula citoplasmática que desloca o núcleo para a periferia?": {
+    "Hint 1": "Sou uma célula do tecido conjuntivo, arredondada, com um grande vacúolo lipídico que ocupa quase todo o citoplasma, deslocando o núcleo para a periferia.",
+    "Hint 2": "Armazeno triglicerídeos, funcionando como reserva energética, isolante térmico e protetor mecânico.",
+    "Hint 3": "Durante exercícios prolongados de baixa intensidade, sou a principal fonte de energia, liberando ácidos graxos para a corrente sanguínea.",
+    "Hint 4": "O 'pneuzinho' abdominal que muitas pessoas tentam eliminar na academia é formado por milhares de células como eu, agrupadas em lóbulos.",
+    "Answer": "Adipócito unilocular",
+    "AlternativeAnswers": ["Adipócito", "Célula adiposa branca"],
+    "Options": [
+      "Adipócito unilocular",
+      "Adipócito multilocular",
+      "Condrócito maduro",
+      "Miofibroblasto"
+    ]
+  },
+  "Qual resposta fisiológica glandular cutânea dissipa a sobrecarga térmica interna através da evaporação de fluido aquoso?": {
+    "Hint 1": "Sou o mecanismo pelo qual a pele contribui para a manutenção da temperatura corporal, envolvendo a produção e evaporação de um líquido aquoso.",
+    "Hint 2": "Esse processo é controlado pelo sistema nervoso autônomo, através de glândulas écrinas presentes na derme.",
+    "Hint 3": "Durante uma sessão de treino intenso, sou o principal responsável por dissipar o calor gerado pelos músculos, evitando a hipertermia.",
+    "Hint 4": "Quando você termina um treino e percebe sua camisa molhada, está vendo o resultado direto desse mecanismo termorregulador.",
+    "Answer": "Sudorese",
+    "AlternativeAnswers": ["Termorregulação por suor", "Transpiração"],
+    "Options": [
+      "Vasoespasmo periférico",
+      "Piloereção reflexa",
+      "Sudorese",
+      "Secreção sebácea"
+    ]
+  },
+  "Qual propriedade biológica tecidual rege as alterações estruturais e volumétricas celulares frente a estímulos de sobrecarga ou desuso?": {
+    "Hint 1": "Sou a capacidade dos tecidos de se adaptarem a diferentes estímulos, alterando sua estrutura e função em resposta ao uso, desuso ou agressão.",
+    "Hint 2": "Esse fenômeno inclui processos como a hipertrofia (aumento do tamanho celular) e a atrofia (redução).",
+    "Hint 3": "O ganho de massa muscular com o treino de força é o exemplo mais clássico de mim, enquanto o desuso leva à perda de massa muscular (atrofia).",
+    "Hint 4": "A frase 'o que não se usa, se perde' é a tradução popular desse princípio, que rege a resposta de todos os tecidos ao estímulo ambiental.",
+    "Answer": "Plasticidade tecidual",
+    "AlternativeAnswers": ["Adaptação tecidual", "Maleabilidade tecidual"],
+    "Options": [
+      "Totipotência celular",
+      "Elasticidade mecânica",
+      "Plasticidade tecidual",
+      "Homeostase estática"
+    ]
+  },
+  "Qual tecido conjuntivo fluido é responsável pelo transporte sistêmico de metabólitos, gases respiratórios e elementos imunitários?": {
+    "Hint 1": "Sou um tecido conjuntivo especializado, líquido, composto por uma matriz plasmática e elementos figurados (hemácias, leucócitos e plaquetas).",
+    "Hint 2": "Minhas funções incluem o transporte de gases, nutrientes, hormônios e excretas pelo corpo.",
+    "Hint 3": "O 'doping sanguíneo', utilizado por alguns atletas para aumentar a capacidade de transporte de oxigênio, consiste em aumentar artificialmente meu volume ou minha massa de hemácias.",
+    "Hint 4": "A 'hemoconcentração' observada em atletas desidratados após um treino longo é o aumento da minha viscosidade devido à perda de água, reduzindo meu volume plasmático.",
+    "Answer": "Sangue",
+    "AlternativeAnswers": ["Tecido sanguíneo"],
+    "Options": [
+      "Líquido cefalorraquidiano",
+      "Sangue",
+      "Linfa intersticial",
+      "Líquido sinovial"
+    ]
+  },
+  "Qual variante do tecido conjuntivo denso apresenta feixes colágenos dispostos tridimensionalmente sem orientação fixa, encapsulando órgãos?": {
+    "Hint 1": "Sou um tipo de tecido conjuntivo denso não modelado, com fibras colágenas entrelaçadas em várias direções, formando uma cápsula resistente.",
+    "Hint 2": "Minha função é envolver e proteger órgãos como o fígado, os rins e as articulações, oferecendo resistência a forças multidirecionais.",
+    "Hint 3": "A cápsula articular que envolve as articulações sinoviais e as cápsulas que envolvem os linfonodos são exemplos de mim.",
+    "Hint 4": "Quando você come um bife e encontra uma membrana branca e fibrosa que é difícil de mastigar, está provavelmente diante de uma estrutura formada por mim.",
+    "Answer": "Tecido conjuntivo denso não modelado",
+    "AlternativeAnswers": ["Conjuntivo fibroso não modelado", "Tecido denso irregular"],
+    "Options": [
+      "Tecido conjuntivo denso modelado",
+      "Tecido conjuntivo denso não modelado",
+      "Tecido conjuntivo frouxo areolar",
+      "Tecido cartilaginoso fibroso"
+    ]
+  },
+  "Qual tipo de tecido conjuntivo frouxo preenche os espaços intersticiais profundos abaixo de epitélios e dá suporte a vasos sanguíneos?": {
+    "Hint 1": "Sou um tecido conjuntivo frouxo altamente vascularizado, localizado abaixo dos epitélios, que serve como 'preenchedor' e suporte.",
+    "Hint 2": "Minha matriz contém fibras colágenas e elásticas finas, além de células como fibroblastos, macrófagos e mastócitos.",
+    "Hint 3": "O 'edema' que ocorre em uma torção de tornozelo é um acúmulo de líquido na minha matriz, devido ao aumento da permeabilidade vascular local.",
+    "Hint 4": "A 'fáscia' que envolve os músculos e separa as camadas da pele é um exemplo de mim em sua forma mais organizada.",
+    "Answer": "Tecido conjuntivo frouxo",
+    "AlternativeAnswers": ["Tecido areolar", "Conjuntivo frouxo"],
+    "Options": [
+      "Tecido conjuntivo denso modelado",
+      "Tecido mucoso embrionário",
+      "Tecido conjuntivo frouxo",
+      "Tecido reticular linfoide"
+    ]
+  },
+  "Qual estrato profundo da epiderme concentra queratinócitos basais indiferenciados em intensa e contínua atividade mitótica?": {
+    "Hint 1": "Sou a camada mais profunda da epiderme, responsável pela constante produção de novas células que se diferenciam e migram para a superfície.",
+    "Hint 2": "Minhas células-tronco (queratinócitos basais) se dividem por mitose, garantindo a renovação contínua da pele a cada 28 dias.",
+    "Hint 3": "A descamação natural da pele após uma queimadura solar ou após o uso de cremes esfoliantes é acelerada pelo estímulo da minha atividade mitótica.",
+    "Hint 4": "Em uma biópsia de pele, sou a camada que toca diretamente a derme, sendo responsável pela ancoragem do epitélio à lâmina basal.",
+    "Answer": "Camada basal",
+    "AlternativeAnswers": ["Estrato basal", "Estrato germinativo"],
+    "Options": [
+      "Estrato espinhoso",
+      "Estrato córneo",
+      "Estrato granuloso",
+      "Camada basal"
+    ]
+  },
+  "Qual variante de tecido conjuntivo apresenta lamelas concêntricas de elastina e é capaz de sofrer grande deformação mecânica reversível?": {
+    "Hint 1": "Sou um tipo de tecido conjuntivo denso, altamente elástico, encontrado em estruturas que precisam se distender e retornar ao formato original.",
+    "Hint 2": "Sou composto por fibras elásticas dispostas em lamelas concêntricas, conferindo alta capacidade de deformação e recoil.",
+    "Hint 3": "A perda da minha elasticidade com a idade contribui para a diminuição da complacência da parede da aorta, afetando a performance cardiovascular durante o esforço.",
+    "Hint 4": "O 'ligamento amarelo' da coluna vertebral, que permite a flexão e extensão da coluna, e as paredes das grandes artérias são exemplos clássicos de mim.",
+    "Answer": "Tecido elástico",
+    "AlternativeAnswers": ["Tecido conjuntivo elástico"],
+    "Options": [
+      "Tecido cartilaginoso hialino",
+      "Tecido elástico",
+      "Tecido conjuntivo denso modelado",
+      "Tecido ósseo esponjoso"
+    ]
+  },
+  "Qual tipo de tecido adiposo multilocular e hipervascularizado é especializado em termogênese sem acoplamento de ATP via mitocôndrias?": {
+    "Hint 1": "Sou um tipo de tecido adiposo especializado na produção de calor, com alta densidade de mitocôndrias e vascularização abundante.",
+    "Hint 2": "Minha função é a termogênese, gerando calor a partir da oxidação de ácidos graxos, sem produzir ATP (desacoplamento da fosforilação oxidativa).",
+    "Hint 3": "Atletas expostos ao frio ou que realizam treinos em baixas temperaturas podem ativar minha atividade para manter a temperatura corporal.",
+    "Hint 4": "Os recém-nascidos e os animais hibernantes possuem grandes quantidades de mim, localizado principalmente nas regiões interescapular e perirrenal.",
+    "Answer": "Tecido adiposo marrom",
+    "AlternativeAnswers": ["Gordura marrom", "Adiposo multilocular"],
+    "Options": [
+      "Tecido adiposo branco",
+      "Tecido adiposo marrom",
+      "Tecido conjuntivo reticular",
+      "Tecido mixoide visceral"
+    ]
+  },
+  "Qual depósito de tecido adiposo localiza-se profundamente no peritônio abdominal e correlaciona-se intimamente com riscos cardiometabólicos?": {
+    "Hint 1": "Sou a gordura localizada profundamente na cavidade abdominal, envolvendo os órgãos internos, e estou fortemente associada a riscos metabólicos.",
+    "Hint 2": "Minha função é fornecer reserva energética de rápida mobilização e proteger os órgãos contra traumas, mas seu excesso está ligado à inflamação crônica.",
+    "Hint 3": "Atletas com maior acúmulo de mim apresentam menor sensibilidade à insulina e pior resposta inflamatória, comprometendo a recuperação pós-treino.",
+    "Hint 4": "A 'barriga de cerveja' ou a gordura que envolve o fígado e o intestino é um exemplo clássico de onde estou localizado.",
+    "Answer": "Tecido adiposo visceral",
+    "AlternativeAnswers": ["Gordura visceral", "Adiposo intra-abdominal"],
+    "Options": [
+      "Tecido adiposo subcutâneo",
+      "Tecido adiposo visceral",
+      "Gordura sinovial infiltrativa",
+      "Panículo adiposo mamário"
+    ]
+  },
+  "Quais estruturas filamentosas finas e ramificadas do estroma linfoide são formadas especificamente por colágeno tipo III?": {
+    "Hint 1": "Sou um tipo de fibra do tecido conjuntivo, muito fina e delicada, composta por colágeno tipo III, que forma uma rede tridimensional.",
+    "Hint 2": "Minha função é sustentar órgãos hematopoiéticos (medula óssea, baço, linfonodos) e formar o arcabouço do fígado e dos rins.",
+    "Hint 3": "Lesões musculares que afetam o tecido conjuntivo perimisial podem envolver a ruptura das minhas fibras, atrasando a recuperação do atleta.",
+    "Hint 4": "Em uma coloração com prata (impregnação argírica), sou corado de preto e posso ser visualizado como uma trama fina sustentando as células dos órgãos linfoides.",
+    "Answer": "Fibras reticulares",
+    "AlternativeAnswers": ["Colágeno tipo III", "Rede reticular"],
+    "Options": [
+      "Fibras elásticas",
+      "Fibras colágenas grossas",
+      "Fibras reticulares",
+      "Miofibrilas contráteis"
+    ]
+  },
+  "Qual matriz amorfa hidrofílica, rica em glicosaminoglicanos e proteoglicanos, preenche o espaço intersticial do tecido conjuntivo?": {
+    "Hint 1": "Sou o componente gelatinoso do tecido conjuntivo, composto por glicosaminoglicanos (como o ácido hialurônico) e proteoglicanos, que retêm água e íons.",
+    "Hint 2": "Minha função é preencher os espaços entre as células e fibras, permitindo a difusão de nutrientes e a lubrificação dos tecidos.",
+    "Hint 3": "Durante o exercício, minha hidratação é crucial para a manutenção da viscosidade do líquido intersticial, facilitando as trocas capilares.",
+    "Hint 4": "O 'gel' que preenche o olho (humor vítreo) e o líquido sinovial das articulações são exemplos de formas especializadas de mim.",
+    "Answer": "Substância fundamental amorfa",
+    "AlternativeAnswers": ["Matriz extracelular amorfa", "Substância fundamental"],
+    "Options": [
+      "Fluido transcelular",
+      "Substância fundamental amorfa",
+      "Líquido intravascular intracelular",
+      "Citoplasma condensado"
+    ]
+  },
+
+  "Qual célula multipotente indiferenciada de origem embrionária atua como precursora direta das linhagens celulares do tecido conjuntivo?": {
+    "Hint 1": "Sou uma célula indiferenciada do tecido conjuntivo, com alta capacidade de proliferação e diferenciação em diversos tipos celulares (fibroblastos, condroblastos, osteoblastos).",
+    "Hint 2": "Minha função é fornecer um reservatório de células-tronco para a regeneração e reparo tecidual.",
+    "Hint 3": "Em lesões musculares graves, sou ativado para formar tecido cicatricial, o que pode limitar a elasticidade do músculo se não houver reabilitação adequada.",
+    "Hint 4": "A 'célula-tronco mesenquimal' frequentemente estudada em pesquisas de regeneração esportiva é um tipo de mim, presente na medula óssea e no tecido adiposo.",
+    "Answer": "Célula mesenquimal",
+    "AlternativeAnswers": ["Célula-tronco mesenquimal", "Célula mesenquimatosa"],
+    "Options": [
+      "Mioblasto maduro",
+      "Célula mesenquimal",
+      "Pericitos vasculares",
+      "Célula endotelial progenitora"
+    ]
+  },
+  "Qual glicoproteína adesiva estrutural ancora os receptores integrinas celulares às fibras de colágeno da matriz extracelular?": {
+    "Hint 1": "Sou uma proteína adesiva da matriz extracelular que conecta as células (via integrinas) às fibras colágenas, ancorando-as à matriz.",
+    "Hint 2": "Minha função é estabilizar a adesão celular, orientar a migração celular durante o desenvolvimento e o reparo, e sinalizar vias de sobrevivência.",
+    "Hint 3": "A integridade dos tendões e ligamentos, essencial para a performance atlética, depende da minha presença para a transmissão de forças mecânicas entre as células e a matriz.",
+    "Hint 4": "A 'fibronectina' é o nome mais conhecido de mim, frequentemente citada em estudos sobre cicatrização e regeneração muscular.",
+    "Answer": "Fibronectina",
+    "AlternativeAnswers": ["Proteína adesiva fibronectina"],
+    "Options": [
+      "Fibronectina",
+      "Condroitina sulfato",
+      "Queratina epidérmica",
+      "Laminina ancorante"
+    ]
+  },
+  "Qual linhagem de maturação hematopoética restrita resulta no desenvolvimento e proliferação celular de eritrócitos sob estímulo de eritropoetina?": {
+    "Hint 1": "Sou o processo específico de formação e maturação das hemácias (glóbulos vermelhos), que ocorre na medula óssea vermelha.",
+    "Hint 2": "Esse mecanismo é estimulado pela eritropoietina (EPO), um hormônio produzido pelos rins em resposta à hipóxia.",
+    "Hint 3": "Atletas que treinam em altitude elevada apresentam aumento da minha atividade, resultando em maior massa de hemácias e melhor capacidade de transporte de oxigênio.",
+    "Hint 4": "O 'doping sanguíneo' com EPO sintética visa acelerar artificialmente o meu processo, melhorando a performance aeróbica de forma ilícita.",
+    "Answer": "Eritropoiese",
+    "AlternativeAnswers": ["Eritropoese", "Formação de hemácias"],
+    "Options": [
+      "Leucopoiese granulocítica",
+      "Eritropoiese",
+      "Trombocitopoiese medular",
+      "Linfopoiese clonal"
+    ]
+  },
+  "Qual corpúsculo anucleado derivado da fragmentação citoplasmática de megacariócitos atua primariamente na hemostasia e coagulação?": {
+    "Hint 1": "Sou o fragmento celular anucleado, derivado do megacariócito da medula óssea, essencial para a hemostasia e a coagulação sanguínea.",
+    "Hint 2": "Minha função é aderir ao local de lesão vascular, agregar-se e liberar grânulos com fatores de coagulação e vasoconstritores.",
+    "Hint 3": "Em atletas, a contagem reduzida de mim pode aumentar o risco de sangramentos e hematomas após traumas, prejudicando a recuperação.",
+    "Hint 4": "A 'plaqueta' é o nome popular de mim, e sua agregação forma o primeiro tampão que estanca o sangramento em um ferimento.",
+    "Answer": "Plaquetas",
+    "AlternativeAnswers": ["Trombócitos", "Plaqueta"],
+    "Options": [
+      "Plaquetas",
+      "Reticulócitos imaturos",
+      "Macrófagos fagocíticos",
+      "Eosinófilos teciduais"
+    ]
+  },
+  "Qual granulócito polimorfonuclear é o mais abundante do sangue periférico e atua na primeira linha de defesa imune via fagocitose bacteriana?": {
+    "Hint 1": "Sou o leucócito mais abundante no sangue (50-70%), com núcleo multilobulado e grânulos neutros no citoplasma.",
+    "Hint 2": "Minha função principal é a fagocitose de bactérias e a liberação de enzimas bactericidas, sendo a primeira linha de defesa inata.",
+    "Hint 3": "Exercícios extenuantes podem causar uma leucocitose com aumento da minha quantidade, seguida de uma queda (janela imunológica) que aumenta a suscetibilidade a infecções.",
+    "Hint 4": "O 'neutrófilo' é meu nome científico, e a presença de muitos de mim em um exame de sangue indica uma infecção bacteriana aguda.",
+    "Answer": "Neutrófilo",
+    "AlternativeAnswers": ["Leucócito neutrófilo", "Polimorfonuclear neutrófilo"],
+    "Options": [
+      "Basófilo tecidual",
+      "Monócito periférico",
+      "Neutrófilo",
+      "Eosinófilo circulante"
+    ]
+  },
+  "Qual leucócito agranulócito mononuclear orquestra os mecanismos efetores de imunidade celular e humoral adaptativa do organismo?": {
+    "Hint 1": "Sou um leucócito agranulócito, com núcleo grande e esférico que ocupa a maior parte da célula, e citoplasma escasso.",
+    "Hint 2": "Sou responsável pela imunidade adaptativa, com subpopulações que produzem anticorpos (células B) ou atacam células infectadas (células T).",
+    "Hint 3": "A relação entre treino intenso e modulação da minha função é bem documentada: o excesso de cortisol reduz minha proliferação e atividade, comprometendo a defesa viral.",
+    "Hint 4": "Sua contagem está elevada em infecções virais e reduzida em condições de imunossupressão.",
+    "Answer": "Linfócito",
+    "AlternativeAnswers": ["Célula linfocitária"],
+    "Options": [
+      "Linfócito",
+      "Neutrófilo segmentado",
+      "Mastócito ativado",
+      "Megacariócito"
+    ]
+  }
+}
