@@ -519,7 +519,7 @@ if (backButton) {
 }
 
 async function enviarDados(question, answer, rightAnswer, alternativeAnswers) {
-  const resposta = await fetch("http://localhost:5000/receber_dados", {
+  const resposta = await fetch("/receber_dados", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -545,7 +545,7 @@ async function enviarDados(question, answer, rightAnswer, alternativeAnswers) {
 }
 
 async function receber_mensagem_errada(question, answer, rightAnswer, alternativeAnswers, hints) {
-  const resposta = await fetch("http://localhost:5000/receber_correcao", {
+  const resposta = await fetch("/receber_correcao", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
