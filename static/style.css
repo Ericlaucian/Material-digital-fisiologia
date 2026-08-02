@@ -469,3 +469,11 @@ body.scroll-page #app {
 /* Safety: ensure no element can cause horizontal overflow */
 * { box-sizing: border-box; }
 body { overflow-x: hidden; }
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}

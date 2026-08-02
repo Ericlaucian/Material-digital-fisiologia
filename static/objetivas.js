@@ -329,8 +329,15 @@ if (nextQuestionButton) {
     nextQuestionButton.addEventListener('click', () => {
         questionsAnsweredCount += 1;
         if (questionsAnsweredCount % 5 === 0) {
-            alert(`Fim da rodada! Sua pontuação total: ${score} pontos.`);
-            score = 0;
+            resultDialog.showModal();
+            resultMessage.textContent = `Fim da rodada! Sua pontuação total: ${score} pontos.`;
+            if (closeDialogButton) {
+                closeDialogButton.onclick = () => {
+                    resultDialog.close();
+                    window.location.href = "/";
+                };
+                score = 0;
+            }
         }
         updateScoreDisplay();
         if (answerArea) answerArea.classList.add('hidden');

@@ -25,6 +25,9 @@ var roundProgressElement = document.getElementById("round-progress");
 var scoreLargeElement = document.getElementById("score-large");
 var roundProgressSmallElement = document.getElementById("round-progress-small");
 var backButton = document.getElementById("back-button");
+var resultDialog = document.getElementById("result-dialog");
+var resultMessage = document.getElementById("result-message");
+var closeDialogButton = document.getElementById("close-dialog-button");
 var currentTopicQuestions = {};
 var answeredQuestions = [];
 var selectedQuestionName = null;
@@ -339,7 +342,15 @@ function resetQuestionStateAndSpinRoulette() {
     rouletteDisplayElement.textContent = "";
   questionsAnsweredCount++;
   if (questionsAnsweredCount % 5 === 0) {
-    alert(`Fim da rodada! Sua pontuação total: ${score} pontos.`);
+    // alert(`Fim da rodada! Sua pontuação total: ${score} pontos.`);
+    resultDialog.showModal();
+    resultMessage.textContent = `Fim da rodada! Sua pontuação total: ${score} pontos.`;
+    if (closeDialogButton) {
+      closeDialogButton.onclick = () => {
+        resultDialog.close();
+        window.location.href = "/";
+      };
+    }
     score = 0;
     if (roundProgressElement) {
       roundProgressElement.textContent = `Questão: 0/5`;
