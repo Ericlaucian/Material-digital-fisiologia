@@ -24,6 +24,7 @@ body {
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
     position: relative;
+    background-color: var(--secondary-bg-color);
 }
 
 body.dark-theme {
@@ -357,7 +358,6 @@ input:checked+.slider:before {
     align-items: center;
     gap: 1rem;
     margin-top: .2rem;
-    justify-content: center;
 }
 
 .center-buttons{
@@ -480,4 +480,8 @@ dialog {
     padding: 24px;
     max-width: 400px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    justify-content: center;
 }
