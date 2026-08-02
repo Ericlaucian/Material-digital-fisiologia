@@ -2,7 +2,6 @@ import os
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
-from google import genai as google_genai
 
 
 app = Flask(__name__)
@@ -12,7 +11,7 @@ load_dotenv()
 
 api_key = os.getenv("API_KEY")
 try:
-
+    from google import genai as google_genai
     gemini_client = google_genai.Client( api_key= api_key)
 except Exception:
     gemini_client = None
@@ -49,6 +48,8 @@ def receber_dados():
     
     if gemini_client == None:
         print("kd esse krl")
+    else:
+        print("ta aki sim")
     
     
 
