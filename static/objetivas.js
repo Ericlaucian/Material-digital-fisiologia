@@ -332,10 +332,10 @@ if (nextQuestionButton) {
             resultDialog.showModal();
             resultMessage.textContent = `Fim da rodada! Sua pontuação total: ${score} pontos.`;
             if (closeDialogButton) {
-                closeDialogButton.onclick = () => {
+                closeDialogButton.addEventListener('click', () => {
                     resultDialog.close();
                     window.location.href = "/";
-                };
+                });
                 score = 0;
             }
         }
