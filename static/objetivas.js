@@ -55,6 +55,9 @@ const roundProgressElement = document.getElementById('round-progress');
 const scoreLargeElement = document.getElementById('score-large');
 const roundProgressSmallElement = document.getElementById('round-progress-small');
 const themeSwitch = document.getElementById('checkbox');
+var resultDialog = document.getElementById("result-dialog");
+var resultMessage = document.getElementById("result-message");
+var closeDialogButton = document.getElementById("close-dialog-button");
 
 let currentTopicQuestions = {};
 let selectedQuestionName = null;
